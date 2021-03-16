@@ -39,6 +39,8 @@
     <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="../../lib/cryptofont/css/cryptofont.min.css" rel="stylesheet">
 
+    <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
+
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.dashboard.css">
@@ -90,21 +92,8 @@
         <div class="container pd-x-0">
           <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
             <div>
-             <!--  <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                  <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Cryptocurrency</li>
-                </ol>
-              </nav> -->
               <h4 class="mg-b-0 tx-spacing--1">Cari Lowongan</h4>
             </div>
-           <!--  <div class="d-none d-md-flex">
-              <button class="btn btn-sm btn-primary btn-uppercase pd-x-20">BTC</button>
-              <button class="btn btn-sm btn-white btn-uppercase pd-x-20 mg-l-5">ETH</button>
-              <button class="btn btn-sm btn-white btn-uppercase pd-x-20 mg-l-5">LTC</button>
-              <button class="btn btn-sm btn-white btn-uppercase pd-x-20 mg-l-5">BTG</button>
-              <button class="btn btn-sm btn-icon btn-white btn-uppercase mg-l-5"><i data-feather="more-vertical"></i></button>
-            </div> -->
           </div>
 
           <div class="row row-xs">
@@ -113,28 +102,118 @@
                 <div class="d-md-flex align-items-center justify-content-between">
                   <div class="media align-sm-items-center">
                       
-                    <div class="d-md-flex">
-                      <div class="form-group mg-b-0">
-                        <input type="text" name="firstname" class="form-control wd-400" placeholder="Cari berdasarkan posisi, kata kunci, perusahaan" >
+                    <form id="formCalendar" method="post" action="app-calendar.html">
+                      <div class="form-group">
+                        <div class="d-md-flex">
+                          <div class="form-group mg-b-0">
+                            <input type="text" name="firstname" class="form-control wd-400" placeholder="Cari berdasarkan posisi, kata kunci, perusahaan" >
+                          </div><!-- form-group -->
+                          <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <input type="text" name="lastname" class="form-control wd-250" placeholder="Daerah, kota, kabupaten" >
+                          </div><!-- form-group -->
+                          <div class="mg-sm-l-20">
+                            <button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn pd-x-20">Cari</button>
+                          </div>
+                        </div><!-- d-flex -->
                       </div><!-- form-group -->
-                      <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
-                        <input type="text" name="lastname" class="form-control wd-250" placeholder="Daerah, kota, kabupaten" >
+
+                      <div style="margin-bottom: 5px;" class="form-group">
+                        <div class="d-md-flex">
+                          <div style="width: 30%" class="form-group mg-b-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Urutkan Berdasarkan</label>
+                            <div data-label="Example" class="df-example demo-forms">
+                              <select class="form-control select2-clear">
+                                <option label="Choose one"></option>
+                                <option value="Firefox">Firefox</option>
+                                <option value="Chrome">Chrome</option>
+                                <option value="Safari">Safari</option>
+                                <option value="Opera">Opera</option>
+                                <option value="Internet Explorer">Internet Explorer</option>
+                              </select>
+                          </div><!-- df-example -->
+                          </div><!-- form-group -->
+                          
+                          <div style="width: 30%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Tanggal Posting</label>
+                            <div data-label="Example" class="df-example demo-forms">
+                              <select class="form-control select2-clear">
+                                <option label="Choose one"></option>
+                                <option value="Firefox">Firefox</option>
+                                <option value="Chrome">Chrome</option>
+                                <option value="Safari">Safari</option>
+                                <option value="Opera">Opera</option>
+                                <option value="Internet Explorer">Internet Explorer</option>
+                              </select>
+                          </div><!-- df-example -->
+                          </div><!-- form-group -->
+
+                          <div style="width: 30%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Urutkan Berdasarkan</label>
+                            <div data-label="Example" class="df-example demo-forms">
+                              <select class="form-control select2-clear">
+                                <option label="Choose one"></option>
+                                <option value="Firefox">Firefox</option>
+                                <option value="Chrome">Chrome</option>
+                                <option value="Safari">Safari</option>
+                                <option value="Opera">Opera</option>
+                                <option value="Internet Explorer">Internet Explorer</option>
+                              </select>
+                          </div><!-- df-example -->
+                          </div><!-- form-group -->
+
+                          <div style="width: 30%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Tingkat Pengalaman</label>
+                            <div data-label="Example" class="df-example demo-forms">
+                              <select class="form-control select2-clear">
+                                <option label="Choose one"></option>
+                                <option value="Firefox">Firefox</option>
+                                <option value="Chrome">Chrome</option>
+                                <option value="Safari">Safari</option>
+                                <option value="Opera">Opera</option>
+                                <option value="Internet Explorer">Internet Explorer</option>
+                              </select>
+                          </div><!-- df-example -->
+                          </div><!-- form-group -->
+
+                          <div style="width: 30%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Jenis Pekerjaan</label>
+                            <div data-label="Example" class="df-example demo-forms">
+                              <select class="form-control select2-clear">
+                                <option label="Choose one"></option>
+                                <option value="Firefox">Firefox</option>
+                                <option value="Chrome">Chrome</option>
+                                <option value="Safari">Safari</option>
+                                <option value="Opera">Opera</option>
+                                <option value="Internet Explorer">Internet Explorer</option>
+                              </select>
+                          </div><!-- df-example -->
+                          </div><!-- form-group -->
+
+                          <div style="width: 30%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Penempatan</label>
+                            <div data-label="Example" class="df-example demo-forms">
+                              <select class="form-control select2-clear">
+                                <option label="Choose one"></option>
+                                <option value="Firefox">Firefox</option>
+                                <option value="Chrome">Chrome</option>
+                                <option value="Safari">Safari</option>
+                                <option value="Opera">Opera</option>
+                                <option value="Internet Explorer">Internet Explorer</option>
+                              </select>
+                          </div><!-- df-example -->
+                          </div><!-- form-group -->
+
+
+                        </div><!-- d-flex -->
                       </div><!-- form-group -->
-                      <div class="mg-sm-l-20">
-                        <button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn pd-x-20">Cari</button>
-                      </div>
-                    </div><!-- d-flex -->
-                   
+
                   </div><!-- media -->
                 </div>
               </div>
             </div><!-- col -->
             
             <div class="col-lg-4 mg-t-10">
-              <div id="scroll1" class="card pos-relative ht-450 bd">
-                <div class="card-header bd-b-0 d-flex ">
-                  <h6 class="lh-5 mg-b-0">Lowongan tersedia</h6>
-                </div><!-- card-header -->
+              <div id="scroll1" class="card pos-relative ht-350 bd">
                 <div class="card-body pd-10">
                   <ul class="list-unstyled mg-b-0">
                     <li class="list-item">
@@ -149,7 +228,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Surabaya</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">0.27%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-success">5 jam yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -164,7 +243,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Jakarta</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">0.35%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-success">17 jam yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -179,7 +258,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Jakarta</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">0.05%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-success">1 hari yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -194,7 +273,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Bogor</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">-0.19%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-success">7 hari yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -209,7 +288,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Tangerang</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">-0.21%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-color-03">2 minggu yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -224,7 +303,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Surabaya</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">2.86%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-color-03">3 minggu yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -239,7 +318,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Jakarta</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">-1.32%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-color-03">3 minggu yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -254,7 +333,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Bandung</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">-1.32%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-color-03">1 bulan yang lalu</p>
                       </div>
                     </li>
                     <li class="list-item">
@@ -269,7 +348,7 @@
                       </div><!-- media -->
                       <div class="text-right">
                         <p class="tx-normal tx-rubik mg-b-0">Malang</p>
-                        <p class="mg-b-0 tx-12 tx-rubik tx-success">-1.32%</p>
+                        <p class="mg-b-0 tx-12 tx-rubik tx-color-03">1 bulan yang lalu</p>
                       </div>
                     </li>
                   </ul>
@@ -278,7 +357,7 @@
             </div><!-- col -->
 
             <div class="col-lg-8 mg-t-10">
-              <div class="card card-crypto pos-relative ht-450 bd" id="scroll2">
+              <div class="card card-crypto pos-relative ht-350 bd" id="scroll2">
                 <div class="card-body pd-10 pd-sm-20">
 
                   <div class="media align-sm-items-center">
@@ -332,9 +411,24 @@
     <script src="../../lib/js-cookie/js.cookie.js"></script>
     <script src="../../assets/js/dashforge.settings.js"></script>
 
+     <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/feather-icons/feather.min.js"></script>
+    <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../lib/prismjs/prism.js"></script>
+    <script src="../../lib/select2/js/select2.min.js"></script>
+
+    <script src="../../assets/js/dashforge.js"></script>
+
     <script>
       $(function(){
         'use strict'
+
+        $('.select2-clear').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Choose one',
+          allowClear: true
+        });
 
         $.plot('#flotChart1', [{
             data: df3,
@@ -556,6 +650,9 @@
       const scroll2 = new PerfectScrollbar('#scroll2', {
         suppressScrollX: true
       });
+
+     
+
     </script>
   </body>
 </html>
