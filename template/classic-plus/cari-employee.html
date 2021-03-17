@@ -32,7 +32,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../../assets/img/logo.png">
 
-    <title>myITS Connect - Cari Lowongan</title>
+    <title>myITS Connect - Cari Calon Pegawai</title>
 
     <!-- vendor css -->
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -69,12 +69,13 @@
         <ul class="nav nav-aside">
           <li class="nav-item"><a href="dashboard-one.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
           <li class="nav-item with-sub">
-            <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Pekerjaan</span></a>
+            <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>PT. Ternaknesia</span></a>
             <ul>
-              <li><a href="page-profile-view.html">Cari Lowongan</a></li>
-              <li><a href="page-connections.html">Lowongan Tersimpan</a></li>
-              <li><a href="page-groups.html">Lamaran Saya</a></li>
-              <li><a href="page-events.html">Daftar Perusahaan</a></li>
+              <li><a href="page-profile-view.html">Beranda Perusahaan</a></li>
+              <li><a href="page-profile-view.html">Cari Calon Pegawai</a></li>
+              <li><a href="page-connections.html">Calon Pegawai Tersimpan</a></li>
+              <li><a href="page-groups.html">Lamaran Masuk</a></li>
+              <li><a href="page-events.html">Riwayat Lowongan</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
@@ -101,7 +102,7 @@
         <div class="container pd-x-0">
           <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
             <div>
-              <h4 class="mg-b-0 tx-spacing--1">Cari Lowongan</h4>
+              <h4 class="mg-b-0 tx-spacing--1">Cari Calon Pegawai</h4>
             </div>
           </div>
 
@@ -115,7 +116,7 @@
                       <div class="form-group">
                         <div class="d-md-flex">
                           <div class="form-group mg-b-0">
-                            <input type="text" name="firstname" class="form-control wd-400" placeholder="Cari berdasarkan posisi, kata kunci, perusahaan" >
+                            <input type="text" name="firstname" class="form-control wd-400" placeholder="Cari berdasarkan pengalaman, keahlian, atau pendidikan" >
                           </div><!-- form-group -->
                           <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
                             <input type="text" name="lastname" class="form-control wd-250" placeholder="Daerah, kota, kabupaten" >
@@ -128,7 +129,7 @@
 
                       <div style="margin-bottom: 5px;" class="form-group">
                         <div class="d-md-flex">
-                          <div style="width: 40%" class="form-group mg-b-0">
+                          <div style="width: 30%" class="form-group mg-b-0">
                             <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Urutkan Berdasarkan</label>
                             <div data-label="Example" class="df-example demo-forms">
                               <select class="form-control select2-clear">
@@ -142,8 +143,8 @@
                           </div><!-- df-example -->
                           </div><!-- form-group -->
                           
-                          <div style="width: 40%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
-                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Tanggal Posting</label>
+                          <div style="width: 30%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Jurusan</label>
                             <div data-label="Example" class="df-example demo-forms">
                               <select class="form-control select2-clear">
                                 <option label="Choose one"></option>
@@ -156,8 +157,8 @@
                           </div><!-- df-example -->
                           </div><!-- form-group -->
 
-                          <div style="width: 40%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
-                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Tingkat Pengalaman</label>
+                          <div style="width: 30%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Jenjang Pendidikan</label>
                             <div data-label="Example" class="df-example demo-forms">
                               <select class="form-control select2-clear">
                                 <option label="Choose one"></option>
@@ -169,35 +170,6 @@
                               </select>
                           </div><!-- df-example -->
                           </div><!-- form-group -->
-
-                          <div style="width: 40%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
-                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Jenis Pekerjaan</label>
-                            <div data-label="Example" class="df-example demo-forms">
-                              <select class="form-control select2-clear">
-                                <option label="Choose one"></option>
-                                <option value="Firefox">Firefox</option>
-                                <option value="Chrome">Chrome</option>
-                                <option value="Safari">Safari</option>
-                                <option value="Opera">Opera</option>
-                                <option value="Internet Explorer">Internet Explorer</option>
-                              </select>
-                          </div><!-- df-example -->
-                          </div><!-- form-group -->
-
-                          <div style="width: 40%" class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
-                            <label class="tx-sans tx-11 tx-medium tx-spacing-1 tx-color-03">Penempatan</label>
-                            <div data-label="Example" class="df-example demo-forms">
-                              <select class="form-control select2-clear">
-                                <option label="Choose one"></option>
-                                <option value="Firefox">Firefox</option>
-                                <option value="Chrome">Chrome</option>
-                                <option value="Safari">Safari</option>
-                                <option value="Opera">Opera</option>
-                                <option value="Internet Explorer">Internet Explorer</option>
-                              </select>
-                          </div><!-- df-example -->
-                          </div><!-- form-group -->
-
 
                         </div><!-- d-flex -->
                       </div><!-- form-group -->
@@ -211,7 +183,7 @@
               <div class="card pos-relative ht-350 bd">
                 <div class="card-body pd-10">
                     <div class="mail-group-header justify-content-between">
-                      <h6 class="tx-semibold mg-b-0">Lowongan Tersedia</h6>
+                      <h6 class="tx-semibold mg-b-0">Calon Pegawai Tersedia</h6>
                     </div><!-- mail-group-header -->
                     
                     <div id="scroll1"  class="mail-group-body">
@@ -276,10 +248,10 @@
                 <div class="card-body pd-10 pd-sm-20">
 
                   <div class="media align-sm-items-center">
-                    <div class="avatar"><span class="avatar-initial rounded-circle bg-indigo">U</span></div>
+                    <div class="avatar"><span class="avatar-initial rounded-circle bg-indigo">PA</span></div>
                     <div class="media-body mg-l-15">
-                      <h4 class="tx-semibold mg-b-0">UI/UX Designer</h4>
-                      <p style="margin-top: 5px;" class="tx-color-03">Gojek Indonesia</p>
+                      <h4 class="tx-semibold mg-b-0">Paramastri Ardiningrum</h4>
+                      <p style="margin-top: 5px;" class="tx-color-03">Fresh Graduate Informatika ITS</p>
                     </div><!-- media-body -->
                   </div><!-- media -->
 
@@ -335,7 +307,6 @@
 
     <script src="../../assets/js/dashforge.js"></script>
 
-    
     <script src="../../assets/js/dashforge.js"></script>
     <script src="../../assets/js/dashforge.mail.js"></script>
 
@@ -417,9 +388,6 @@
             },
             reserveSpace: false
           }
-
-
-
     		});
 
         function flotOption(min, max) {
