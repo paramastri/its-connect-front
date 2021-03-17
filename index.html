@@ -41,6 +41,7 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.auth.css">
+    <link rel="stylesheet" href="assets/css/dashforge.dashboard.css">
   </head>
   <body>
 
@@ -61,15 +62,14 @@
       </div><!-- navbar-right -->
     </header><!-- navbar -->
 
-    <div class="">
-      <!-- <div class="container"> -->
+
         <div class="media align-items-stretch justify-content-center ht-100p pos-relative">
           <div class="media-body align-items-center d-none d-lg-flex">
-            <div style="margin-top: 60px; margin-bottom: 50px; margin-right: 0px;">
+            <div style="margin-top: 60px; margin-bottom: 100px; margin-right: 0px;">
               <img style="width: 80%" src="assets/img/landing-photo.png" class="img-fluid" alt="">
             </div>
           </div><!-- media-body -->
-          <div style="margin-right: 200px; margin-left: 50px;"  class="sign-wrapper">
+          <div style="margin-right: 200px; margin-left: 20px;"  class="sign-wrapper">
             <div class="wd-100p">
               <h3 style="margin-bottom: 10px; margin-top: 30px;" class="tx-color-01 mg-b-5">Selamat datang di<br><span style="color: #013880"> myITS Connect!</span></h3>
               <p class="tx-color-03 tx-16 mg-b-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -77,8 +77,77 @@
             </div>
           </div><!-- sign-wrapper -->
         </div><!-- media -->
-      </div><!-- container -->
-    </div><!-- content -->
+
+        <div style="margin-top: 100px; margin-bottom: 200px;" class="container">
+        <div class="row row-xs">
+        <div class="col-sm-6 col-lg-4 mg-t-10">
+            <div class="card">
+              <div class="card-body tx-center">
+                <h4 class="tx-normal tx-rubik tx-25 tx-spacing--1 mg-b-0">Cari pekerjaan impian anda sekarang</h4>
+                <p style="margin-top: 10px;" class="tx-color-03 tx-16 mg-b-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div><!-- card-body -->
+              <div class="card-footer bd-t-0 pd-t-0">
+                <button class="btn btn-sm btn-block btn-outline-primary btn-uppercase tx-spacing-1">Telusuri Lebih Banyak</button>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+
+
+          <div class="col-sm-6 col-lg-4 mg-t-10">
+            <div class="card">
+              <div class="card-body tx-center">
+                <h4 class="tx-normal tx-rubik tx-25 tx-spacing--1 mg-b-0">Buka lowongan dan temukan yang anda butuhkan </h4>
+                <p style="margin-top: 10px;" class="tx-color-03 tx-16 mg-b-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div><!-- card-body -->
+              <div class="card-footer bd-t-0 pd-t-0">
+                <button class="btn btn-sm btn-block btn-outline-primary btn-uppercase tx-spacing-1">Telusuri Lebih Banyak</button>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+
+
+
+          <div class="col-sm-6 col-lg-4 mg-t-10">
+            <div class="card">
+              <div class="card-body tx-center">
+                <h4 class="tx-normal tx-rubik tx-25 tx-spacing--1 mg-b-0">Dapatkan banyak relasi dan mulai berbagi</h4>
+                <p style="margin-top: 10px;" class="tx-color-03 tx-16 mg-b-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div><!-- card-body -->
+              <div class="card-footer bd-t-0 pd-t-0">
+                <button class="btn btn-sm btn-block btn-outline-primary btn-uppercase tx-spacing-1">Telusuri Lebih Banyak</button>
+              </div><!-- card-footer -->
+            </div><!-- card -->
+          </div><!-- col -->
+        </div>
+      </div>
+
+
+
+      <div style="margin-bottom: 50px;" class="container">
+        <div class="row row-xs">
+          <div class="col-12">
+            <div class="card card-body">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <div class="media align-sm-items-center">
+                  <div class="tx-40 tx-lg-60 lh-0 tx-orange"><i class="fab fa-bitcoin"></i></div>
+                  <div class="media-body mg-l-15">
+                    <h6 class="tx-12 tx-lg-14 tx-semibold tx-uppercase tx-spacing-1 mg-b-5">Bitcoin Price <span class="tx-normal tx-color-03">(BTC)</span></h6>
+                    <div class="d-flex align-items-baseline">
+                      <h2 class="tx-20 tx-lg-28 tx-normal tx-rubik tx-spacing--2 lh-2 mg-b-0">$3,972.87</h2>
+                      <h6 class="tx-11 tx-lg-16 tx-normal tx-rubik tx-danger mg-l-5 lh-2 mg-b-0">-$7.98(0.2006%)</h6>
+                    </div>
+                  </div><!-- media-body -->
+                </div><!-- media -->
+                <div class="d-flex flex-column flex-sm-row mg-t-20 mg-md-t-0">
+                  <button class="btn btn-sm btn-white btn-uppercase pd-x-15"><i data-feather="download" class="mg-r-5"></i> Export CSV</button>
+                  <button class="btn btn-sm btn-white btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0 mg-sm-l-5"><i data-feather="share-2" class="mg-r-5"></i> Share</button>
+                  <button class="btn btn-sm btn-white btn-uppercase pd-x-15 mg-t-5 mg-sm-t-0  mg-sm-l-5"><i data-feather="eye" class="mg-r-5"></i> Watch</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- col -->
+        </div>
+      </div>
 
     <footer class="footer">
       <div>
