@@ -2613,6 +2613,14 @@ textarea.form-control {
   transform: translateX(-50%);
 }
 
+.horizontal-right {
+  margin: 0;
+  position: absolute;
+  left: 100%;
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
 .btn, .ui-datepicker-buttonpane button, .sp-container button {
   display: inline-block;
   font-weight: 400;
@@ -9996,6 +10004,11 @@ textarea.form-control {
   .link-03:hover, .link-03:focus {
     color: #1b2e4b; }
 
+.vector-footer {
+  background-image: url('assets/img/landing-footer-vector.png');
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+
 .hover-primary:hover, .hover-primary:focus {
   color: #0168fa; }
 
@@ -12706,18 +12719,18 @@ textarea.parsley-success:focus {
     margin-left: 15px;
     display: flex;
     align-items: center;
-    color: #0168fa;
-    font-size: 11px;
+    color: #013880;
+    font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase; }
+    /* text-transform: uppercase; } */}
     @media (min-width: 992px) {
       .navbar-header .btn-buy {
         min-height: inherit;
         padding: 7px 12px;
-        color: #0168fa;
-        border: 2px solid #0168fa; }
+        color: #013880;
+        /* border: 2px solid #0168fa; } */}
         .navbar-header .btn-buy:hover, .navbar-header .btn-buy:focus {
-          background-color: #0168fa;
+          background-color: #013880;
           color: #fff; } }
     .navbar-header .btn-buy .feather {
       width: 18px;
