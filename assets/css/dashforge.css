@@ -2605,6 +2605,14 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
+.horizontal-center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .btn, .ui-datepicker-buttonpane button, .sp-container button {
   display: inline-block;
   font-weight: 400;
@@ -13862,14 +13870,13 @@ textarea.parsley-success:focus {
         margin-top: 0; } }
 
 .footer {
-  font-size: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
   letter-spacing: .3px;
-  padding: 15px 25px;
-  background-color: #fafbfc;
-  color: #637388;
+  padding: 40px 200px;
+  background-color: #013880;
+  color: #ffffff;
   border-top: 1px solid rgba(72, 94, 144, 0.16);
-  text-transform: uppercase;
   display: none; }
   @media (min-width: 992px) {
     .footer {
