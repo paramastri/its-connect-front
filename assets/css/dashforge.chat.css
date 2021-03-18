@@ -208,8 +208,8 @@
 
 .chat-sidebar-body {
   position: absolute;
-  top: 60px;
-  bottom: 60px;
+  top: 0px;
+  bottom: 0px;
   left: 0;
   right: 0;
   display: flex;
@@ -324,7 +324,7 @@
 
 .chat-content-body {
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: 0;
   right: 0;
   bottom: 0; }
