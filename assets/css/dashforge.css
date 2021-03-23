@@ -13466,7 +13466,7 @@ textarea.parsley-success:focus {
           transition: none; } }
     .aside.minimize .aside-alert-link {
       opacity: 0;
-      visibility: hidden;
+      visibility: visible;
       position: fixed; }
     .aside.minimize .aside-loggedin {
       margin-bottom: 5px; }
@@ -13488,7 +13488,7 @@ textarea.parsley-success:focus {
       .aside.minimize .nav-aside .nav-link span {
         position: fixed;
         opacity: 0;
-        visibility: hidden;
+        visibility: visible;
         margin-left: 31px; }
       .aside.minimize .nav-aside .nav-label + .nav-item {
         position: relative; }
