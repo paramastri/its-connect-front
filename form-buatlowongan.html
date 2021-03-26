@@ -40,7 +40,12 @@
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
     <link href="lib/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="lib/quill/quill.core.css" rel="stylesheet">
+    <link href="lib/quill/quill.snow.css" rel="stylesheet">
+    <link href="lib/quill/quill.bubble.css" rel="stylesheet">
+
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
@@ -50,7 +55,7 @@
 
     <aside class="aside aside-fixed">
       <div class="aside-header">
-        <a href="../../index.html" class="aside-logo">dash<span>forge</span></a>
+        <a href="index.html" class="aside-logo">dash<span>forge</span></a>
         <a href="" class="aside-menu-link">
           <i data-feather="menu"></i>
           <i data-feather="x"></i>
@@ -61,7 +66,7 @@
         <ul class="nav nav-aside">
           <li class="nav-item active"><a href="index.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
           <li class="nav-item with-sub">
-            <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Pekerjaan</span></a>
+            <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Perusahaan</span></a>
             <ul>
               <li class=""><a href="employee.html">Cari Calon Pegawai</a></li>
               <li><a href="page-connections.html">Calon Pegawai Tersimpan</a></li>
@@ -98,7 +103,7 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-style1 mg-b-10">
                   <li class="breadcrumb-item"><a href="lowongan-tersimpan.html">beranda</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">buka lowongan pekerjaan baru</li>
+                  <li class="breadcrumb-item active" aria-current="page">buat lowongan pekerjaan</li>
                 </ol>
               </nav>
               <h4 class="mg-b-0 tx-spacing--1">Buat Lowongan Pekerjaan Baru</h4>
@@ -122,7 +127,18 @@
                       </div>
                       <div class="col-sm-8 mg-t-10">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">jenis pekerjaan</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <div class="">
+                          <select class="form-control select2-no-search">
+                            <option label="Pilih salah satu"></option>
+                            <option value="Firefox">Full-time</option>
+                            <option value="Chrome">Part-time</option>
+                            <option value="Safari">Kontrak</option>
+                            <option value="Opera">Magang</option>
+                            <option value="Opera">Volunteer</option>
+                            <option value="Opera">Pekerja Sementara</option>
+                            <option value="Internet Explorer">Internet Explorer</option>
+                          </select>
+                        </div>
                       </div>
                     </div><!-- row -->
                   </div>
@@ -130,18 +146,81 @@
                   <div class="mg-b-10 mg-sm-b-0 mg-t-30">
                     <h5 class="tx-bold mg-b-0 tx-15 tx-color-02 mg-b-20">Detail Lowongan</h5>
                     <div class="row row-sm">
-                      <div class="col-sm-8">
+                      <div class="col-sm-12">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">deskripsi pekerjaan</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <div class="tx-13">
+                          <div id="toolbar-container">
+                            <span class="ql-formats">
+                              <select class="ql-font"></select>
+                              <select class="ql-size"></select>
+                            </span>
+                            <span class="ql-formats">
+                              <button class="ql-bold"></button>
+                              <button class="ql-italic"></button>
+                              <button class="ql-underline"></button>
+                              <button class="ql-strike"></button>
+                            </span>
+                            <span class="ql-formats">
+                              <select class="ql-color"></select>
+                              <select class="ql-background"></select>
+                            </span>
+                            <span class="ql-formats">
+                              <button class="ql-script" value="sub"></button>
+                              <button class="ql-script" value="super"></button>
+                            </span>
+                            <span class="ql-formats">
+                              <button class="ql-header" value="1"></button>
+                              <button class="ql-header" value="2"></button>
+                              <button class="ql-blockquote"></button>
+                              <button class="ql-code-block"></button>
+                            </span>
+                            <span class="ql-formats">
+                              <button class="ql-list" value="ordered"></button>
+                              <button class="ql-list" value="bullet"></button>
+                              <button class="ql-indent" value="-1"></button>
+                              <button class="ql-indent" value="+1"></button>
+                            </span>
+                            <span class="ql-formats">
+                              <button class="ql-direction" value="rtl"></button>
+                              <select class="ql-align"></select>
+                            </span>
+                            <span class="ql-formats">
+                              <button class="ql-link"></button>
+                              <button class="ql-image"></button>
+                              <button class="ql-video"></button>
+                              <button class="ql-formula"></button>
+                            </span>
+                            <span class="ql-formats">
+                              <button class="ql-clean"></button>
+                            </span>
+                          </div>
+                          <div id="editor-container" class="ht-200">
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-sm-8 mg-t-10">
+                      <div class="col-sm-12 mg-t-10">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">keahlian yang dibutuhkan</label>
-                        <input id="input2" type="text" class="form-control" value="Amsterdam,Washington">
+                        <input id="input2" type="text" class="form-control" value="HTML5,CSS,JavaScript">
                       </div>
-                      <div class="col-sm-8 mg-t-10">
+                      <div class="col-sm-12 mg-t-10">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">buat pertanyaan</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <textarea class="form-control" rows="2" placeholder=""></textarea>
                       </div>
+                      <div class="col-sm-12 mg-t-10">
+                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">berkas yang anda butuhkan</label>
+                        <div class="d-flex">
+                            <a href="#modalEditContact" data-toggle="modal" class="btn btn-sm btn-white d-flex align-items-center mg-r-5"><i data-feather="plus"></i><span class="d-none d-sm-inline mg-l-5"> Tambah</span></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 mg-t-30">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label mg-l-5" for="customCheck1">Lowongan pekerjaan ini dibuat dengan sebenar-benarnya sesuai dengan kebijakan perusahaan tanpa ada pemalsuan yang disengaja</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 mg-t-40">
+                            <button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn btn-sm d-flex align-items-center mg-r-5"><i data-feather="check"></i><span class="d-none d-sm-inline mg-l-5">Buat Lowongan</span></button>
+                        </div>
                     </div><!-- row -->
                   </div>
                 </div><!-- card-body -->
@@ -151,6 +230,60 @@
         </div><!-- container -->
       </div>
     </div><!-- content -->
+
+    <div class="modal fade effect-scale" id="modalEditContact" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h5 class="tx-18 tx-sm-20 mg-b-20">Edit Contact</h5>
+            <p class="tx-13 tx-color-03 mg-b-30">You can add more information than what you see here, such as address and birthday by clicking <span class="tx-color-02">Add More Fields</span> button below to bring up more options.</p>
+
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <h6 class="mg-b-10">Personal Information</h6>
+                <div class="form-group mg-b-10">
+                  <input type="text" class="form-control" placeholder="Firstname" value="Abigail">
+                </div><!-- form-group -->
+                <div class="form-group mg-b-10">
+                  <input type="text" class="form-control" placeholder="Lastname" value="Johnson">
+                </div><!-- form-group -->
+
+                <h6 class="mg-t-20 mg-b-10">Contact Information</h6>
+
+                <div class="form-group mg-b-10">
+                  <input type="text" class="form-control" placeholder="Phone number" value="+1 234 567 8910">
+                </div><!-- form-group -->
+                <div class="form-group mg-b-10">
+                  <input type="email" class="form-control" placeholder="Email address" value="me@themepixels.me">
+                </div><!-- form-group -->
+
+                <h6 class="mg-t-20 mg-b-10">Notes</h6>
+                <textarea class="form-control" rows="2" placeholder="Add notes"></textarea>
+              </div><!-- col -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+              <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+                <button type="button" class="btn btn-block bd bd-gray-300" data-toggle="dropdown">Add More Fields <i class="icon ion-ios-arrow-up mg-l-5"></i></button>
+                <div class="dropdown-menu tx-13">
+                  <a href="" class="dropdown-item">Email</a>
+                  <a href="" class="dropdown-item">Phone</a>
+                  <a href="" class="dropdown-item">Address</a>
+                  <a href="" class="dropdown-item">Custom</a>
+                </div><!-- dropdown-menu -->
+              </div>
+              <button type="button" class="btn btn-primary mg-b-5 mg-sm-b-0">Save Changes</button>
+              <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Cancel</button>
+            </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -175,8 +308,125 @@
     <script src="lib/prismjs/prism.js"></script>
     <script src="lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
     <script src="lib/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="lib/quill/quill.min.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+    <script>
+      // Adding placeholder for search input
+      (function($) {
 
-    <script src="assets/js/dashforge.js"></script>
+        'use strict'
+
+        var Defaults = $.fn.select2.amd.require('select2/defaults');
+
+        $.extend(Defaults.defaults, {
+          searchInputPlaceholder: ''
+        });
+
+        var SearchDropdown = $.fn.select2.amd.require('select2/dropdown/search');
+
+        var _renderSearchDropdown = SearchDropdown.prototype.render;
+
+        SearchDropdown.prototype.render = function(decorated) {
+
+          // invoke parent method
+          var $rendered = _renderSearchDropdown.apply(this, Array.prototype.slice.apply(arguments));
+
+          this.$search.attr('placeholder', this.options.get('searchInputPlaceholder'));
+
+          return $rendered;
+        };
+
+      })(window.jQuery);
+
+
+      $(function(){
+        'use strict'
+
+        // Basic with search
+        $('.select2').select2({
+          placeholder: 'Pilih salah satu...',
+          searchInputPlaceholder: 'Search options'
+        });
+
+        // Disable search
+        $('.select2-no-search').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Pilih salah satu...'
+        });
+
+        // Clearable selection
+        $('.select2-clear').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Pilih salah satu...',
+          allowClear: true
+        });
+
+        // Limit selection
+        $('.select2-limit').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Pilih salah satu...',
+          maximumSelectionLength: 2
+        });
+
+      });
+    </script>
+    <script>
+      $(function(){
+        'use strict'
+
+        var quill = new Quill('#editor-container', {
+          modules: {
+            toolbar: '#toolbar-container'
+          },
+          placeholder: 'Tulis deskripsi pekerjaan. Mulai dari kualifikasi pegawai, tanggung jawab, dan lain-lain...',
+          theme: 'snow'
+        });
+
+        var quill2 = new Quill('#editor-container2', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic'],
+              ['link', 'blockquote', 'code-block', 'image'],
+              [{ list: 'ordered' }, { list: 'bullet' }]
+            ]
+          },
+          placeholder: 'Tulis deskripsi pekerjaan. Mulai dari kualifikasi pegawai, tanggung jawab, dan lain-lain...',
+          theme: 'snow'
+        });
+
+        // Inline Edit
+        var quillInline = new Quill('#quillInline', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic', 'underline'],
+              [{ 'header': 1 }, { 'header': 2 }, 'blockquote'],
+              ['link', 'image', 'code-block'],
+            ]
+          },
+          bounds: '#quillInline',
+          scrollingContainer: '#scrolling-container',
+          placeholder: 'Write something...',
+          theme: 'bubble'
+        });
+
+        const ps = new PerfectScrollbar('#scrolling-container', {
+          suppressScrollX: true
+        });
+
+        // Editor in Modal
+        var quillModal2 = new Quill('#quillEditorModal', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic', 'underline'],
+              [{ 'header': 1 }, { 'header': 2 }, 'blockquote'],
+              ['link', 'image', 'code-block'],
+            ]
+          },
+          theme: 'snow'
+        });
+
+      });
+    </script>
     <script>
       $(function(){
         'use strict'
