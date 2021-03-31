@@ -94,7 +94,7 @@
 
               <div class="profile-update-option bg-white ht-50 bd d-flex justify-content-end mg-b-20 mg-lg-b-25 rounded">
                 <div class="d-flex align-items-center pd-x-20 mg-r-auto">
-                  <i data-feather="edit-3"></i> <a href="" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin</span> anda bagikan?</a>
+                  <i data-feather="edit-3"></i> <a href="#modalEditContact" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin</span> anda bagikan?</a>
                 </div>
                 <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
                   <a href="" class="link-03" data-toggle="tooltip" title="Unggah Foto"><i data-feather="image"></i></a>
@@ -215,6 +215,42 @@
         </div><!-- container -->
       </div><!-- content-body -->
     </div><!-- content -->
+
+    <div class="modal fade effect-scale" id="modalEditContact" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h5 class="tx-18 tx-sm-20 mg-b-20">Buat Postingan</h5>
+
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <textarea class="form-control" rows="2" placeholder="Apa yang ingin anda bagikan?"></textarea>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="image"></i><span class="d-none d-sm-inline mg-l-5">Gambar</span></button>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="link"></i><span class="d-none d-sm-inline mg-l-5">Tautan</span></button>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="file-text"></i><span class="d-none d-sm-inline mg-l-5">Dokumen</span></button>
+              </div><!-- col -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+              <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+                <div class="dropdown-menu tx-13">
+                  <a href="" class="dropdown-item">Email</a>
+                  <a href="" class="dropdown-item">Phone</a>
+                  <a href="" class="dropdown-item">Address</a>
+                  <a href="" class="dropdown-item">Custom</a>
+                </div><!-- dropdown-menu -->
+              </div>
+              <button type="button" class="btn btn-primary mg-b-5 mg-sm-b-0">Selesai</button>
+            </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
