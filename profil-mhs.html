@@ -37,10 +37,14 @@
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
   </head>
   <body class="page-profile">
 
@@ -230,6 +234,20 @@
                   </nav>
                 </div><!-- card-header -->
                 <div class="card-body pd-25">
+
+
+                  <div class="row mg-b-20">
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Mulai</h6>
+                    <input type="text" id="dateFrom" class="form-control" placeholder="From">
+                  </div><!-- col -->
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Selesai</h6>
+                    <input type="text" id="dateTo" class="form-control" placeholder="To">
+                  </div><!-- col -->
+                </div><!-- row -->
+
+
                   <div class="media d-block d-sm-flex">
                     <div class="wd-80 ht-80 bg-ui-04 rounded d-flex align-items-center justify-content-center">
                       <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
@@ -457,14 +475,50 @@
               <span aria-hidden="true">&times;</span>
             </button>
 
-            <h5 class="tx-18 tx-sm-20 mg-b-20">Buat Postingan</h5>
+            <h5 class="tx-18 tx-sm-20 mg-b-20">Tambahkan Pengalaman</h5>
+            <p class="tx-13 tx-color-03 mg-b-30">Lengkapi data di bawah ini sesuai pengalaman yang ingin anda tambahkan.</p>
 
             <div class="d-sm-flex">
               <div class="flex-fill">
-                <textarea class="form-control" rows="2" placeholder="Apa yang ingin anda bagikan?"></textarea>
-                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="image"></i><span class="d-none d-sm-inline mg-l-5">Gambar</span></button>
-                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="link"></i><span class="d-none d-sm-inline mg-l-5">Tautan</span></button>
-                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="file-text"></i><span class="d-none d-sm-inline mg-l-5">Dokumen</span></button>
+                <h6 class="mg-b-10">Judul</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" placeholder="Contoh: UI/UX Designer Internship">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Jenis Pekerjaan</h6>
+                <div class="form-group mg-b-20">
+                  <select class="form-control">
+                    <option label="Pilih salah satu"><option>
+                    <option value="Firefox">Full-time</option>
+                    <option value="Chrome">Part-time</option>
+                    <option value="Safari">Kontrak<option>
+                    <option value="Opera">Magang</option>
+                    <option value="Opera">Volunteer</option>
+                    <option value="Opera">Pekerja Sementara</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                  </select>
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Perusahaan / Institusi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" placeholder="">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Lokasi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" placeholder="Surabaya, Indonesia">
+                </div><!-- form-group -->
+
+                <div class="custom-control custom-checkbox mg-b-20">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Saya ingin memperbarui posisi ini pada akun</label>
+                </div>
+                <h6 class="mg-b-10">Posisi Baru</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" placeholder="">
+                  <p class="mg-t-5 tx-color-03">*Posisi ini akan muncul di bawah nama lengkap pada akun anda.</p>
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Deskripsi</h6>
+                <div class="form-group mg-b-20">
+                  <textarea type="text" class="form-control" placeholder=""></textarea>
+                </div><!-- form-group -->
               </div><!-- col -->
             </div>
           </div>
@@ -478,7 +532,7 @@
                   <a href="" class="dropdown-item">Custom</a>
                 </div><!-- dropdown-menu -->
               </div>
-              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Posting Sekarang</button>
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0"> Selesai</button>
             </div>
           </div><!-- modal-footer -->
         </div><!-- modal-content -->
@@ -524,39 +578,72 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/feather-icons/feather.min.js"></script>
-    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
-    <script src="assets/js/dashforge.js"></script>
+    
+    <script src="lib/select2/js/select2.min.js"></script>
     <script src="assets/js/dashforge.aside.js"></script>
-
     <!-- append theme customizer -->
-    <script src="lib/js-cookie/js.cookie.js"></script>
-    <script src="assets/js/dashforge.settings.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
     <script>
       $(function(){
-        'use script'
+        'use strict'
 
-        $('[data-toggle="tooltip"]').tooltip()
+        $('#datepicker1').datepicker();
 
-        window.darkMode = function(){
-          $('.btn-white').addClass('btn-dark').removeClass('btn-white');
-          $('.bg-white').addClass('bg-gray-900').removeClass('bg-white');
-          $('.bg-gray-50').addClass('bg-dark').removeClass('bg-gray-50');
+        $('#datepicker2').datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true
+        });
+
+        $('#datepicker3').datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true,
+          changeMonth: true,
+          changeYear: true
+        });
+
+        $('#datepicker4').datepicker();
+
+        $('#datepicker5').datepicker({
+          showButtonPanel: true
+        });
+
+        $('#datepicker6').datepicker({
+          numberOfMonths: 2
+        });
+
+        var dateFormat = 'mm/dd/yy',
+        from = $('#dateFrom')
+        .datepicker({
+          defaultDate: '+1w',
+          numberOfMonths: 2
+        })
+        .on('change', function() {
+          to.datepicker('option','minDate', getDate( this ) );
+        }),
+        to = $('#dateTo').datepicker({
+          defaultDate: '+1w',
+          numberOfMonths: 2
+        })
+        .on('change', function() {
+          from.datepicker('option','maxDate', getDate( this ) );
+        });
+
+        function getDate( element ) {
+          var date;
+          try {
+            date = $.datepicker.parseDate( dateFormat, element.value );
+          } catch( error ) {
+            date = null;
+          }
+
+          return date;
         }
 
-        window.lightMode = function() {
-          $('.btn-dark').addClass('btn-white').removeClass('btn-dark');
-          $('.bg-gray-900').addClass('bg-white').removeClass('bg-gray-900');
-          $('.bg-dark').addClass('bg-gray-50').removeClass('bg-dark');
-        }
 
-        var hasMode = Cookies.get('df-mode');
-        if(hasMode === 'dark') {
-          darkMode();
-        } else {
-          lightMode();
-        }
-      })
+      });
     </script>
   </body>
 </html>
