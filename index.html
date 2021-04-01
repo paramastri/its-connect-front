@@ -57,7 +57,9 @@
         </div><!-- navbar-menu-header -->
       </div><!-- navbar-menu-wrapper -->
       <div class="navbar-right">
-        <a href="https://themeforest.net/item/azia-responsive-bootstrap-4-dashboard-template/22983790" class="btn btn-buy tx-semibold"><i data-feather="log-in"></i> <span>Masuk</span></a>
+        <a href="#modalLogin" class="btn btn-buy tx-semibold" data-toggle="modal">
+          <i data-feather="log-in"></i><span>Masuk</span>
+        </a><!-- contact-add -->
       </div><!-- navbar-right -->
     </header><!-- navbar -->
 
@@ -200,6 +202,43 @@
       <span>&copy; 2021 Institut Teknologi Sepuluh Nopember </span>
     </div>
   </footer>
+
+  <div class="modal fade effect-scale" id="modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body pd-20 pd-sm-30">
+          <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <!-- <h5 class="tx-18 tx-sm-20 mg-b-20">Create New Contact</h5>
+          <p class="tx-13 tx-color-03 mg-b-30">You can add more information than what you see here, such as address and birthday by clicking <span class="tx-color-02">Add More Fields</span> button below to bring up more options.</p> -->
+          
+          <div class="d-sm-flex">
+            <img style="margin-bottom: 25px; width: 20%" src="assets/img/logo.png" class="img-fluid" alt="">
+          </div>
+          
+          <div class="d-sm-flex"> 
+            <div class="flex-fill">
+              <button class="btn btn-brand-02 btn-block horizontal-center tx-semibold" style="max-width: 210px;"><img style="max-width: 12%; margin-right: 7px;" src="assets/img/ITS_white.png">Masuk dengan myITS</button>
+              <p style="text-align: center; margin-top: 20px;">atau</p>
+              <div class="form-group mg-b-10">
+                <h5 class="tx-bold mg-b-10 tx-15 tx-color-02">Email</h5>
+                <input type="text" class="form-control">
+              </div><!-- form-group -->
+              <div class="form-group mg-b-10">
+                <h5 class="tx-bold mg-b-10 tx-15 tx-color-02">Password</h5>
+                <input type="email" class="form-control">
+              </div><!-- form-group -->
+              <button class="btn btn-white btn-block horizontal-center tx-semibold" style="max-width: 210px; margin-top: 20px;">Masuk dengan email</button>
+              <p style="text-align: center; margin-top: 20px;">Belum punya akun?<a class="tx-bold" href=""> Daftar Sekarang</a></p>
+            </div><!-- col -->
+          </div>
+        </div>
+        
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
