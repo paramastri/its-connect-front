@@ -2607,7 +2607,7 @@ textarea.form-control {
 
 .horizontal-center {
   margin: 0;
-  position: absolute;
+  position: relative;
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
