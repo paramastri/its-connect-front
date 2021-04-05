@@ -37,10 +37,12 @@
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
     <link rel="stylesheet" href="assets/css/dashforge.dashboard.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
   </head>
@@ -48,7 +50,7 @@
 
     <aside class="aside aside-fixed">
       <div class="aside-header">
-        <a href="../../index.html" class="aside-logo">dash<span>forge</span></a>
+        <a href="index.html"><img width="40%" class="aside-logo" src="assets/img/logo.png"></a>
         <a href="" class="aside-menu-link">
           <i data-feather="menu"></i>
           <i data-feather="x"></i>
@@ -57,11 +59,11 @@
       <div class="aside-body">
         <ul class="nav nav-aside">
           <li class="nav-item"><a href="beranda.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
-          <li class="nav-item with-sub active show">
+          <li class="nav-item with-sub">
             <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Pekerjaan</span></a>
             <ul>
               <li><a href="lowongan.html">Cari Lowongan</a></li>
-              <li class="active"><a href="lowongan-tersimpan.html">Lowongan Tersimpan</a></li>
+              <li class=""><a href="lowongan-tersimpan.html">Lowongan Tersimpan</a></li>
               <li><a href="lamaran-saya.html">Lamaran Saya</a></li>
               <li><a href="list-perusahaan.html">Daftar Perusahaan</a></li>
             </ul>
@@ -90,33 +92,21 @@
 
       <div class="content-body">
         <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
-          <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
+          <div class="d-sm-flex align-items-center justify-content-between">
             <div>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                  <li class="breadcrumb-item"><a href="lowongan-tersimpan.html">lowongan tersimpan</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">detail lowongan</li>
-                </ol>
-              </nav>
-              <h4 class="mg-b-0 tx-spacing--1">Detail Lowongan</h4>
+                <div class="mg-t-0">
+                  <a href="profil-mhs.html"><button type="submit" class="btn btn-secondary btn-xs align-items-center mg-r-5"><i data-feather="chevron-left"></i><span class="d-none d-sm-inline mg-l-5"> Kembali</span></button></a>
+                </div>
+              <h4 class="mg-t-30">Tambahkan Pengalaman</h4>
+              <p class="tx-13 tx-color-03 mg-t-10">Lengkapi data di bawah ini sesuai pengalaman yang ingin anda tambahkan.</p>
             </div>
           </div>
 
           <div class="row row-xs">
             <div class="col-lg-8">
               <div class="card">
-                <div class="card-header d-sm-flex bd-b-0 pd-t-20 pd-b-0">
-                  <div class="mg-t-0">
-                            <a href="profil-mhs.html"><button type="submit" class="btn btn-secondary btn-xs align-items-center mg-r-5"><i data-feather="chevron-left"></i><span class="d-none d-sm-inline mg-l-5"> Kembali</span></button></a>
-                        </div>
-                  
-                  
-                </div>
                 <div class="card-body">
-                  <div class="mg-t-10 mg-b-10 mg-sm-b-0">
-                    <h5 class="tx-18 tx-sm-20 mg-b-20">Tambahkan Pengalaman</h5>
-            <p class="tx-13 tx-color-03 mg-b-30">Lengkapi data di bawah ini sesuai pengalaman yang ingin anda tambahkan.</p>
-
+                  <div class="mg-b-10 mg-sm-b-0">
             <div class="d-sm-flex">
               <div class="flex-fill">
                 <h6 class="mg-b-10">Judul</h6>
@@ -148,27 +138,27 @@
                 <div class="row mg-b-20">
                   <div class="col-6">
                     <h6 class="mg-b-10">Mulai</h6>
-                    <input type="text" id="dateFrom" class="form-control" placeholder="From">
+                    <input type="text" id="datepicker3from" class="form-control" placeholder="">
                   </div><!-- col -->
                   <div class="col-6">
                     <h6 class="mg-b-10">Selesai</h6>
-                    <input type="text" id="dateTo" class="form-control" placeholder="To">
+                    <input type="text" id="datepicker3to" class="form-control" placeholder="">
                   </div><!-- col -->
                 </div><!-- row -->
-
-                <div class="custom-control custom-checkbox mg-b-20">
-                  <input type="checkbox" class="custom-control-input" id="customCheck2">
-                  <label class="custom-control-label" for="customCheck2">Saya ingin memperbarui posisi ini pada akun</label>
-                </div>
-                <h6 class="mg-b-10">Posisi Baru</h6>
+                <h6 class="mg-b-10">Perbarui Posisi</h6>
                 <div class="form-group mg-b-20">
                   <input type="text" class="form-control" placeholder="">
-                  <p class="mg-t-5 tx-color-03">*Posisi ini akan muncul di bawah nama lengkap pada akun anda.</p>
+                  <p class="mg-t-5 tx-color-03">*Posisi yang anda isikan ini akan muncul di bawah nama lengkap pada akun anda.</p>
                 </div><!-- form-group -->
                 <h6 class="mg-b-10">Deskripsi</h6>
                 <div class="form-group mg-b-20">
                   <textarea type="text" class="form-control" placeholder=""></textarea>
                 </div><!-- form-group -->
+
+                <div class="mg-t-20">
+                    <a href="profil-mhs-baru.html"><button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn btn-sm d-flex align-items-center"><i data-feather="check"></i><span class="d-none d-sm-inline mg-l-5">Simpan</span></button></a>
+                </div>
+
                   </div>
                   </div>
                 </div><!-- card-body -->
@@ -183,16 +173,9 @@
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/feather-icons/feather.min.js"></script>
     <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="lib/jquery.flot/jquery.flot.js"></script>
-    <script src="lib/jquery.flot/jquery.flot.stack.js"></script>
-    <script src="lib/jquery.flot/jquery.flot.resize.js"></script>
-    <script src="lib/flot.curvedlines/curvedLines.js"></script>
-    <script src="lib/peity/jquery.peity.min.js"></script>
-    <script src="lib/chart.js/Chart.bundle.min.js"></script>
     <script src="lib/select2/js/select2.min.js"></script>
+    
 
-
-    <script src="assets/js/dashforge.js"></script>
     <script src="assets/js/dashforge.aside.js"></script>
     <script src="assets/js/dashforge.sampledata.js"></script>
     <script src="assets/js/dashboard-four.js"></script>
@@ -201,6 +184,75 @@
     <script src="lib/js-cookie/js.cookie.js"></script>
     <script src="assets/js/dashforge.settings.js"></script>
 
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
+
+    <script>
+      $(function(){
+        'use strict'
+
+        $('#datepicker1').datepicker();
+
+        $('#datepicker2').datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true
+        });
+
+        $('#datepicker3from').datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true,
+          changeMonth: true,
+          changeYear: true
+        });
+        $('#datepicker3to').datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true,
+          changeMonth: true,
+          changeYear: true
+        });
+
+        $('#datepicker4').datepicker();
+
+        $('#datepicker5').datepicker({
+          showButtonPanel: true
+        });
+
+        $('#datepicker6').datepicker({
+          numberOfMonths: 2
+        });
+
+        var dateFormat = 'mm/dd/yy',
+        from = $('#dateFrom')
+        .datepicker({
+          defaultDate: '+1w',
+          numberOfMonths: 2
+        })
+        .on('change', function() {
+          to.datepicker('option','minDate', getDate( this ) );
+        }),
+        to = $('#dateTo').datepicker({
+          defaultDate: '+1w',
+          numberOfMonths: 2
+        })
+        .on('change', function() {
+          from.datepicker('option','maxDate', getDate( this ) );
+        });
+
+        function getDate( element ) {
+          var date;
+          try {
+            date = $.datepicker.parseDate( dateFormat, element.value );
+          } catch( error ) {
+            date = null;
+          }
+
+          return date;
+        }
+
+
+      });
+    </script>
 
     <script>
       // Adding placeholder for search input
