@@ -3065,6 +3065,7 @@ input[type="button"].btn-block {
 .dropup,
 .dropright,
 .dropdown,
+.dropdown-checkbox,
 .dropleft {
   position: relative; }
 

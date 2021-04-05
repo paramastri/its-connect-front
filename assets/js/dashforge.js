@@ -55,6 +55,15 @@ $(function(){
     }
   })
 
+$("document").ready(function() {
+
+  $('.dropdown-menu').on('click', function(e) {
+      if($(this).hasClass('dropdown-menu')) {
+          e.stopPropagation();
+      }
+  });
+});
+
   $('#mainMenuClose').on('click', function(e){
     e.preventDefault();
     $('body').removeClass('navbar-nav-show');
