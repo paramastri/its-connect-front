@@ -57,8 +57,8 @@ $(function(){
 
 $("document").ready(function() {
 
-  $('.dropdown-menu').on('click', function(e) {
-      if($(this).hasClass('dropdown-menu')) {
+  $('.dropdown-menu-checkbox').on('click', function(e) {
+      if($(this).hasClass('dropdown-menu-checkbox')) {
           e.stopPropagation();
       }
   });
