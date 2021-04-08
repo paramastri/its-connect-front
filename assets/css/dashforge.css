@@ -41346,3 +41346,9 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
       display:none;
   }
 }
+
+/*object fit*/
+.img-object-fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
