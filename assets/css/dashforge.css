@@ -35031,6 +35031,11 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   transform: rotate(-90deg); }
 
 /* ###### 9.8 Typography   ###### */
+.tx-overlay-bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px; }
+
 .tx-brand-01 {
   color: #0168fa !important; }
 
