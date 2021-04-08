@@ -33,7 +33,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
-    <title>myITS Connect - Detail Riwayat Lowongan</title>
+    <title>myITS Connect - Ubah Lowongan Pekerjaan</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -51,7 +51,6 @@
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
     <link rel="stylesheet" href="assets/css/dashforge.filemgr.css">
-    <link rel="stylesheet" href="assets/css/dashforge.profile.css">
   </head>
   <body>
 
@@ -66,14 +65,14 @@
       </div>
       <div class="aside-body">
         <ul class="nav nav-aside">
-          <li class="nav-item"><a href="beranda-perusahaan.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
-          <li class="nav-item with-sub show active">
+          <li class="nav-item active"><a href="beranda-perusahaan.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
+          <li class="nav-item with-sub">
             <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Perusahaan</span></a>
             <ul>
               <li class=""><a href="employee.html">Cari Calon Pegawai</a></li>
               <li><a href="employee-tersimpan.html">Calon Pegawai Tersimpan</a></li>
               <li><a href="lamaran-masuk.html">Lamaran Masuk</a></li>
-              <li class="active"><a href="riwayat-lowongan.html">Riwayat Lowongan</a></li>
+              <li><a href="riwayat-lowongan.html">Riwayat Lowongan</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
@@ -102,8 +101,8 @@
         <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
           <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
             <div class="btn-toolbar align-items-center">
-              <a href="riwayat-lowongan.html" type="button" class="btn btn-xs btn-secondary btn-icon"><i data-feather="arrow-left"></i></a>
-              <h4 class="mg-b-0 tx-spacing--1 mg-l-20">UI/UX Designer</h4>
+              <a href="detail-riwayatlowongan.html" type="button" class="btn btn-xs btn-secondary btn-icon"><i data-feather="arrow-left"></i></a>
+              <h4 class="mg-b-0 tx-spacing--1 mg-l-20">Ubah Lowongan Pekerjaan</h4>
             </div>
           </div>
 
@@ -116,59 +115,68 @@
                     <div class="row row-sm">
                       <div class="col-sm-8">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">posisi yang ditawarkan</label>
-                        <p>UI/UX Designer</p>
+                        <input type="text" class="form-control" value="UI/UX Designer">
                       </div>
                       <div class="col-sm-8 mg-t-10">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">divisi</label>
-                        <p>Product & Design</p>
+                        <input type="text" class="form-control" value="Product & Design">
                       </div>
                       <div class="col-sm-8 mg-t-10">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">jenis pekerjaan</label>
-                        <p>Full-time</p>
+                        <div class="">
+                          <select class="form-control select2-no-search">
+                            <option >Full-time</option>
+                            <option value="Chrome">Part-time</option>
+                            <option value="Safari">Kontrak</option>
+                            <option value="Opera">Magang</option>
+                            <option value="Opera">Volunteer</option>
+                            <option value="Opera">Pekerja Sementara</option>
+                            <option value="Internet Explorer">Internet Explorer</option>
+                          </select>
+                        </div>
                       </div>
                     </div><!-- row -->
                   </div>
 
-                  <div class="mg-b-10 mg-sm-b-0 mg-t-20">
+                  <div class="mg-b-10 mg-sm-b-0 mg-t-30">
                     <h5 class="tx-bold mg-b-0 tx-15 tx-color-02 mg-b-20">Detail Lowongan</h5>
                     <div class="row row-sm">
                       <div class="col-sm-12">
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-20">deskripsi pekerjaan</label>
-                        <p class="tx-semibold mg-b-0 tx-13 tx-color-02 mg-b-5 mg-l-20">Kualifikasi:</p>
-                        <ul class="">
+                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">deskripsi pekerjaan</label>
+                        <div id="editor-container2" class="ht-200 mg-b-25"><p style="margin-bottom: 10px;" class="tx-semibold tx-color-03 mg-b-0">Kualifikasi</p>
+
+                    <ul class="pd-l-10 mg-0 mg-l-10 mg-lg-b-20 tx-13">
                         <li>Mahasiswa S1 semester (5 - akhir) atau mahasiswa S2 yang ingin bergabung</li>
                         <li>Memiliki kemampuan komunikasi dan kerjasama yang baik dalam tim</li>
                         <li>Memiliki nilai untuk bekerja dengan compassion, courage & curious</li>
+                        <li>Reporting to top managers.</li>
                         <li>Waktu magang 3 (tiga) bulan</li>
                       </ul>
-                      <p class="tx-semibold mg-b-0 tx-13 tx-color-02 mg-b-5 mg-l-20">Tanggung Jawab:</p>
-                      <p class="mg-l-20">Melakukan riset guna mengetahui kebiasaan dan kebutuhan para pengguna yang diimplementasikan pada platform untuk dapat mengakses produk/service di Ikigai Consulting. Mengkonsep bagaimana alur suatu produk terasa nyaman digunakan oleh pengguna untuk meningkatkan branding dan sales Membuat tampilan website/flatform Ikigai Consulting agar terlihat lebih menarik dan mudah dipahami oleh pengguna.</p>
+                      <p style="margin-bottom: 10px;" class="tx-semibold tx-color-03 mg-b-0">Tanggung Jawab:</p>
+                    <p>Melakukan riset guna mengetahui kebiasaan dan kebutuhan para pengguna yang diimplementasikan pada platform untuk dapat mengakses produk/service di Ikigai Consulting. Mengkonsep bagaimana alur suatu produk terasa nyaman digunakan oleh pengguna untuk meningkatkan branding dan sales Membuat tampilan website/flatform Ikigai Consulting agar terlihat lebih menarik dan mudah dipahami oleh pengguna.
+                    </p>
+                    </div>
                       </div>
                       <div class="col-sm-12">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">keahlian yang dibutuhkan</label>
-                        <ul class="list-inline list-inline-skills">
-                        <li class="list-inline-item"><a href="">HTML5</a></li>
-                        <li class="list-inline-item"><a href="">Sass</a></li>
-                        <li class="list-inline-item"><a href="">CSS</a></li>
-                        <li class="list-inline-item"><a href="">React</a></li>
-                        <li class="list-inline-item"><a href="">jQuery</a></li>
-                        <li class="list-inline-item"><a href="">Angular</a></li>
-                        <li class="list-inline-item"><a href="">Wordpress</a></li>
-                        <li class="list-inline-item"><a href="">Photoshop</a></li>
-                      </ul>
+                        <input id="input2" type="text" class="form-control" value="UI Designer,UX Researcher,HTML,Graphic Design">
                       </div>
-                      <div class="col-sm-12 mg-t-10">
+                      <div class="col-sm-12 mg-t-20">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">buat pertanyaan</label>
-                        <ol class="pd-l-10 mg-0 mg-t-10 mg-l-20 mg-b-20 tx-13">
+                        <div id="editor-container3" class="ht-200 mg-b-25"><ol class="pd-l-10 mg-0 mg-t-10 mg-l-20 mg-b-20 tx-13">
                           <li>Reaching the targets and goals set for my area.</li>
                           <li>Servicing the needs of my existing customers.</li>
                           <li>Maintaining the relationships with existing customers for repeat business.</li>
                           <li>Reporting to top managers.</li>
                           <li>Keeping up to date with the products.</li>
                         </ol>
+                      </div></div>
                       </div>
                       <div class="col-sm-12 mg-t-10">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">berkas yang anda butuhkan</label>
+                        <div class="d-flex">
+                            <a href="#modalEditContact" data-toggle="modal" class="btn btn-sm btn-white d-flex align-items-center mg-r-5"><i data-feather="plus"></i><span class="d-none d-sm-inline mg-l-5"> Tambah</span></a>
+                        </div>
                       </div>
 
                         <div class="col-sm-6 mg-t-10">
@@ -204,10 +212,9 @@
                             </div><!-- dropdown -->
                           </div><!-- media -->
                         </div><!-- col -->
-                      <div class="col-sm-12 mg-t-40 ">
-                        <a href="form-editlowongan.html" type="submit" class="btn btn-brand-02 align-items-center mg-r-5"><i data-feather="edit"></i><span class="d-none d-sm-inline mg-l-5"> Ubah Lowongan</span></a>
-                        <button type="submit" class="btn btn-danger align-items-center mg-r-5"><i data-feather="trash"></i><span class="d-none d-sm-inline mg-l-5"> Hapus Lowongan</span></button>
-                      </div>
+                      <div class="col-sm-12 mg-t-40">
+                            <button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn btn-sm d-flex align-items-center mg-r-5"><i data-feather="check"></i><span class="d-none d-sm-inline mg-l-5">Simpan Perubahan</span></button>
+                        </div>
                     </div><!-- row -->
                   </div>
                 </div><!-- card-body -->
