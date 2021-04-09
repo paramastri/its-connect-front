@@ -12688,7 +12688,9 @@ textarea.parsley-success:focus {
     align-items: center;
     padding-left: 15px;
     margin-right: 0;
-    order: 1; }
+    order: 1;
+    width: 240px;
+    padding: 0 0 0 20px; }
     @media (min-width: 992px) {
       .navbar-header .navbar-brand {
         width: 240px;
@@ -41352,3 +41354,19 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+/*ilangin elemen footer index*/
+
+@media (max-width: 767px) {
+  .elemen-footer {
+    visibility: hidden;
+    display:none;
+  }
+}
+
+/*ilangin margin di index*/
+@media (max-width: 767px){
+  .ilangin-margin {
+    margin-left: 0px;
+  }
+}
