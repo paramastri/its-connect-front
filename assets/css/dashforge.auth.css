@@ -42,4 +42,14 @@
   .sign-wrapper .form-group label {
     display: block;
     margin-bottom: 5px; }
+  @media (max-width: 767px) {
+    .sign-wrapper{
+      text-align: center;
+      margin: 0;
+      position: relative;
+      left: 50%;
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
 
