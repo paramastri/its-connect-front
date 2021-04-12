@@ -99,14 +99,9 @@
       <div class="content-body">
         <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
           <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
-            <div>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-                  <li class="breadcrumb-item"><a href="lowongan.html">cari lowongan</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">formulir lamaran</li>
-                </ol>
-              </nav>
-              <h4 class="mg-b-0 tx-spacing--1">UI/UX Designer | PT. Surya Jaya</h4>
+            <div class="btn-toolbar align-items-center">
+              <a href="detail-riwayatlowongan.html" type="button" class="btn btn-xs btn-secondary btn-icon"><i data-feather="arrow-left"></i></a>
+              <h4 class="mg-b-0 tx-spacing--1 mg-l-20"><h4 class="mg-b-0 tx-spacing--1">UI/UX Designer | PT. Surya Jaya</h4>
             </div>
           </div>
 
@@ -209,13 +204,10 @@
                       </div>
 
                       <div class="col-sm-12 mg-t-10">
-                        <label class="tx-bold mg-b-15 tx-15 tx-color-02">Resume</label>
-                        <div class="d-flex">
-                            <input type="file">
-                        </div>
+                        <label class="tx-bold tx-15 tx-color-02">Resume</label>
                       </div>
 
-                        <div class="col-sm-6 mg-t-10 mg-b-30">
+                        <div class="col-sm-6 mg-t-10 mg-b-10">
                           <div class="media media-folder">
                             <i data-feather="folder"></i>
                             <div class="media-body">
@@ -225,59 +217,14 @@
                             <div class="dropdown-file">
                               <a href="" class="dropdown-link" data-toggle="dropdown"><i data-feather="more-vertical"></i></a>
                               <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="info"></i>Lihat Detail</a>
-                                <a href="#" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
+                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="eye"></i>Lihat Berkas</a>
                               </div>
                             </div><!-- dropdown -->
                           </div><!-- media -->
                         </div><!-- col -->
-
-
-                      <div class="col-sm-12 mg-t-10">
-                        <label class="tx-bold mg-b-15 tx-15 tx-color-02">Portofolio</label>
-                        <div class="d-flex">
-                            <input type="file">
-                        </div>
-                      </div>
-                        <div class="col-sm-6 mg-t-10 mg-b-30">
-                          <div class="media media-folder">
-                            <i data-feather="folder"></i>
-                            <div class="media-body">
-                              <h6><a href="" class="link-02">Resume</a></h6>
-                              <span>DOC, PNG, JPEG</span>
-                            </div><!-- media-body -->
-                            <div class="dropdown-file">
-                              <a href="" class="dropdown-link" data-toggle="dropdown"><i data-feather="more-vertical"></i></a>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="info"></i>Lihat Detail</a>
-                                <a href="#" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
-                              </div>
-                            </div><!-- dropdown -->
-                          </div><!-- media -->
-                        </div><!-- col -->
-
-                      <div class="col-sm-12 mg-t-10">
-                        <label class="tx-bold mg-b-15 tx-15 tx-color-02">Cover Letter</label>
-                        <div class="d-flex">
-                            <input type="file">
-                        </div>
-                      </div>
-                        <div class="col-sm-6 mg-t-10 mg-b-30">
-                          <div class="media media-folder">
-                            <i data-feather="folder"></i>
-                            <div class="media-body">
-                              <h6><a href="" class="link-02">Cover Letter</a></h6>
-                              <span>DOC, PNG, JPEG</span>
-                            </div><!-- media-body -->
-                            <div class="dropdown-file">
-                              <a href="" class="dropdown-link" data-toggle="dropdown"><i data-feather="more-vertical"></i></a>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="info"></i>Lihat Detail</a>
-                                <a href="#" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
-                              </div>
-                            </div><!-- dropdown -->
-                          </div><!-- media -->
-                        </div><!-- col -->
+                          <div class="col-sm-12">
+                            <p>Berkas di atas adalah Resume yang telah disimpan pada sistem, apakah anda ingin mengganti dengan berkas lainnya? <a href="#modalUpload" data-toggle="modal">Unggah berkas lain</a></p>
+                          </div>
                       <div class="col-sm-12 mg-t-20">
                             <a href="lamaran-saya.html"><button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn btn-sm d-flex align-items-center mg-r-5"><i data-feather="check"></i><span class="d-none d-sm-inline mg-l-5">Kirim Lamaran</span></button></a>
                         </div>
@@ -291,7 +238,7 @@
       </div>
     </div><!-- content -->
 
-    <div class="modal fade effect-scale" id="modalEditContact" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade effect-scale" id="modalUpload" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body pd-20 pd-sm-30">
@@ -299,21 +246,13 @@
               <span aria-hidden="true">&times;</span>
             </button>
 
-            <h5 class="tx-18 tx-sm-20 mg-b-20">Tambahkan Persyaratan Berkas</h5>
-            <p class="tx-13 tx-color-03 mg-b-30">Lengkapi data jenis berkas yang anda butuhkan untuk dapat diunggah oleh pelamar.</p>
+            <h5 class="tx-18 tx-sm-20 mg-b-10">Ganti Berkas</h5>
+            <p class="tx-13 tx-color-03 mg-b-30">Unggah berkas baru untuk mengisi formulir lamaran terkait.</p>
 
             <div class="d-sm-flex">
               <div class="flex-fill">
-                <h6 class="mg-b-10">Nama Berkas</h6>
-                <div class="form-group mg-b-10">
-                  <input type="text" class="form-control" placeholder="Contoh: Portofolio / CV / Cover Letter">
-                </div><!-- form-group -->
-                <h6 class="mg-t-20 mg-b-10">Format Berkas</h6>
-                <div class="form-group mg-b-10">
-                  <input type="text" class="form-control" placeholder="Contoh: DOC, PDF, JPG.">
-                </div><!-- form-group -->
-                <h6 class="mg-t-20 mg-b-10">Deskripsi</h6>
-                <textarea class="form-control" rows="2" placeholder="Contoh: 'Sertakan portofolio dari beberapa desain website terbaik yang pernah anda buat.'"></textarea>
+                <h6 class="mg-b-10">Unggah Berkas</h6>
+                  <input type="file" >
               </div><!-- col -->
             </div>
           </div>
@@ -327,7 +266,7 @@
                   <a href="" class="dropdown-item">Custom</a>
                 </div><!-- dropdown-menu -->
               </div>
-              <button type="button" class="btn btn-primary mg-b-5 mg-sm-b-0">Selesai</button>
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Selesai</button>
             </div>
           </div><!-- modal-footer -->
         </div><!-- modal-content -->
