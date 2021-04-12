@@ -157,19 +157,23 @@
                       <div class="col-sm-12 mg-t-10">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">berkas yang anda butuhkan</label>
                         <div class="custom-control custom-checkbox mg-t-10">
-                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
                           <label class="custom-control-label mg-l-5" for="customCheck1">CV / Resume</label>
                         </div>
                         <div class="custom-control custom-checkbox mg-t-10">
-                          <input type="checkbox" class="custom-control-input" id="customCheck2">
+                          <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
                           <label class="custom-control-label mg-l-5" for="customCheck2">Portofolio</label>
                         </div>
                         <div class="custom-control custom-checkbox mg-t-10">
-                          <input type="checkbox" class="custom-control-input" id="customCheck3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
                           <label class="custom-control-label mg-l-5" for="customCheck3">Cover Letter</label>
                         </div>
+                        <div class="custom-control custom-checkbox mg-t-10">
+                          <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
+                          <label class="custom-control-label mg-l-5" for="customCheck3">Artikel<span> (PDF, DOC) - </span><a href="#modalDetail" data-toggle="modal">Ubah</a> | <a href="">Hapus</a></label>
+                        </div>
                         <div class="d-flex mg-t-20">
-                            <a href="#modalEditContact" data-toggle="modal" class="btn btn-sm btn-white d-flex align-items-center mg-r-5"><i data-feather="plus"></i><span class="d-none d-sm-inline mg-l-5"> Tambah Berkas Lain</span></a>
+                            <a href="#modalTambahBerkas" data-toggle="modal" class="btn btn-sm btn-white d-flex align-items-center mg-r-5"><i data-feather="plus"></i><span class="d-none d-sm-inline mg-l-5"> Tambah Berkas Lain</span></a>
                         </div>
                       </div>
                       <div class="col-sm-12 mg-t-30">
@@ -191,7 +195,43 @@
       </div>
     </div><!-- content -->
 
-    <div class="modal fade effect-scale" id="modalEditContact" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade effect-scale" id="modalDetail" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h5 class="tx-18 tx-sm-20 mg-b-20">Ubah Persyaratan Berkas</h5>
+            <p class="tx-13 tx-color-03 mg-b-30">Lengkapi data jenis berkas yang anda butuhkan untuk dapat diunggah oleh pelamar.</p>
+
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <h6 class="mg-b-10">Nama Berkas</h6>
+                <div class="form-group mg-b-10">
+                  <input type="text" class="form-control" value="Artikel">
+                </div><!-- form-group -->
+                <h6 class="mg-t-20 mg-b-10">Format Berkas</h6>
+                <div class="form-group mg-b-10">
+                  <input type="text" class="form-control" value="PDF, DOC">
+                </div><!-- form-group -->
+                <h6 class="mg-t-20 mg-b-10">Deskripsi</h6>
+                <textarea class="form-control" rows="2">Sertakan portofolio dari beberapa desain website terbaik yang pernah anda buat.</textarea>
+              </div><!-- col -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+              <a href="form-lowongan-berkas.html" type="button" class="btn btn-secondary mg-b-5 mg-r-5">Kembali</a>
+              <a href="form-lowongan-berkas.html" type="button" class="btn btn-brand-02 mg-b-5">Selesai</a>
+            </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalTambahBerkas" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body pd-20 pd-sm-30">
