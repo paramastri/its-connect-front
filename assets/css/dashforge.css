@@ -41383,3 +41383,10 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
     margin-left: 0px;
   }
 }
+
+/*rounded multiple image*/
+.img-group-mutual .img {
+  width: 80px;
+  height: 80px; }
+.img-group-mutual .img + .img {
+    margin-left: -16px; }
