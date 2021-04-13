@@ -37,12 +37,38 @@
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+    <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
   </head>
   <body class="page-profile">
+
+    <div id="offCanvas3" class="off-canvas off-canvas-overlay off-canvas-right wd-300">
+      <a href="#" class="close"><i data-feather="x"></i></a>
+
+      <div class="pd-25 ht-100p tx-13">
+        <div class="clearfix mg-b-25">
+            <div id="contactAvatar" class="pos-relative float-left">
+            <div class="avatar avatar-xl"><span class="avatar-initial rounded-circle bg-gray-700 tx-normal">A</span></div>
+            <a href="" class="" data-toggle="tooltip" title="Upload Photo"></i></a>
+          </div>
+        </div>
+        <h5 id="contactName" class="tx-18 tx-xl-20 mg-b-5">PT. Surya Jaya</h5>
+              <p class="tx-13 tx-lg-12 tx-xl-13 tx-color-03 mg-b-20">Jakarta, Indonesia</p>
+
+              <hr class="mg-y-20">
+              <nav class="nav flex-column contact-content-nav mg-b-25">
+                <a href="profil-perusahaan.html" class="nav-link"><i data-feather="user"></i> Lihat Akun</a>
+                <a href="" class="nav-link"><i data-feather="settings"></i> Kelola Akun</a>
+              </nav>
+                <a href="" class="btn btn-secondary btn-block">Kembali ke myITS SSO</a>
+                <a href="" class="btn btn-white btn-block">Keluar</a>
+      </div>
+    </div><!-- off-canvas -->
 
     <aside class="aside aside-fixed">
       <div class="aside-header">
@@ -83,7 +109,7 @@
           <input type="search" class="form-control" placeholder="Search">
         </div>
         <nav class="nav">
-          <a href="" class="nav-link"><i data-feather="user"></i></a>
+          <a href="#offCanvas3" class="nav-link off-canvas-menu"><i data-feather="user"></i></a>
         </nav>
       </div><!-- content-header -->
 
@@ -255,39 +281,44 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/feather-icons/feather.min.js"></script>
-    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
-    <script src="assets/js/dashforge.js"></script>
     <script src="assets/js/dashforge.aside.js"></script>
-
-    <!-- append theme customizer -->
-    <script src="lib/js-cookie/js.cookie.js"></script>
-    <script src="assets/js/dashforge.settings.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="assets/js/dashforge.js"></script>
     <script>
       $(function(){
-        'use script'
+        'use strict'
 
-        $('[data-toggle="tooltip"]').tooltip()
+        // The code below is for demo purposes only.
+        // For you to not be confused, please refer to
+        // Off-Canvas starter template in Collections
 
-        window.darkMode = function(){
-          $('.btn-white').addClass('btn-dark').removeClass('btn-white');
-          $('.bg-white').addClass('bg-gray-900').removeClass('bg-white');
-          $('.bg-gray-50').addClass('bg-dark').removeClass('bg-gray-50');
-        }
+        $('.off-canvas-menu').on('click', function(e){
+          e.preventDefault();
+          var target = $(this).attr('href');
+          $(target).addClass('show');
+        });
 
-        window.lightMode = function() {
-          $('.btn-dark').addClass('btn-white').removeClass('btn-dark');
-          $('.bg-gray-900').addClass('bg-white').removeClass('bg-gray-900');
-          $('.bg-dark').addClass('bg-gray-50').removeClass('bg-dark');
-        }
 
-        var hasMode = Cookies.get('df-mode');
-        if(hasMode === 'dark') {
-          darkMode();
-        } else {
-          lightMode();
-        }
-      })
+        $('.off-canvas .close').on('click', function(e){
+          e.preventDefault();
+          $(this).closest('.off-canvas').removeClass('show');
+        })
+
+        $(document).on('click touchstart', function(e){
+          e.stopPropagation();
+
+          // closing of sidebar menu when clicking outside of it
+          if(!$(e.target).closest('.off-canvas-menu').length) {
+            var offCanvas = $(e.target).closest('.off-canvas').length;
+            if(!offCanvas) {
+              $('.off-canvas.show').removeClass('show');
+            }
+          }
+        });
+
+
+      });
     </script>
   </body>
 </html>
