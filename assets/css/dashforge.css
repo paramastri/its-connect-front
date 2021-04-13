@@ -41384,6 +41384,15 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   }
 }
 
+/*ilangin margin di detail komunitas (udh join)*/
+@media (max-width: 992px){
+  .ilangin-margin-l-r {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+
 /*tambahin margin di postingan detail komunitas (blm join)*/
 @media (max-width: 767px){
   .tambahin-margin {
