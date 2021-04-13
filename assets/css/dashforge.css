@@ -41384,6 +41384,13 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   }
 }
 
+/*tambahin margin di postingan detail komunitas (blm join)*/
+@media (max-width: 767px){
+  .tambahin-margin {
+    margin-bottom: 10px;
+  }
+}
+
 /*rounded multiple image*/
 .img-group-mutual .img {
   width: 80px;
