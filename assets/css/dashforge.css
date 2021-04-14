@@ -35045,6 +35045,12 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   bottom: 8px;
   left: 16px; }
 
+.tx-overlay-left {
+  position: absolute;
+  top: 35%;
+  bottom: 50%;
+  left: 16px;}
+
 .tx-overlay-center {
   position: absolute;
   top: 50%;
