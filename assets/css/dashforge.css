@@ -4556,6 +4556,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.5); }
 
+.badge-brand-02 {
+  color: #fff;
+  background-color: #042893; }
+  a.badge-primary:hover, a.badge-primary:focus {
+    color: #fff;
+    background-color: #002185; }
+  a.badge-primary:focus, a.badge-primary.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.5); }
+
 .badge-secondary {
   color: #fff;
   background-color: #7987a1; }
