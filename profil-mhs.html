@@ -45,9 +45,31 @@
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+    <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
   </head>
   <body class="page-profile">
-
+    <div id="offCanvas3" class="off-canvas off-canvas-overlay off-canvas-right wd-300">
+      <a href="#" class="close"><i data-feather="x"></i></a>
+      <div class="pd-25 ht-100p tx-13">
+        <div class="clearfix mg-b-15 mg-t-15">
+          <div id="contactAvatar" class="pos-relative float-left">
+            <div class="avatar avatar-xl avatar-img horizontal-center">
+              <img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt="">
+            </div>
+            <a href="" class="contact-edit-photo" data-toggle="tooltip" title="Upload Photo"><i data-feather="edit-2"></i></a>
+          </div>
+        </div>
+        <h5 id="contactName" class="tx-18 tx-xl-20 mg-b-5">Aldi Wijaya</h5>
+        <p class="tx-13 tx-lg-12 tx-xl-13 tx-color-03 mg-b-20">Fresh Graduate Teknik Informatika</p>
+        <hr class="mg-y-20">
+        <nav class="nav flex-column contact-content-nav mg-b-25">
+          <a href="profil-mhs.html" class="nav-link"><i data-feather="user"></i> Lihat Akun</a>
+          <a href="" class="nav-link"><i data-feather="settings"></i> Kelola Akun</a>
+        </nav>
+          <a href="" class="btn btn-secondary btn-block">Kembali ke myITS SSO</a>
+          <a href="" class="btn btn-white btn-block">Keluar</a>
+      </div>
+    </div><!-- off-canvas -->
     <aside class="aside aside-fixed">
       <div class="aside-header">
         <a href="index.html"><img width="40%" class="aside-logo" src="assets/img/logo.png"></a>
@@ -86,7 +108,7 @@
           <input type="search" class="form-control" placeholder="Search">
         </div>
         <nav class="nav">
-          <a href="" class="nav-link"><i data-feather="user"></i></a>
+          <a href="#offCanvas3" class="nav-link off-canvas-menu"><i data-feather="user"></i></a>
         </nav>
       </div><!-- content-header -->
 
@@ -95,7 +117,7 @@
           <div class="media d-block d-lg-flex">
             <div class="media-body mg-t-40 mg-lg-t-0 pd-lg-x-10">
               <div class="card mg-b-20 mg-lg-b-25">
-                <div class="card mg-b-25" style="max-width: 1920px; height: 200px; background: black; overflow: hidden;">
+                <div class="card mg-b-25" style="max-width: 1920px; height: 200px; background: black; overflow: hidden; border: none;">
                   <img class="card-img-top img-object-fit"
                   src="assets/img/thumbnail-3.jpg" style="opacity: 0.6;" alt="Card image cap">
                   <div class="tx-overlay-center">
@@ -103,7 +125,7 @@
                       <img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt="">
                     </div>
                     <h2 class="tx-center tx-white">Aldi Wijaya</h2>
-                    <p class="tx-center tx-white mg-b-0">Fresh Graduate ITS<br>Jakarta, Indonesia</p>
+                    <p class="tx-center tx-white mg-b-0">Fresh Graduate Teknik Informatika<br>Jakarta, Indonesia</p>
                   </div>
                 </div>
                 <div class="d-sm-flex pd-l-25 pd-r-25 pd-b-25 justify-content-between"> 

@@ -45,9 +45,31 @@
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+    <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
   </head>
   <body class="page-profile">
-
+    <div id="offCanvas3" class="off-canvas off-canvas-overlay off-canvas-right wd-300">
+      <a href="#" class="close"><i data-feather="x"></i></a>
+      <div class="pd-25 ht-100p tx-13">
+        <div class="clearfix mg-b-15 mg-t-15">
+          <div id="contactAvatar" class="pos-relative float-left">
+            <div class="avatar avatar-xl avatar-img horizontal-center">
+              <img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt="">
+            </div>
+            <a href="" class="contact-edit-photo" data-toggle="tooltip" title="Upload Photo"><i data-feather="edit-2"></i></a>
+          </div>
+        </div>
+        <h5 id="contactName" class="tx-18 tx-xl-20 mg-b-5">Aldi Wijaya</h5>
+        <p class="tx-13 tx-lg-12 tx-xl-13 tx-color-03 mg-b-20">Fresh Graduate Teknik Informatika</p>
+        <hr class="mg-y-20">
+        <nav class="nav flex-column contact-content-nav mg-b-25">
+          <a href="profil-mhs.html" class="nav-link"><i data-feather="user"></i> Lihat Akun</a>
+          <a href="" class="nav-link"><i data-feather="settings"></i> Kelola Akun</a>
+        </nav>
+          <a href="" class="btn btn-secondary btn-block">Kembali ke myITS SSO</a>
+          <a href="" class="btn btn-white btn-block">Keluar</a>
+      </div>
+    </div><!-- off-canvas -->
     <aside class="aside aside-fixed">
       <div class="aside-header">
         <a href="index.html"><img width="40%" class="aside-logo" src="assets/img/logo.png"></a>
@@ -86,7 +108,7 @@
           <input type="search" class="form-control" placeholder="Search">
         </div>
         <nav class="nav">
-          <a href="" class="nav-link"><i data-feather="user"></i></a>
+          <a href="#offCanvas3" class="nav-link off-canvas-menu"><i data-feather="user"></i></a>
         </nav>
       </div><!-- content-header -->
 
@@ -95,40 +117,26 @@
           <div class="media d-block d-lg-flex">
             <div class="media-body mg-t-40 mg-lg-t-0 pd-lg-x-10">
               <div class="card mg-b-20 mg-lg-b-25">
-                <div class="card mg-b-25" style="max-width: 1920px; height: 200px; background: black; overflow: hidden;">
+                <div class="card mg-b-25" style="max-width: 1920px; height: 200px; background: black; overflow: hidden; border: none;">
                   <img class="card-img-top img-object-fit"
                   src="assets/img/thumbnail-3.jpg" style="opacity: 0.6;" alt="Card image cap">
                   <div class="tx-overlay-center">
                     <div class="avatar avatar-xl avatar-img horizontal-center mg-b-10">
-                      <img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt="">
+                      <img src="assets/img/pp-alex.jpg" class="rounded-circle" alt="">
                     </div>
-                    <h2 class="tx-center tx-white">Aldi Wijaya</h2>
-                    <p class="tx-center tx-white mg-b-0">Fresh Graduate ITS<br>Jakarta, Indonesia</p>
+                    <h2 class="tx-center tx-white">Alex Martin</h2>
+                    <p class="tx-center tx-white mg-b-0">Informatics Student<br>Surabaya, Indonesia</p>
                   </div>
                 </div>
                 <div class="d-sm-flex pd-l-25 pd-r-25 pd-b-25 justify-content-between"> 
                   <div class="d-sm-flex align-items-center">
-                    <span class="tx-spacing-1 pd-r-10">411 Koneksi</span><span class="tx-spacing-1 pd-r-10 pd-l-10">|</span><span class="tx-spacing-1 pd-l-10">11 koneksimu terhubung dengan Aldi Wijaya</span>
+                    <span class="tx-spacing-1 pd-r-10">411 Koneksi</span><span class="tx-spacing-1 pd-r-10 pd-l-10">|</span><span class="tx-spacing-1 pd-l-10">11 koneksimu terhubung dengan Alex Martin</span>
                   </div>
                   <div class="d-sm-flex align-items-center">
                     <div class="d-sm-flex align-items-center">
                     <a href="" class="btn btn-brand-02"><i class="mg-r-5" data-feather="plus"></i><span class="mg-l-10">Hubungkan</span></a>
                   </div>
                   </div>
-                </div>
-              </div>
-              <div class="profile-update-option bg-white ht-50 bd d-flex justify-content-end mg-b-20 mg-lg-b-25 rounded">
-                <div class="d-flex align-items-center pd-x-20 mg-r-auto">
-                  <i data-feather="edit-3"></i> <a href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin</span> anda bagikan?</a>
-                </div>
-                <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
-                  <a href="" class="link-03" data-toggle="tooltip" title="Unggah Foto"><i data-feather="image"></i></a>
-                </div>
-                <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
-                  <a href="" class="link-03" data-toggle="tooltip" title="Bagikan Tautan"><i data-feather="link"></i></a>
-                </div>
-                <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
-                  <a href="" class="link-03" data-toggle="tooltip" title="Unggah Dokumen"><i data-feather="file-text"></i></a>
                 </div>
               </div>
 
@@ -143,8 +151,8 @@
                   <div class="media align-items-center mg-b-20">
                     <div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
                     <div class="media-body pd-l-15">
-                      <h6 class="mg-b-3">Aldi Wijaya</h6>
-                      <span class="d-block tx-13 tx-color-03">Fresh Graduate ITS</span>
+                      <h6 class="mg-b-3">Alex Martin</h6>
+                      <span class="d-block tx-13 tx-color-03">Informatics Student</span>
                     </div>
                     <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">5 hours ago</span>
                   </div><!-- media -->
@@ -168,9 +176,6 @@
               <div class="card mg-b-20 mg-lg-b-25">
                 <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                   <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Pengalaman</h6>
-                  <nav class="nav nav-with-icon tx-13">
-                    <a href="tambah-pengalaman.html" class="nav-link"><i data-feather="plus"></i> Tambah</a>
-                  </nav>
                 </div><!-- card-header -->
                 <div class="card-body pd-25">
                   <div class="media d-block d-sm-flex">
@@ -181,7 +186,6 @@
                         <h5 class="mg-b-5">Area Sales Manager</h5>
                       <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">ThemePixels, Inc.</span>, Bay Area, San Francisco, CA</p>
                       <span class="d-block tx-13 tx-color-03">December 2016 - Present</span>
-                      <a href="edit-pengalaman.html" class="btn btn-xs btn-white mg-t-10">Ubah</a>
                     </div>
                   </div><!-- media -->
                 </div>
@@ -194,7 +198,6 @@
                         <h5 class="mg-b-5">Area Sales Manager</h5>
                       <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">ThemePixels, Inc.</span>, Bay Area, San Francisco, CA</p>
                       <span class="d-block tx-13 tx-color-03">December 2016 - Present</span>
-                      <a href="edit-pengalaman.html" class="btn btn-xs btn-white mg-t-10">Ubah</a>
                     </div>
                   </div><!-- media -->
                 </div>
@@ -211,9 +214,6 @@
               <div class="card mg-b-20 mg-lg-b-25">
                 <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                   <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Pendidikan</h6>
-                  <nav class="nav nav-with-icon tx-13">
-                    <a href="tambah-pendidikan.html" class="nav-link"><i data-feather="plus"></i> Tambah</a>
-                  </nav>
                 </div><!-- card-header -->
                 <div class="card-body pd-25">
                   <div class="media">
@@ -224,7 +224,6 @@
                       <h5 class="mg-b-5">BS in Computer Science</h5>
                       <p class="mg-b-3"><span class="tx-medium tx-color-02">Holy Name University</span>,  Tagbilaran City, Bohol</p>
                       <span class="d-block tx-13 tx-color-03">2002-2006</span>
-                      <a href="edit-pendidikan.html" class="btn btn-xs btn-white mg-t-10">Ubah</a>
                     </div>
                   </div><!-- media -->
                 </div>
@@ -241,10 +240,6 @@
               <div class="card card-profile-interest">
                 <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                   <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Keahlian</h6>
-                  <nav class="nav nav-with-icon tx-13">
-                    <a href="edit-keahlian.html" class="nav-link"><i data-feather="edit" class="mg-l-5 mg-r-0"></i>Ubah</a>
-                    <a href="tambah-keahlian.html" class="nav-link"><i data-feather="plus" class="mg-l-5 mg-r-0"></i>Tambah</a>
-                  </nav>
                 </div><!-- card-header -->
                 <div class="card-body pd-25">
                   <div class="row">
