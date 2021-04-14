@@ -9510,10 +9510,11 @@ textarea.form-control {
   position: relative;
   width: 38px;
   height: 38px; }
-  .avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .avatar-initial {
   position: absolute;
