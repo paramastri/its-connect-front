@@ -35046,6 +35046,11 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   bottom: 8px;
   left: 16px; }
 
+.tx-overlay-bottom-right {
+  position: absolute;
+  bottom: 32px;
+  right: 40px; }
+
 .tx-overlay-left {
   position: absolute;
   top: 35%;
@@ -41413,3 +41418,46 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   height: 80px; }
 .img-group-mutual .img + .img {
     margin-left: -16px; }
+
+
+/*Relevant styles*/
+
+.image-stack::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+  .image-stack__item--top {
+      float: left;
+      width: 66%;
+      margin-right: -100%;
+      position: relative;
+      z-index: 1; /*tells the browser to make this image on top*/
+  }
+
+  .image-stack__item--bottom {
+      float: right;
+      width: 75%;
+  }
+
+@supports (display: grid) {
+  .image-stack {
+    display: grid;
+    position: relative; /*imperative for the overlapping to work*/
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .image-stack__item--bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .image-stack__item--top {
+    grid-row: 1;
+    grid-column: 1 / span 8;
+    padding-top: 20%; /*slightly arbitrary, keeps proportion once resized*/
+    width: 100%;
+  }
+}

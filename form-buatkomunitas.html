@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
     <link rel="stylesheet" href="assets/css/dashforge.filemgr.css">
+    <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
   </head>
   <body>
 
@@ -120,110 +121,72 @@
                   <div class="card" style="max-width: 1920px; height: 200px; background: black; overflow: hidden; border: none;">
                     <img class="card-img-top img-object-fit"
                     src="assets/img/thumbnail-3.jpg" style="opacity: 0.6;" alt="Card image cap">
+                    <div class="tx-overlay-bottom-right">
+                      <a href="" class="btn btn-sm btn-white"><i data-feather="image"></i><span class="mg-l-10 tx-medium">Pilih foto</span></a>
+                    </div>
                   </div>
-                <div class="card-body">
-                  <div class="mg-b-10 mg-sm-b-0">
-                    <div class="row row-sm">
-                      <div class="col-sm-8">
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Nama Komunitas</label>
-                        <input type="text" class="form-control" placeholder="">
-                      </div>
-                      <div class="col-sm-8 mg-t-10">
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Deskripsi</label>
-                        <textarea class="form-control" rows="2" placeholder="Apa tujuan komunitas anda?"></textarea>
-                      </div><div class="col-sm-8 mg-t-10">
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Aturan</label>
-                        <textarea class="form-control" rows="2" placeholder="Arahkan kepada anggota untuk mengikuti aturan yang anda buat"></textarea>
-                      </div>
-                      <div class="row col-sm-10 mg-t-10">
-                        <div class="col-sm-5">
-                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Kategori</label>
-                          <div class="">
-                            <select class="form-control select1-no-search">
-                              <option label=""></option>
-                              <option value="Kategori 1">Kategori 1</option>
-                              <option value="Kategori 2">Kategori 2</option>
-                              <option value="Kategori 3">Kategori 3</option>
-                              <option value="Kategori 4">Kategori 4</option>
-                              <option value="Kategori 5">Kategori 5</option>
-                              <option value="Kategori 6">Kategori 6</option>
-                            </select>
+                  <div class="card-body">
+                    <div class="mg-b-10 mg-sm-b-0">
+                      <div class="row row-sm">
+                        <div class="col-sm-8">
+                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Nama Komunitas</label>
+                          <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-sm-8 mg-t-10">
+                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Deskripsi</label>
+                          <textarea class="form-control" rows="2" placeholder="Apa tujuan komunitas anda?"></textarea>
+                        </div><div class="col-sm-8 mg-t-10">
+                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Aturan</label>
+                          <textarea class="form-control" rows="2" placeholder="Arahkan kepada anggota untuk mengikuti aturan yang anda buat"></textarea>
+                        </div>
+                        <div class="row col-sm-10 mg-t-10">
+                          <div class="col-sm-5">
+                            <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Kategori</label>
+                            <div class="">
+                              <select class="form-control select1-no-search">
+                                <option label=""></option>
+                                <option value="Kategori 1">Kategori 1</option>
+                                <option value="Kategori 2">Kategori 2</option>
+                                <option value="Kategori 3">Kategori 3</option>
+                                <option value="Kategori 4">Kategori 4</option>
+                                <option value="Kategori 5">Kategori 5</option>
+                                <option value="Kategori 6">Kategori 6</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-5">
+                            <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Privasi</label>
+                            <div class="">
+                              <select class="form-control select2-no-search">
+                                <option label=""></option>
+                                <option value="Privat">Privat</option>
+                                <option value="Publik">Publik</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-sm-5">
-                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Privasi</label>
-                          <div class="">
-                            <select class="form-control select2-no-search">
-                              <option label=""></option>
-                              <option value="Privat">Privat</option>
-                              <option value="Publik">Publik</option>
-                            </select>
+                      </div><!-- row -->
+                    </div>
+                    <div class="mg-b-10 mg-sm-b-0 mg-t-20">
+                      <div class="row row-sm">
+                        <div class="col-sm-8">
+                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Undang koneksi anda</label>
+                          <input id="input2" type="text" class="form-control" value="">
+                        </div>
+                        <div class="col-sm-12 mg-t-40">
+                              <a href="komunitas-saya.html" type="submit" class="btn btn-sm btn-brand-02 align-items-center mg-r-5"><i data-feather="check"></i><span class="mg-l-5"></span>Buat Komunitas</span></a>
                           </div>
-                        </div>
-                      </div>
-                    </div><!-- row -->
-                  </div>
-                  <div class="mg-b-10 mg-sm-b-0 mg-t-20">
-                    <div class="row row-sm">
-                      <div class="col-sm-8">
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Undang koneksi anda</label>
-                        <input id="input2" type="text" class="form-control" value="">
-                      </div>
-                      <div class="col-sm-12 mg-t-40">
-                            <a href="komunitas-saya.html" type="submit" class="btn btn-sm btn-brand-02 align-items-center mg-r-5"><i data-feather="check"></i><span class="mg-l-5"></span>Buat Komunitas</span></a>
-                        </div>
-                    </div><!-- row -->
-                  </div>
-                </div><!-- card-body -->
-              </div><!-- card -->
-            </div><!-- col -->
-          </div><!-- row -->
-        </div><!-- container -->
-      </div>
-    </div><!-- content -->
-
-    <div class="modal fade effect-scale" id="modalEditContact" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body pd-20 pd-sm-30">
-            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-
-            <h5 class="tx-18 tx-sm-20 mg-b-20">Tambahkan Persyaratan Berkas</h5>
-            <p class="tx-13 tx-color-03 mg-b-30">Lengkapi data jenis berkas yang anda butuhkan untuk dapat diunggah oleh pelamar.</p>
-
-            <div class="d-sm-flex">
-              <div class="flex-fill">
-                <h6 class="mg-b-10">Nama Berkas</h6>
-                <div class="form-group mg-b-10">
-                  <input type="text" class="form-control" placeholder="Contoh: Portofolio / CV / Cover Letter">
-                </div><!-- form-group -->
-                <h6 class="mg-t-20 mg-b-10">Format Berkas</h6>
-                <div class="form-group mg-b-10">
-                  <input type="text" class="form-control" placeholder="Contoh: DOC, PDF, JPG.">
-                </div><!-- form-group -->
-                <h6 class="mg-t-20 mg-b-10">Deskripsi</h6>
-                <textarea class="form-control" rows="2" placeholder="Contoh: 'Sertakan portofolio dari beberapa desain website terbaik yang pernah anda buat.'"></textarea>
+                      </div><!-- row -->
+                    </div>
+                  </div><!-- card-body -->
+                </div><!-- card -->
               </div><!-- col -->
-            </div>
-          </div>
-          <div class="modal-footer">
-            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
-              <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
-                <div class="dropdown-menu tx-13">
-                  <a href="" class="dropdown-item">Email</a>
-                  <a href="" class="dropdown-item">Phone</a>
-                  <a href="" class="dropdown-item">Address</a>
-                  <a href="" class="dropdown-item">Custom</a>
-                </div><!-- dropdown-menu -->
-              </div>
-              <a href="form-lowongan-berkas.html" type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Selesai</a>
-            </div>
-          </div><!-- modal-footer -->
-        </div><!-- modal-content -->
-      </div><!-- modal-dialog -->
-    </div><!-- modal -->
+            </div><!-- row -->
+          </div><!-- container -->
+        </div>
+      </div><!-- content -->
+    </div>
+    
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
