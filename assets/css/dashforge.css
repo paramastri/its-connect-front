@@ -35066,10 +35066,20 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   bottom: 8px;
   left: 16px; }
 
+.tx-overlay-top-right-form {
+  position: absolute;
+  top: 32px;
+  right: 40px; }
+
 .tx-overlay-bottom-right-form {
   position: absolute;
   bottom: 32px;
   right: 40px; }
+
+.tx-overlay-bottom-right-bg {
+  position: absolute;
+  bottom: 16px;
+  right: 20px; }
 
 .tx-overlay-bottom-left-form {
   position: absolute;
