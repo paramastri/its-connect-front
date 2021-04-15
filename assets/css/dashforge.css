@@ -9521,6 +9521,16 @@ textarea.form-control {
   width: 38px;
   height: 38px; }
 
+.avatar-shadow {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  box-shadow: 1px 2px 10px 0px  rgba(43, 81, 133, 0.1);
+  -moz-box-shadow: 1px 2px 10px 0px  rgba(43, 81, 133,0.1);
+  -webkit-box-shadow: 1px 2px 10px 0px  rgba(43, 81, 133, 0.1);
+  -o-box-shadow: 1px 2px 10px 0px  rgba(43, 81, 133,0.1);
+  border-radius:100px; }
+
 .avatar img {
   width: 100%;
   height: 100%;
@@ -41476,3 +41486,4 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
     width: 100%;
   }
 }
+
