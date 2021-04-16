@@ -41447,6 +41447,13 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   }
 }
 
+/*tambahin padding di profil mhs*/
+@media (max-width: 576px){
+  .ilangin-pd-l-sosmedprofil {
+    padding-left: 0px;
+  }
+}
+
 /*rounded multiple image*/
 .img-group-mutual .img {
   width: 80px;
