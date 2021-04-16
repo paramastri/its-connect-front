@@ -2838,22 +2838,22 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(88, 99, 122, 0.5); }
 
 .btn-outline-primary {
-  color: #0168fa;
-  border-color: #0168fa; }
+  color: #013880;
+  border-color: #013880; }
   .btn-outline-primary:hover {
     color: #fff;
-    background-color: #0168fa;
-    border-color: #0168fa; }
+    background-color: #013880;
+    border-color: #013880; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #0168fa;
+    color: #013880;
     background-color: transparent; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0168fa;
-    border-color: #0168fa; }
+    background-color: #013880;
+    border-color: #013880; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.5); }
@@ -4558,7 +4558,7 @@ input[type="button"].btn-block {
 
 .badge-brand-02 {
   color: #fff;
-  background-color: #042893; }
+  background-color: #013880; }
   a.badge-primary:hover, a.badge-primary:focus {
     color: #fff;
     background-color: #002185; }
@@ -8321,8 +8321,8 @@ strong {
     color: #fff; }
 
 .btn-brand-02 {
-  background-color: #042893;
-  border-color: #042893;
+  background-color: #013880;
+  border-color: #013880;
   color: #fff; }
   .btn-brand-02:hover, .btn-brand-02:focus {
     background-color: #063cdd;
@@ -14316,7 +14316,7 @@ textarea.parsley-success:focus {
   background-color: #0168fa; }
 
 .bg-brand-02 {
-  background-color: #042893; }
+  background-color: #013880; }
 
 .bg-brand-03 {
   background-color: #1ce1ac; }
@@ -35102,7 +35102,7 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   color: #0168fa !important; }
 
 .tx-brand-02 {
-  color: #042893 !important; }
+  color: #013880 !important; }
 
 .tx-brand-03 {
   color: #1ce1ac !important; }
