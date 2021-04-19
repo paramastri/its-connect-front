@@ -43,13 +43,16 @@ body {
   border-radius: 0.25rem;
 }
 
+.card-noborder {
+}
+
 .card-header,
 .card-footer,
 .list-group-item,
 .table tr th,
 .table tr td,
 .bd {
-  border-color: #e9f1fc; }
+  border-color: transparent; }
 
 .footer {
   border-top-color: transparent;
