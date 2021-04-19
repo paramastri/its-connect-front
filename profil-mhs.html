@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
     <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
+    <link rel="stylesheet" href="assets/css/dashforge.filemgr.css">
   </head>
   <body class="page-profile">
     <div id="offCanvas3" class="off-canvas off-canvas-overlay off-canvas-right wd-300">
@@ -271,7 +272,7 @@
                 </div><!-- card-footer -->
               </div><!-- card -->
 
-              <div class="card card-profile-interest">
+              <div class="card card-profile-interest mg-b-20">
                 <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                   <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Keahlian</h6>
                   <nav class="nav nav-with-icon tx-13">
@@ -295,6 +296,70 @@
                     </div><!-- col -->
                   </div><!-- row -->
                 </div><!-- card-body -->
+              </div><!-- card -->
+              <div class="card card-profile-interest">
+                <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
+                  <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Berkas Saya</h6>
+                </div><!-- card-header -->
+                <div class="row">
+                  <div class="col-sm col-lg-12 col-xl">
+                    <div class="media">
+                      <div class="media-body pd-0">
+                        <div class="card-body pd-25">
+                          <label class="d-block tx-medium tx-10 tx-uppercase tx-sans tx-spacing-1 tx-color-03 mg-b-15">Resume</label>
+                          <div class="card-noshadow card-file">
+                            <div class="dropdown-file">
+                              <a href="" class="dropdown-link" data-toggle="dropdown"><i data-feather="more-vertical"></i></a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="info"></i>Detail</a>
+                                <a href="" class="dropdown-item download"><i data-feather="download"></i>Unduh</a>
+                                <a href="" class="dropdown-item file"><i data-feather="file"></i>Ubah File</a>
+                                <a href="" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
+                              </div>
+                            </div><!-- dropdown -->
+                            <div class="card-file-thumb tx-danger">
+                              <i class="far fa-file-pdf"></i>
+                            </div>
+                            <div class="card-body">
+                              <h6><a href="" class="link-02">My Resume.pdf</a></h6>
+                              <p>PDF File</p>
+                              <span>1,5 MB</span>
+                            </div>
+                          </div>
+                        </div><!-- card-body -->
+                      </div>
+                    </div><!-- media -->
+                  </div><!-- col -->
+                  
+                  <div class="col-sm col-lg-12 col-xl mg-sm-t-0 mg-lg-t-25 mg-xl-t-0">
+                    <div class="media">
+                      <div class="media-body pd-0">
+                        <div class="card-body pd-25">
+                          <label class="d-block tx-medium tx-10 tx-uppercase tx-sans tx-spacing-1 tx-color-03 mg-b-15">Portofolio</label>
+                          <div class="card-noshadow card-file">
+                            <div class="dropdown-file">
+                              <a href="" class="dropdown-link" data-toggle="dropdown"><i data-feather="more-vertical"></i></a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="info"></i>Detail</a>
+                                <a href="" class="dropdown-item download"><i data-feather="download"></i>Unduh</a>
+                                <a href="" class="dropdown-item file"><i data-feather="file"></i>Ubah File</a>
+                                <a href="" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
+                              </div>
+                            </div><!-- dropdown -->
+                            <div class="card-file-thumb tx-danger">
+                              <i class="far fa-file-pdf"></i>
+                            </div>
+                            <div class="card-body">
+                              <h6><a href="" class="link-02">My Portofolio.pdf</a></h6>
+                              <p>PDF File</p>
+                              <span>1,5 MB</span>
+                            </div>
+                          </div>
+                        </div><!-- card-body -->
+                      </div>
+                    </div><!-- media -->
+                  </div><!-- col -->
+                </div><!-- row -->
               </div><!-- card -->
             </div><!-- media-body -->
           </div><!-- media -->
@@ -333,6 +398,55 @@
               </div>
               <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Posting Sekarang</button>
             </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalViewDetails" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h5 class="tx-18 tx-sm-20 mg-b-30">View Details</h5>
+
+            <div class="row mg-b-10">
+              <div class="col-4">Filename:</div>
+              <div class="col-8">My Resume.pdf</div>
+            </div><!-- row -->
+            <div class="row mg-b-10">
+              <div class="col-4">File ype:</div>
+              <div class="col-8">PDF File</div>
+            </div><!-- row -->
+            <div class="row mg-b-10">
+              <div class="col-4">File Size:</div>
+              <div class="col-8">1,5 MB</div>
+            </div><!-- row -->
+            <div class="row mg-b-10">
+              <div class="col-4">Created:</div>
+              <div class="col-8">Monday, July 02, 2018 9:34am</div>
+            </div><!-- row -->
+            <div class="row mg-b-10">
+              <div class="col-4">Modified:</div>
+              <div class="col-8">Monday, July 02, 2018 9:34am</div>
+            </div><!-- row -->
+            <div class="row mg-b-10">
+              <div class="col-4">Accessed:</div>
+              <div class="col-8">Monday, July 02, 2018 9:34am</div>
+            </div><!-- row -->
+            <div class="row mg-b-10">
+              <div class="col-4">Description:</div>
+              <div class="col-8">
+                <textarea class="form-control mg-t-5" rows="2" placeholder="Add description"></textarea>
+              </div>
+            </div><!-- row -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Close</button>
           </div><!-- modal-footer -->
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
