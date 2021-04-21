@@ -41447,10 +41447,17 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   }
 }
 
-/*tambahin padding di profil mhs*/
+/*ilangin padding di profil mhs*/
 @media (max-width: 576px){
   .ilangin-pd-l-sosmedprofil {
     padding-left: 0px;
+  }
+}
+
+/*ilangin padding di hasil search*/
+@media (max-width: 576px){
+  .ilangin-pd-search {
+    padding: 0px;
   }
 }
 
