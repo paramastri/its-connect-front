@@ -12895,6 +12895,13 @@ textarea.parsley-success:focus {
     right: 0;
     z-index: 1000; } }
 
+.navbar-header-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; } 
+
 .navbar-menu-wrapper {
   order: 3;
   width: 260px;
