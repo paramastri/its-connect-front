@@ -3037,6 +3037,18 @@ fieldset:disabled a.btn {
   .btn-block + .btn-block {
     margin-top: 0.5rem; }
 
+.btn-label {
+  position: relative;
+  left: -12px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.300);
+  border-radius: 3px 0 0 3px;}
+    
+.btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;}
+
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
@@ -41438,6 +41450,13 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   }
 }
 
+/*ilangin margin di img index*/
+@media (max-width: 1200px){
+  .ilangin-margin-img-index {
+    margin-right: 0px;
+  }
+}
+
 /*ilangin margin di detail komunitas (udh join)*/
 @media (max-width: 992px){
   .ilangin-margin-l-r {
@@ -41517,4 +41536,3 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
     width: 100%;
   }
 }
-

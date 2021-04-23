@@ -34,8 +34,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 340px; }
-  @media (min-width: 1200px) {
+  width: 400px; }
+  @media (min-width: 767px) {
     .sign-wrapper {
       width: 340px;
       margin-left: 80px } }
@@ -44,6 +44,7 @@
     margin-bottom: 5px; }
   @media (max-width: 767px) {
     .sign-wrapper{
+      width: 340px;
       text-align: center;
       margin: 0;
       position: relative;
