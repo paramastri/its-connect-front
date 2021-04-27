@@ -180,7 +180,7 @@
                 </div><!-- card-header -->
                 <div class="card-body pd-20 pd-lg-25">
                   <div class="media align-items-center mg-b-20">
-                    <div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    <div class="avatar"><img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt=""></div>
                     <div class="media-body pd-l-15">
                       <h6 class="mg-b-3">Aldi Wijaya</h6>
                       <span class="d-block tx-13 tx-color-03">Fresh Graduate ITS</span>
@@ -222,20 +222,6 @@
                       <span class="d-block tx-13 tx-color-03">Desember 2016 - Sekarang</span>
                       <a href="edit-pengalaman.html" class="btn btn-xs btn-white mg-t-10"><i data-feather="edit" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Ubah</span></a>
                       <a href="" class="btn btn-xs btn-white mg-t-10 mg-l-5"><i data-feather="trash" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Hapus</span></a>
-                    </div>
-                  </div><!-- media -->
-                </div>
-                <div class="card-body pd-25">
-                  <div class="media">
-                    <div class="wd-80 ht-80 bg-ui-04 rounded d-flex align-items-center justify-content-center">
-                      <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
-                    </div>
-                    <div class="media-body pd-l-25">
-                        <h5 class="mg-b-5">Graphic Designer</h5>
-                      <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">ThemePixels, Inc.</span>, Bandung, Indonesia</p>
-                      <span class="d-block tx-13 tx-color-03">December 2016 - Present</span>
-                      <a href="edit-pengalaman.html" class="btn btn-xs btn-white mg-t-10"><i data-feather="edit" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Ubah</span></a>
-                      <a href="#modalHapus" data-toggle="modal" class="btn btn-xs btn-white mg-t-10 mg-l-5"><i data-feather="trash" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Hapus</span></a>
                     </div>
                   </div><!-- media -->
                 </div>
@@ -328,8 +314,25 @@
                       <div class="media-body pd-0">
                         <div class="card-body pd-25">
                           <label class="d-block tx-medium tx-10 tx-uppercase tx-sans tx-spacing-1 tx-color-03 mg-b-15">Portofolio</label>
-                          <input class="btn btn-sm btn-white" type="file">
-                          <a href="profil-mhs-finish.html"><button class="btn btn-white mg-l-5"><i data-feather="check" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Simpan</span></button></a>
+                          <div class="card-noshadow card-file">
+                            <div class="dropdown-file">
+                              <a href="" class="dropdown-link" data-toggle="dropdown"><i data-feather="more-vertical"></i></a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="info"></i>Detail</a>
+                                <a href="" class="dropdown-item download"><i data-feather="download"></i>Unduh</a>
+                                <a href="" class="dropdown-item file"><i data-feather="file"></i>Ubah File</a>
+                                <a href="" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
+                              </div>
+                            </div><!-- dropdown -->
+                            <div class="card-file-thumb tx-danger">
+                              <i class="far fa-file-pdf"></i>
+                            </div>
+                            <div class="card-body">
+                              <h6><a href="" class="link-02">My Portofolio.pdf</a></h6>
+                              <p>PDF File</p>
+                              <span>1,5 MB</span>
+                            </div>
+                          </div>
                         </div><!-- card-body -->
                       </div>
                     </div><!-- media -->
@@ -422,29 +425,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Close</button>
-          </div><!-- modal-footer -->
-        </div><!-- modal-content -->
-      </div><!-- modal-dialog -->
-    </div><!-- modal -->
-
-    <div class="modal fade effect-scale" id="modalHapus" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-content">
-                  <div class="modal-header">
-                    <h6 class="modal-title">Hapus Pengalaman</h6>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="mg-b-0">Apakah anda yakin ingin menghapus riwayat pengalaman ini?</p>
-                  </div>
-          <div class="modal-footer">
-            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
-              <a href="" type="button" class="btn btn-secondary mg-b-5 mg-sm-b-0" data-dismiss="modal" aria-label="Close">Kembali</a>
-              <a href="profil-mhs.html" type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0 mg-l-10">Hapus</a>
-            </div>
           </div><!-- modal-footer -->
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
