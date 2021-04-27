@@ -41536,3 +41536,10 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
     width: 100%;
   }
 }
+
+/*ilangin btn choose file*/
+.ilangin-inputfile {
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
