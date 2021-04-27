@@ -203,7 +203,7 @@
                   <div style="float: right;" class="card-footer tx-13">
                     <div class="demo-btn-group">
                     <a href="profil-mhs-perusahaan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="user"></i><span class="d-sm-inline mg-l-5">Lihat Profil</span></button></a>
-                    <a href="employee-2.html" class="btn btn-xs btn-light"><i data-feather="check-circle"></i><span class="d-sm-inline mg-l-5"> Terimpan</span></a>
+                    <a href="employee-2.html" class="btn btn-xs btn-outline-primary"><i data-feather="bookmark"></i><span class="d-sm-inline mg-l-5"> Simpan</span></a>
                   </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
@@ -386,22 +386,22 @@
             data: df3,
             color: '#0168fa'
           }], {
-          series: {
+    			series: {
             stack: 0,
-            shadowSize: 0,
+    				shadowSize: 0,
             lines: {
               show: true,
               lineWidth: 1.7,
               fill: true,
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 5,
             hoverable: true
           },
-          yaxis: {
+    			yaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             min: 0,
@@ -411,7 +411,7 @@
               color: '#8392a5'
             }
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             ticks: [[0, '08:00'], [20, '09:00'], [40, '10:00'], [60, '11:00'], [80, '12:00'], [100, '13:00'], [120, '14:00'], [140, '15:00']],
@@ -425,7 +425,7 @@
 
 
 
-        });
+    		});
 
         function flotOption(min, max) {
           return {
@@ -509,29 +509,29 @@
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
           }], {
-          series: {
-            shadowSize: 0,
+    			series: {
+    				shadowSize: 0,
             lines: {
               show: true,
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 10,
             aboveData: true
           },
-          yaxis: {
+    			yaxis: {
             show: false,
             max: 150
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             tickColor: 'rgba(72,94,144, 0.07)',
             ticks: [[25,'mar 10'],[50,'mar 11'],[75,'mar 12'],[100,'mar 13'],[125,'mar 14']],
             //min: 35,
             //max: 125
           }
-        });
+    		});
 
 
         /** PIE CHART **/

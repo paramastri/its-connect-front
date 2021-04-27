@@ -32,7 +32,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <title>myITS Connect - Cari Calon Pegawai</title>
+    <title>myITS Connect - Calon Pegawai Tersimpan</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -45,6 +45,8 @@
     <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
@@ -77,11 +79,11 @@
       <div class="aside-body">
         <ul class="nav nav-aside">
           <li class="nav-item"><a href="beranda-perusahaan.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
-          <li class="nav-item with-sub active show">
+          <li class="nav-item with-sub show active">
             <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Perusahaan</span></a>
             <ul>
-              <li class="active"><a href="employee.html">Cari Calon Pegawai</a></li>
-              <li><a href="employee-tersimpan.html">Calon Pegawai Tersimpan</a></li>
+              <li class=""><a href="employee.html">Cari Calon Pegawai</a></li>
+              <li class="active"><a href="employee-tersimpan.html">Calon Pegawai Tersimpan</a></li>
               <li><a href="lamaran-masuk.html">Lamaran Masuk</a></li>
               <li><a href="riwayat-lowongan.html">Riwayat Lowongan</a></li>
             </ul>
@@ -120,90 +122,42 @@
             <div class="container pd-x-0">
               <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
                 <div>
-                  <h4 class="mg-b-0 tx-spacing--1">Cari Calon Pegawai</h4>
+                  <h4 class="mg-b-0 tx-spacing--1">Calon Pegawai Tersimpan</h4>
                 </div>
               </div>
 
-            <div class="row row-xs">
+              <div class="row row-xs">
               <div class="col-lg-4 wd-lg-40p mg-b-20">
-                <div class="">
-                  <input type="search" class="form-control" value="Aldi">
+                <div class="search-form">
+                  <input type="search" class="form-control" placeholder="Cari berdasarkan nama, keahlian, pengalaman">
+                  <button class="btn" type="button"><i data-feather="search"></i></button>
                 </div><!-- search-form -->
               </div>
               <div class="col-lg-4 wd-lg-40p mg-b-20">
-                <div class="">
-                  <input type="search" class="form-control" value="Surabaya">
+                <div class="search-form">
+                  <input type="search" class="form-control" placeholder="Daerah, kabupaten, kota">
+                  <button class="btn" type="button"><i data-feather="search"></i></button>
                 </div><!-- search-form -->
-              </div>
-              <div class="mg-sm-l-10">
-                <a href="lowongan-search.html"><button class="btn btn-sm btn-brand-02 pd-x-20">Cari</button></a>
               </div>
           </div>
 
-          <div class="row row-xs">
-            <div class="col-lg-6 mg-b-20">
-              <div class="card mg-b-10">
-                <div class="table-responsive">
-                  <table class="table table-dashboard mg-b-0">
-                    <thead>
-                      <tr>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> jurusan</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label="">Teknik Informatika</option>
-                                <option value="Firefox">Fisika</option>
-                                <option value="Chrome">Biologi</option>
-                                <option value="Safari">Teknik Industri</option>
-                                <option value="Opera">Kimia</option>
-                                <option value="Internet Explorer">Teknik Informatika</option>
-                                <option value="Opera">Teknik Geomatika</option>
-                                <option value="Opera">Teknik Geofisika</option>
-                                <option value="Opera">Teknik Material dan Metalurgi</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> jenjang pendidikan</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label="">Sarjana</option>
-                                <option value="Firefox">Sarjana</option>
-                                <option value="Chrome">Magister</option>
-                                <option value="Safari">Doktor</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                          <div class="mg-t-30">
-                            <button class="btn btn-sm btn-secondary">Terapkan</button>
-                          </div>
-                        </td>
-                      </tr>
-                    </thead>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card -->
-          </div><!-- row -->
-        </div><!-- container -->
 
-
-        <div class="row">
+              <div class="row">
           <div class="col-lg-8 col-xl-12">
 
             <div class="row row-sm mg-b-25">
               <div style="margin-bottom: 20px;" class="col-md-4">
                 <div class="card">
                   <div class="card-body tx-13">
-                    <div class="avatar mg-b-10"><img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt=""></div>
-                    <h5>Aldi Wijaya</h5>
+                    <div style="margin-bottom: 10px;" class="avatar"><span class="avatar-initial rounded-circle bg-facebook">AW</span></div>
+                    <h5><a>Aldi Wijaya</a></h5>
                     <p class="mg-b-0">Fresh Graduate ITS</p>
-                    <span class="tx-12 tx-color-03">Surabaya, Indonesia</span>
+                    <span class="tx-12 tx-color-03">Bojonegoro, Indonesia</span>
                   </div><!-- card-body -->
                   <div style="float: right;" class="card-footer tx-13">
                     <div class="demo-btn-group">
                     <a href="profil-mhs-perusahaan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="user"></i><span class="d-sm-inline mg-l-5">Lihat Profil</span></button></a>
-                    <a href="employee-2.html" class="btn btn-xs btn-light"><i data-feather="check-circle"></i><span class="d-sm-inline mg-l-5"> Terimpan</span></a>
+                    <button class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class="d-sm-inline mg-l-5"> Batal Simpan</span></button>
                   </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
@@ -213,15 +167,15 @@
               <div style="margin-bottom: 20px;" class="col-md-4">
                 <div class="card">
                   <div class="card-body tx-13">
-                    <div class="avatar mg-b-10"><img src="assets/img/pp-alex.jpg" class="rounded-circle" alt=""></div>
-                    <h5><a>Aldi Hendrawan</a></h5>
+                    <div style="margin-bottom: 10px;" class="avatar"><span class="avatar-initial rounded-circle bg-facebook">JD</span></div>
+                    <h5><a>Jaler Dio</a></h5>
                     <p class="mg-b-0">Fresh Graduate ITS</p>
-                    <span class="tx-12 tx-color-03">Surabaya, Indonesia</span>
+                    <span class="tx-12 tx-color-03">Bogor, Indonesia</span>
                   </div><!-- card-body -->
                   <div style="float: right;" class="card-footer tx-13">
                     <div class="demo-btn-group">
-                    <a href=""><button class="btn btn-xs btn-brand-02"><i data-feather="user"></i><span class="d-sm-inline mg-l-5">Lihat Profil</span></button></a>
-                    <button class="btn btn-xs btn-light"><i data-feather="check-circle"></i><span class="d-sm-inline mg-l-5"> Tersimpan</span></button>
+                    <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="user"></i><span class="d-sm-inline mg-l-5">Lihat Profil</span></button></a>
+                    <button class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class="d-sm-inline mg-l-5"> Batal Simpan</span></button>
                   </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
@@ -230,22 +184,38 @@
               <div style="margin-bottom: 20px;" class="col-md-4">
                 <div class="card">
                   <div class="card-body tx-13">
-                    <div class="avatar mg-b-10"><img src="assets/img/pp-jack.jpg" class="rounded-circle" alt=""></div>
-                    <h5><a>Aldi Islahudin</a></h5>
+                    <div style="margin-bottom: 10px;" class="avatar"><span class="avatar-initial rounded-circle bg-facebook">BN</span></div>
+                    <h5><a>Bintang Nuralamsyah</a></h5>
                     <p class="mg-b-0">Fresh Graduate ITS</p>
-                    <span class="tx-12 tx-color-03">Surabaya, Indonesia</span>
+                    <span class="tx-12 tx-color-03">Jember, Indonesia</span>
                   </div><!-- card-body -->
                   <div style="float: right;" class="card-footer tx-13">
                     <div class="demo-btn-group">
-                    <a href=""><button class="btn btn-xs btn-brand-02"><i data-feather="user"></i><span class="d-sm-inline mg-l-5">Lihat Profil</span></button></a>
-                    <button class="btn btn-xs btn-outline-primary"><i data-feather="bookmark"></i><span class="d-sm-inline mg-l-5"> Simpan</span></button>
+                    <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="user"></i><span class="d-sm-inline mg-l-5">Lihat Profil</span></button></a>
+                    <button class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class="d-sm-inline mg-l-5"> Batal Simpan</span></button>
                   </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
               </div><!-- col -->
 
+              <div style="margin-bottom: 20px;" class="col-md-4">
+                <div class="card">
+                  <div class="card-body tx-13">
+                    <div style="margin-bottom: 10px;" class="avatar"><span class="avatar-initial rounded-circle bg-facebook">AD</span></div>
+                    <h5><a>Adin Ningrum</a></h5>
+                    <p class="mg-b-0">Fresh Graduate ITS</p>
+                    <span class="tx-12 tx-color-03">Sidoarjo, Indonesia</span>
+                  </div><!-- card-body -->
+                  <div style="float: right;" class="card-footer tx-13">
+                    <div class="demo-btn-group">
+                    <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="user"></i><span class="d-sm-inline mg-l-5">Lihat Profil</span></button></a>
+                    <button class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class="d-sm-inline mg-l-5"> Batal Simpan</span></button>
+                  </div>
+                  </div><!-- card-footer -->
+                </div><!-- card -->
+              </div><!-- col -->
 
-              
+  
                   </div><!-- media -->
                 </div>
               </div>
@@ -366,7 +336,7 @@
 
         $('.select2-clear').select2({
           minimumResultsForSearch: Infinity,
-          placeholder: '',
+          placeholder: 'Choose one',
           allowClear: true
         });
 
@@ -386,22 +356,22 @@
             data: df3,
             color: '#0168fa'
           }], {
-          series: {
+    			series: {
             stack: 0,
-            shadowSize: 0,
+    				shadowSize: 0,
             lines: {
               show: true,
               lineWidth: 1.7,
               fill: true,
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 5,
             hoverable: true
           },
-          yaxis: {
+    			yaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             min: 0,
@@ -411,7 +381,7 @@
               color: '#8392a5'
             }
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             ticks: [[0, '08:00'], [20, '09:00'], [40, '10:00'], [60, '11:00'], [80, '12:00'], [100, '13:00'], [120, '14:00'], [140, '15:00']],
@@ -425,7 +395,7 @@
 
 
 
-        });
+    		});
 
         function flotOption(min, max) {
           return {
@@ -509,29 +479,29 @@
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
           }], {
-          series: {
-            shadowSize: 0,
+    			series: {
+    				shadowSize: 0,
             lines: {
               show: true,
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 10,
             aboveData: true
           },
-          yaxis: {
+    			yaxis: {
             show: false,
             max: 150
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             tickColor: 'rgba(72,94,144, 0.07)',
             ticks: [[25,'mar 10'],[50,'mar 11'],[75,'mar 12'],[100,'mar 13'],[125,'mar 14']],
             //min: 35,
             //max: 125
           }
-        });
+    		});
 
 
         /** PIE CHART **/
