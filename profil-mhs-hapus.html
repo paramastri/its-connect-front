@@ -158,7 +158,7 @@
               </div>
               <div class="card-profile profile-update-option ht-50 bd d-flex justify-content-end mg-b-20 mg-lg-b-25 rounded">
                 <div class="d-flex align-items-center pd-x-20 mg-r-auto">
-                  <i data-feather="edit-3"></i> <a href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin</span> anda bagikan?</a>
+                  <i data-feather="edit-3"></i> <a href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin anda bagikan?</span><span class="d-sm-none">Buat postingan</span></a>
                 </div>
                 <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
                   <a href="" class="link-03" data-toggle="tooltip" title="Unggah Foto"><i data-feather="image"></i></a>
@@ -180,7 +180,7 @@
                 </div><!-- card-header -->
                 <div class="card-body pd-20 pd-lg-25">
                   <div class="media align-items-center mg-b-20">
-                    <div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    <div class="avatar"><img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt=""></div>
                     <div class="media-body pd-l-15">
                       <h6 class="mg-b-3">Aldi Wijaya</h6>
                       <span class="d-block tx-13 tx-color-03">Fresh Graduate ITS</span>
@@ -217,25 +217,11 @@
                       <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
                     </div>
                     <div class="media-body pd-l-25">
-                        <h5 class="mg-b-5">UI/UX Designer Intern</h5>
+                      <h5 class="mg-b-5">UI/UX Designer Intern</h5>
                       <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">PT. Surya Jaya</span>, Surabaya</p>
-                      <span class="d-block tx-13 tx-color-03">Desember 2016 - Sekarang</span>
+                      <span class="d-block tx-13 tx-color-03">Desember 2017 - Sekarang</span>
                       <a href="edit-pengalaman.html" class="btn btn-xs btn-white mg-t-10"><i data-feather="edit" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Ubah</span></a>
                       <a href="" class="btn btn-xs btn-white mg-t-10 mg-l-5"><i data-feather="trash" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Hapus</span></a>
-                    </div>
-                  </div><!-- media -->
-                </div>
-                <div class="card-body pd-25">
-                  <div class="media">
-                    <div class="wd-80 ht-80 bg-ui-04 rounded d-flex align-items-center justify-content-center">
-                      <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
-                    </div>
-                    <div class="media-body pd-l-25">
-                        <h5 class="mg-b-5">Graphic Designer</h5>
-                      <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">ThemePixels, Inc.</span>, Bandung, Indonesia</p>
-                      <span class="d-block tx-13 tx-color-03">December 2016 - Present</span>
-                      <a href="edit-pengalaman.html" class="btn btn-xs btn-white mg-t-10"><i data-feather="edit" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Ubah</span></a>
-                      <a href="#modalHapus" data-toggle="modal" class="btn btn-xs btn-white mg-t-10 mg-l-5"><i data-feather="trash" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Hapus</span></a>
                     </div>
                   </div><!-- media -->
                 </div>
@@ -305,7 +291,7 @@
                               <div class="dropdown-menu dropdown-menu-right">
                                 <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="info"></i>Detail</a>
                                 <a href="" class="dropdown-item download"><i data-feather="download"></i>Unduh</a>
-                                <a href="" class="dropdown-item file"><i data-feather="file"></i>Ubah File</a>
+                                <a href="#modalUploadResume" class="dropdown-item file" data-toggle="modal"><i data-feather="file"></i>Ubah Berkas</a>
                                 <a href="" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
                               </div>
                             </div><!-- dropdown -->
@@ -427,23 +413,54 @@
       </div><!-- modal-dialog -->
     </div><!-- modal -->
 
-    <div class="modal fade effect-scale" id="modalHapus" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade effect-scale" id="modalUploadResume" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-content">
-                  <div class="modal-header">
-                    <h6 class="modal-title">Hapus Pengalaman</h6>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="mg-b-0">Apakah anda yakin ingin menghapus riwayat pengalaman ini?</p>
-                  </div>
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h5 class="tx-18 tx-sm-20 mg-b-10">Ubah Berkas Resume</h5>
+            <p class="tx-13 tx-color-03 mg-b-30">Unggah berkas resume terbaru anda</p>
+
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <h6 class="mg-b-10">Unggah Berkas</h6>
+                  <input type="file" >
+              </div><!-- col -->
+            </div>
+          </div>
           <div class="modal-footer">
             <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
-              <a href="" type="button" class="btn btn-secondary mg-b-5 mg-sm-b-0" data-dismiss="modal" aria-label="Close">Kembali</a>
-              <a href="profil-mhs-hapus.html" type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0 mg-l-10">Hapus</a>
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Simpan</button>
+            </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalUploadPortofolio" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h5 class="tx-18 tx-sm-20 mg-b-10">Ubah Berkas Portofolio</h5>
+            <p class="tx-13 tx-color-03 mg-b-30">Unggah berkas portfolio terbaru anda</p>
+
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <h6 class="mg-b-10">Unggah Berkas</h6>
+                  <input type="file" >
+              </div><!-- col -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Simpan</button>
             </div>
           </div><!-- modal-footer -->
         </div><!-- modal-content -->
