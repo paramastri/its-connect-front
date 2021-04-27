@@ -152,7 +152,7 @@
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> tanggal posting</label>
                         <div class="wd-200">
                         <select class="form-control select2-clear">
-                                <option label="">Minggu Lalu</option>
+                                <option label=""></option>
                                 <option value="Firefox">Kapanpun</option>
                                 <option value="Chrome">Bulan Lalu</option>
                                 <option value="Safari">Minggu Lalu</option>
@@ -164,7 +164,7 @@
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> tingkat pengalaman</label>
                         <div class="wd-200">
                         <select class="form-control select2-clear">
-                                <option label="">Tingkat Pemula</option>
+                                <option label=""></option>
                                 <option value="Firefox">Tingkat Pemula</option>
                                 <option value="Chrome">Asosiasi</option>
                                 <option value="Safari">Magang</option>
@@ -178,7 +178,7 @@
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> jenis pekerjaan</label>
                         <div class="wd-200">
                         <select class="form-control select2-clear">
-                                <option label="">Full-time</option>
+                                <option label=""></option>
                                 <option value="Firefox">Full-time</option>
                                 <option value="Safari">Part-time</option>
                                 <option value="Safari">Magang</option>
@@ -191,7 +191,7 @@
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> bidang industri</label>
                         <div class="wd-200">
                         <select class="form-control select2-clear">
-                                <option label="">Teknologi Informasi</option>
+                                <option label=""></option>
                                 <option value="Firefox">Teknologi Informasi</option>
                                 <option value="Safari">Minyak dan Gas</option>
                                 <option value="Opera">Pertambangan</option>
@@ -206,7 +206,7 @@
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> penempatan</label>
                         <div class="wd-200">
                         <select class="form-control select2-clear">
-                                <option label="">Remote</option>
+                                <option label=""></option>
                                 <option value="Firefox">Remote</option>
                                 <option value="Chrome">Work From Office</option>
                         </select>
@@ -344,7 +344,7 @@
                   <div style="float: right;" class="card-footer tx-13">
                     <div class="demo-btn-group">
                     <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
-                    <button class="btn btn-xs btn-light"><i data-feather="check-circle"></i><span class="d-sm-inline mg-l-5"> Tersimpan</span></button>
+                    <a href="lowongan-2.html" class="btn btn-xs btn-outline-primary"><i data-feather="bookmark"></i><span class="d-sm-inline mg-l-5"> Simpan</span></a>
                   </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
@@ -384,6 +384,23 @@
                   </div><!-- card-footer -->
                 </div><!-- card -->
               </div><!-- col -->
+
+              <div style="margin-bottom: 20px;" class="col-md-4">
+                <div class="card">
+                  <div class="card-body tx-13">
+                    <div style="margin-bottom: 10px;" class="avatar"><span class="avatar-initial rounded-circle bg-indigo">AW</span></div>
+                    <h5><a>Graphic Designer</a></h5>
+                    <p class="mg-b-0">PT. Aldi Wijaya</p>
+                    <span class="tx-12 tx-color-03">Surabaya, Indonesia</span>
+                  </div><!-- card-body -->
+                  <div style="float: right;" class="card-footer tx-13">
+                    <div class="demo-btn-group">
+                    <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
+                    <button class="btn btn-xs btn-outline-primary"><i data-feather="bookmark"></i><span class="d-sm-inline mg-l-5"> Simpan</span></button>
+                  </div>
+                  </div><!-- card-footer -->
+                </div><!-- card -->
+
 
 
               
@@ -527,22 +544,22 @@
             data: df3,
             color: '#0168fa'
           }], {
-          series: {
+    			series: {
             stack: 0,
-            shadowSize: 0,
+    				shadowSize: 0,
             lines: {
               show: true,
               lineWidth: 1.7,
               fill: true,
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 5,
             hoverable: true
           },
-          yaxis: {
+    			yaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             min: 0,
@@ -552,7 +569,7 @@
               color: '#8392a5'
             }
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             ticks: [[0, '08:00'], [20, '09:00'], [40, '10:00'], [60, '11:00'], [80, '12:00'], [100, '13:00'], [120, '14:00'], [140, '15:00']],
@@ -566,7 +583,7 @@
 
 
 
-        });
+    		});
 
         function flotOption(min, max) {
           return {
@@ -650,29 +667,29 @@
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
           }], {
-          series: {
-            shadowSize: 0,
+    			series: {
+    				shadowSize: 0,
             lines: {
               show: true,
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 10,
             aboveData: true
           },
-          yaxis: {
+    			yaxis: {
             show: false,
             max: 150
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             tickColor: 'rgba(72,94,144, 0.07)',
             ticks: [[25,'mar 10'],[50,'mar 11'],[75,'mar 12'],[100,'mar 13'],[125,'mar 14']],
             //min: 35,
             //max: 125
           }
-        });
+    		});
 
 
         /** PIE CHART **/

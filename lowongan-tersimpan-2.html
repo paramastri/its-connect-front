@@ -32,7 +32,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <title>myITS Connect - Cari Lowongan</title>
+    <title>myITS Connect - Lowongan Tersimpan</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -45,6 +45,8 @@
     <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
@@ -80,8 +82,8 @@
           <li class="nav-item with-sub active show">
             <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Pekerjaan</span></a>
             <ul>
-              <li class="active"><a href="lowongan.html">Cari Lowongan</a></li>
-              <li class=""><a href="lowongan-tersimpan.html">Lowongan Tersimpan</a></li>
+              <li><a href="lowongan.html">Cari Lowongan</a></li>
+              <li class="active"><a href="lowongan-tersimpan.html">Lowongan Tersimpan</a></li>
               <li><a href="lamaran-saya.html">Lamaran Saya</a></li>
               <li><a href="list-perusahaan.html">Daftar Perusahaan</a></li>
             </ul>
@@ -120,216 +122,27 @@
             <div class="container pd-x-0">
               <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
                 <div>
-                  <h4 class="mg-b-0 tx-spacing--1">Cari Lowongan</h4>
+                  <h4 class="mg-b-0 tx-spacing--1">Lowongan Tersimpan</h4>
                 </div>
               </div>
 
-          <div class="row row-xs">
+              <div class="row row-xs">
               <div class="col-lg-4 wd-lg-40p mg-b-20">
-                <div class="">
-                  <input type="search" class="form-control" value="Designer">
+                <div class="search-form">
+                  <input type="search" class="form-control" placeholder="Cari berdasarkan kata kunci, posisi, perusahaan">
+                  <button class="btn" type="button"><i data-feather="search"></i></button>
                 </div><!-- search-form -->
               </div>
               <div class="col-lg-4 wd-lg-40p mg-b-20">
-                <div class="">
-                  <input type="search" class="form-control" value="Surabaya">
+                <div class="search-form">
+                  <input type="search" class="form-control" placeholder="Daerah, kabupaten, kota">
+                  <button class="btn" type="button"><i data-feather="search"></i></button>
                 </div><!-- search-form -->
-              </div>
-              <div class="mg-sm-l-10">
-                <button class="btn btn-sm btn-brand-02 pd-x-20">Cari</button>
               </div>
           </div>
 
-          <div class="d-none d-sm-inline">
-          <div class="row row-xs">
-            <div class="col-lg-12 mg-b-20">
-              <div class="card mg-b-10">
-                <div class="table-responsive">
-                  <table class="table table-dashboard mg-b-0">
-                    <thead>
-                      <tr>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> tanggal posting</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label="">Minggu Lalu</option>
-                                <option value="Firefox">Kapanpun</option>
-                                <option value="Chrome">Bulan Lalu</option>
-                                <option value="Safari">Minggu Lalu</option>
-                                <option value="Opera">24 jam terakhir</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> tingkat pengalaman</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label="">Tingkat Pemula</option>
-                                <option value="Firefox">Tingkat Pemula</option>
-                                <option value="Chrome">Asosiasi</option>
-                                <option value="Safari">Magang</option>
-                                <option value="Opera">Senior Tingkat Menengah</option>
-                                <option value="Internet Explorer">Eksekutif</option>
-                                <option value="Internet Explorer">Direktur</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> jenis pekerjaan</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label="">Full-time</option>
-                                <option value="Firefox">Full-time</option>
-                                <option value="Safari">Part-time</option>
-                                <option value="Safari">Magang</option>
-                                <option value="Opera">Kontrak</option>
-                                <option value="Internet Explorer">Volunteer</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> bidang industri</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label="">Teknologi Informasi</option>
-                                <option value="Firefox">Teknologi Informasi</option>
-                                <option value="Safari">Minyak dan Gas</option>
-                                <option value="Opera">Pertambangan</option>
-                                <option value="Internet Explorer">Telekomunikasi</option>
-                                <option value="Internet Explorer">Otomotif</option>
-                                <option value="Internet Explorer">Mesin/Peralatan</option>
-                                <option value="Internet Explorer">Mekanik/Listrik</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> penempatan</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label="">Remote</option>
-                                <option value="Firefox">Remote</option>
-                                <option value="Chrome">Work From Office</option>
-                        </select>
-                        </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                          <div class="text-right mg-r-8">
-                            <a href="lowongan-filter.html"><button class="btn btn-sm btn-secondary">Terapkan Filter</button></a>
-                          </div>
-                        </td>
-                      </tr>
-                    </thead>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card -->
-          </div><!-- col -->
-        </div><!-- row -->
-      </div>
 
-      <div class="d-sm-none">
-        <div class="row row-xs">
-            <div class="col-lg-12">
-              <div class="card mg-b-10">
-                <div class="table-responsive">
-                  <table class="table table-dashboard mg-b-0">
-                    <thead>
-                      <tr>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> tanggal posting</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label=""></option>
-                                <option value="Firefox">Kapanpun</option>
-                                <option value="Chrome">Bulan Lalu</option>
-                                <option value="Safari">Minggu Lalu</option>
-                                <option value="Opera">24 jam terakhir</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> tingkat pengalaman</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label=""></option>
-                                <option value="Firefox">Tingkat Pemula</option>
-                                <option value="Chrome">Asosiasi</option>
-                                <option value="Safari">Magang</option>
-                                <option value="Opera">Senior Tingkat Menengah</option>
-                                <option value="Internet Explorer">Eksekutif</option>
-                                <option value="Internet Explorer">Direktur</option>
-                        </select>
-                        </div>
-                        </td>
-                      </tr>
-                    </thead>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card -->
-          </div><!-- col -->
-        </div><!-- row -->
-
-        <div class="row row-xs">
-            <div class="col-lg-12 mg-b-20">
-              <div class="card mg-b-10">
-                <div class="table-responsive">
-                  <table class="table table-dashboard mg-b-0">
-                    <thead>
-                      <tr>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> jenis pekerjaan</label>
-                        <div class="wd-150">
-                        <select class="form-control select2-clear">
-                                <option label=""></option>
-                                <option value="Firefox">Full-time</option>
-                                <option value="Safari">Part-time</option>
-                                <option value="Safari">Magang</option>
-                                <option value="Opera">Kontrak</option>
-                                <option value="Internet Explorer">Volunteer</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> bidang industri</label>
-                        <div class="wd-200">
-                        <select class="form-control select2-clear">
-                                <option label=""></option>
-                                <option value="Firefox">Teknologi Informasi</option>
-                                <option value="Safari">Minyak dan Gas</option>
-                                <option value="Opera">Pertambangan</option>
-                                <option value="Internet Explorer">Telekomunikasi</option>
-                                <option value="Internet Explorer">Otomotif</option>
-                                <option value="Internet Explorer">Mesin/Peralatan</option>
-                                <option value="Internet Explorer">Mekanik/Listrik</option>
-                        </select>
-                        </div>
-                        </td>
-                        <td>
-                        <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10"> penempatan</label>
-                        <div class="wd-150">
-                        <select class="form-control select2-clear">
-                                <option label=""></option>
-                                <option value="Firefox">Remote</option>
-                                <option value="Chrome">Work From Office</option>
-                        </select>
-                        </div>
-                        </td>
-                      </tr>
-                    </thead>
-                  </table>
-                </div><!-- table-responsive -->
-              </div><!-- card -->
-          </div><!-- col -->
-        </div><!-- row -->
-      </div>
-
-
-        <div class="row">
+              <div class="row">
           <div class="col-lg-8 col-xl-12">
 
             <div class="row row-sm mg-b-25">
@@ -341,29 +154,11 @@
                     <p class="mg-b-0">PT. Surya Jaya</p>
                     <span class="tx-12 tx-color-03">Surabaya, Indonesia</span>
                   </div><!-- card-body -->
-                  <div style="float: right;" class="card-footer tx-13">
+                  <div class="card-footer tx-13">
                     <div class="demo-btn-group">
-                    <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
-                    <button class="btn btn-xs btn-light"><i data-feather="check-circle"></i><span class="d-sm-inline mg-l-5"> Tersimpan</span></button>
-                  </div>
-                  </div><!-- card-footer -->
-                </div><!-- card -->
-              </div><!-- col -->
-
-
-              <div style="margin-bottom: 20px;" class="col-md-4">
-                <div class="card">
-                  <div class="card-body tx-13">
-                    <div style="margin-bottom: 10px;" class="avatar"><span class="avatar-initial rounded-circle bg-indigo">AW</span></div>
-                    <h5><a>Graphic Designer</a></h5>
-                    <p class="mg-b-0">PT. Aldi Wijaya</p>
-                    <span class="tx-12 tx-color-03">Surabaya, Indonesia</span>
-                  </div><!-- card-body -->
-                  <div style="float: right;" class="card-footer tx-13">
-                    <div class="demo-btn-group">
-                    <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
-                    <button class="btn btn-xs btn-light"><i data-feather="check-circle"></i><span class="d-sm-inline mg-l-5"> Tersimpan</span></button>
-                  </div>
+                    <a href="detail-lowongan-tersimpan.html"><button type="button"  class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
+                    <button type="button" class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class=" d-sm-inline mg-l-5">Batal Simpan</span></button>
+                    </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
               </div><!-- col -->
@@ -378,14 +173,14 @@
                   </div><!-- card-body -->
                   <div style="float: right;" class="card-footer tx-13">
                     <div class="demo-btn-group">
-                    <a href="detail-lowongan.html"><button class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
-                    <button class="btn btn-xs btn-outline-primary"><i data-feather="bookmark"></i><span class="d-sm-inline mg-l-5"> Simpan</span></button>
+                    <a href=""><button class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
+                    <button class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class="d-sm-inline mg-l-5">Batal Simpan</span></button>
                   </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
               </div><!-- col -->
 
-
+              
               
                   </div><!-- media -->
                 </div>
@@ -507,7 +302,7 @@
 
         $('.select2-clear').select2({
           minimumResultsForSearch: Infinity,
-          placeholder: '',
+          placeholder: 'Choose one',
           allowClear: true
         });
 
@@ -527,22 +322,22 @@
             data: df3,
             color: '#0168fa'
           }], {
-          series: {
+    			series: {
             stack: 0,
-            shadowSize: 0,
+    				shadowSize: 0,
             lines: {
               show: true,
               lineWidth: 1.7,
               fill: true,
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 5,
             hoverable: true
           },
-          yaxis: {
+    			yaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             min: 0,
@@ -552,7 +347,7 @@
               color: '#8392a5'
             }
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             color: 'rgba(72, 94, 144, .1)',
             ticks: [[0, '08:00'], [20, '09:00'], [40, '10:00'], [60, '11:00'], [80, '12:00'], [100, '13:00'], [120, '14:00'], [140, '15:00']],
@@ -566,7 +361,7 @@
 
 
 
-        });
+    		});
 
         function flotOption(min, max) {
           return {
@@ -650,29 +445,29 @@
               fillColor: { colors: [ { opacity: 0 }, { opacity: 0.2 } ] }
             }
           }], {
-          series: {
-            shadowSize: 0,
+    			series: {
+    				shadowSize: 0,
             lines: {
               show: true,
             }
-          },
+    			},
           grid: {
             borderWidth: 0,
             labelMargin: 10,
             aboveData: true
           },
-          yaxis: {
+    			yaxis: {
             show: false,
             max: 150
           },
-          xaxis: {
+    			xaxis: {
             show: true,
             tickColor: 'rgba(72,94,144, 0.07)',
             ticks: [[25,'mar 10'],[50,'mar 11'],[75,'mar 12'],[100,'mar 13'],[125,'mar 14']],
             //min: 35,
             //max: 125
           }
-        });
+    		});
 
 
         /** PIE CHART **/
