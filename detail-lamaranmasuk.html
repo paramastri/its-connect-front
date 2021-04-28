@@ -118,11 +118,13 @@
               <h4 class="mg-b-0 tx-spacing--1 mg-l-20">Aldi Wijaya | UI/UX Designer</h4>
               </div>
                 <div class="mg-t-20">
-                  <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">status</label>
+                  <h6 class="mg-t-30">Status:</h6>
+                  <p style="height: 23px; " class="badge badge-secondary tx-15">Menunggu</p>
                   <div class="d-flex">
                   <select class="form-control select2-no-search wd-200">
-                    <option label="">Menunggu</option>
+                    <option></option>
                     <option value="Firefox">Diterima</option>
+                    <option value="Firefox">Menunggu</option>
                     <option value="Firefox">Ditolak</option>
                   </select>
                   <a href="detail-lamaranmasuk-diterima.html"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02"></i>Ubah</button></a>
@@ -392,27 +394,27 @@
 
         // Basic with search
         $('.select2').select2({
-          placeholder: 'Pilih salah satu...',
+          placeholder: 'Pilih status...',
           searchInputPlaceholder: 'Search options'
         });
 
         // Disable search
         $('.select2-no-search').select2({
           minimumResultsForSearch: Infinity,
-          placeholder: 'Pilih salah satu...'
+          placeholder: 'Pilih status...'
         });
 
         // Clearable selection
         $('.select2-clear').select2({
           minimumResultsForSearch: Infinity,
-          placeholder: 'Pilih salah satu...',
+          placeholder: 'Pilih status...',
           allowClear: true
         });
 
         // Limit selection
         $('.select2-limit').select2({
           minimumResultsForSearch: Infinity,
-          placeholder: 'Pilih salah satu...',
+          placeholder: 'Pilih status...',
           maximumSelectionLength: 2
         });
 
