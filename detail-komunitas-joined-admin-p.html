@@ -32,7 +32,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <title>myITS Connect - Beranda</title>
+    <title>myITS Connect - Komunitas</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -75,30 +75,29 @@
 
     <aside class="aside aside-fixed">
       <div class="aside-header">
-        <a href="index.html"><img class="aside-logo" width="40%" src="assets/img/logo.png"></a>
+        <a href="beranda.html"><img class="aside-logo" width="40%" src="assets/img/logo.png"></a>
         <a href="" class="aside-menu-link">
           <i data-feather="menu"></i>
           <i data-feather="x"></i>
         </a>
-        <a href="" id="chatContentClose" class="burger-menu d-none"><i data-feather="arrow-left"></i></a>
       </div>
       <div class="aside-body">
         <ul class="nav nav-aside">
-          <li class="nav-item active"><a href="beranda-perusahaan.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
+          <li class="nav-item"><a href="beranda.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
           <li class="nav-item with-sub">
-            <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Perusahaan</span></a>
+            <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Pekerjaan</span></a>
             <ul>
-              <li class=""><a href="employee.html">Cari Calon Pegawai</a></li>
-              <li><a href="employee-tersimpan.html">Calon Pegawai Tersimpan</a></li>
-              <li class=""><a href="lamaran-masuk.html">Lamaran Masuk</a></li>
-              <li><a href="riwayat-lowongan.html">Riwayat Lowongan</a></li>
+              <li><a href="lowongan.html">Cari Lowongan</a></li>
+              <li><a href="lowongan-tersimpan.html">Lowongan Tersimpan</a></li>
+              <li><a href="lamaran-saya.html">Lamaran Saya</a></li>
+              <li><a href="list-perusahaan.html">Daftar Perusahaan</a></li>
             </ul>
           </li>
-          <li class="nav-item with-sub">
+          <li class="nav-item with-sub active show">
             <a href="" class="nav-link"><i data-feather="users"></i> <span>Komunitas</span></a>
             <ul>
-              <li><a href="jelajahi-komunitas-p.html">Jelajahi Komunitas</a></li>
-              <li><a href="komunitas-saya-p.html">Komunitas Saya</a></li>
+              <li><a href="jelajahi-komunitas.html">Jelajahi Komunitas</a></li>
+              <li class="active"><a href="komunitas-saya.html">Komunitas Saya</a></li>
             </ul>
           </li>
         </ul>
@@ -126,18 +125,29 @@
 
       <div class="content-body">
         <div class="container pd-x-0 tx-13">
+          <div class="card mg-b-20 mg-lg-b-25 mg-l-10 ilangin-margin-l-r">
+            <div class="card" style="max-width: 1920px; height: 200px; background: black; overflow: hidden; border: none;">
+              <img class="card-img-top img-object-fit"
+              src="assets/img/robotics-background.jpg" style="opacity: 0.6;" alt="Card image cap">
+              <div class="tx-overlay-center">
+                <h2 class="tx-center tx-white">Komunitas Robotika</h2>
+                <p class="tx-center tx-white d-none d-sm-inline">Tempat ngumpul para hobbyist, pemula, hingga pakar mikrokontroler dan robotika.</p>
+              </div>
+            </div>
+            <div class="d-sm-flex pd-l-25 pd-r-25 pd-b-20 justify-content-between"> 
+              <div class="d-sm-flex pd-t-20 align-items-center">
+                <i data-feather="users" style="max-width: 15px;" class="d-sm-none"></i><span class="pd-l-7 tx-spacing-1">20<span class="d-none d-sm-inline"> Anggota</span></span><span class="tx-spacing-1 pd-r-15 pd-l-15">|</span><span class="tx-spacing-1">9 anggota dari Teknik Informatika</span>
+              </div>
+              <div class="d-sm-flex pd-t-20 align-items-center">
+                <a href="" class="btn btn-brand-02 pd-l-15 pd-r-15"><i data-feather="settings"></i><span class="mg-l-5">Kelola komunitas</span></a>
+              </div>
+            </div>
+          </div>
           <div class="media d-block d-lg-flex">
-            <div class="media-body mg-lg-t-0 pd-lg-x-10">
-                <div class="card mg-b-25" style="max-width: 1920px; height: 100px; background: black; overflow: hidden; border:none; border-radius: 7px;">
-                  <img class="card-img-top img-object-fit"
-                  src="assets/img/thumbnail-3.jpg" alt="Card image cap">
-                  <div class="tx-overlay-center">
-                    <a href="form-buatlowongan.html"><button type="button" class="btn btn-lg btn-white mg-b-5 mg-sm-b-0" style="box-shadow: 5px 5px 30px gray; border-color: white;">Buat Lowongan Baru</button></a>
-                  </div>
-                </div>
+            <div class="media-body mg-t-20 mg-lg-t-0 pd-lg-x-10">
               <div class="card-profile profile-update-option ht-50 bd d-flex justify-content-end mg-b-20 mg-lg-b-25 rounded">
                 <div class="d-flex align-items-center pd-x-20 mg-r-auto">
-                  <i data-feather="edit-3"></i> <a href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin anda bagikan?</span><span class="d-sm-none">Buat postingan</span></a>
+                  <i data-feather="edit-3"></i> <a href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin anda diskusikan?</span><span class="d-sm-none">Buat diskusi</span></a>
                 </div>
                 <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
                   <a href="" class="link-03" data-toggle="tooltip" title="Unggah Foto"><i data-feather="image"></i></a>
@@ -153,15 +163,20 @@
               <div class="card mg-b-20 mg-lg-b-25">
                 <div class="card-body pd-20 pd-lg-25">
                   <div class="media align-items-center mg-b-20">
-                    <div class="avatar avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    <div class="avatar avatar-online"><img src="assets/img/NoraZoey.jpg" class="rounded-circle" alt=""></div>
                     <div class="media-body pd-l-15">
                       <h6 class="mg-b-3">Nora Zoey</h6>
                       <span class="d-block tx-13 tx-color-03">Founder of PT. XYZ</span>
                     </div>
-                    <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">5 jam yang lalu</span>
+                    <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">2 jam yang lalu</span>
                   </div><!-- media -->
                   <p class="mg-b-20">Our team is expanding again. We are looking for a Product Manager and Software Engineer to drive our new aspects of our capital projects. If you're interested, please drop a comment here or simply message me. <a href="">#softwareengineer</a> <a href="">#engineering</a></p>
-
+                  <a href="">
+                    <div class="card mg-b-20" style="max-width: 720; height: 720;">
+                      <img class="card-img-top img-object-fit"
+                      src="assets/img/ngoding.jpg" alt="Card image cap">
+                    </div>
+                  </a>
                   <div class="bd bg-gray-50 pd-y-15 pd-x-15 pd-sm-x-20">
                     <h6 class="tx-15 mg-b-3">We're hiring of Product Manager</h6>
                     <p class="mg-b-0 tx-14">Full-time, $60,000 - $80,000 annual</p>
@@ -180,14 +195,20 @@
               <div class="card mg-b-20 mg-lg-b-25">
                 <div class="card-body pd-20 pd-lg-25">
                   <div class="media align-items-center mg-b-20">
-                    <div class="avatar avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    <div class="avatar avatar-online"><img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt=""></div>
                     <div class="media-body pd-l-15">
-                      <h6 class="mg-b-3">Liam Payne</h6>
+                      <h6 class="mg-b-3">Aldi Wijaya</h6>
                       <span class="d-block tx-13 tx-color-03">Business Expert</span>
                     </div>
                     <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">5 jam yang lalu</span>
                   </div><!-- media -->
-                  <p class="">Our team is expanding again. We are looking for a Product Manager and Software Engineer to drive our new aspects of our capital projects. If you're interested, please drop a comment here or simply message me. <a href="">#softwareengineer</a> <a href="">#engineering</a></p>
+                  <p class="">Tiga saham emiten barang konsumsi (consumer goods) 'kelas kakap' sama-sama merosot pada perdagangan sesi I hari ini, Selasa (13/4/2021). Ketiga saham tersebut melanjutkan koreksi pada penutupan perdagangan kemarin, Senin (12/4).Ketiganya ialah PT Mayora Indah Tbk (MYOR), PT Unilever Indonesia Tbk (UNVR) dan PT Indofood CBP Sukses Makmur (ICBP). Lalu, di antara ketiganya emiten mana yang memiliki kinerja fundamental dan saham paling jeblok? <span class="tx-brand-02 tx-semibold" href="">Baca selengkapnya</span></p>
+                  <a href="">
+                    <div class="card mg-b-20" style="max-width: 720; height: 720;">
+                      <img class="card-img-top img-object-fit"
+                      src="assets/img/unilever-news.jpg" alt="Card image cap">
+                    </div>
+                  </a>
                 </div>
                 <div class="card-footer bg-transparent pd-y-10 pd-sm-y-15 pd-x-10 pd-sm-x-20">
                   <nav class="nav nav-with-icon tx-13">
@@ -197,55 +218,55 @@
                   </nav>
                 </div><!-- card-footer -->
               </div><!-- card -->
-
-
             </div><!-- media-body -->
 
-
             <div class="profile-sidebar profile-sidebar-two mg-t-40 mg-lg-t-0 pd-lg-l-15">
-              <div class="row">
-                <div class="col-sm-6 col-md-5 col-lg">
-                  <div class="d-flex align-items-center justify-content-between mg-b-20">
-                    <h6 class="tx-13 tx-uppercase tx-semibold mg-b-0">calon pegawai untuk anda</h6>
+              <div class="row pd-l-15 pd-r-15">
+                <div class="card card-body pd-0 mg-b-20 mg-lg-b-25">
+                  <div class="card-body pd-20 pd-lg-25">
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                      <h5 class="mg-b-10 tx-spacing--1">Tentang komunitas ini</h5>
+                    </div>
+                    <p class="mg-b-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula tellus enim, vitae vehicula arcu fermentum in. Curabitur non consequat diam, vitae vulputate urna.</p>
                   </div>
-                  <ul class="list-unstyled media-list mg-b-15">
-                    <li class="media align-items-center">
-                      <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                      <div class="media-body pd-l-15">
-                        <p class="tx-medium mg-b-2"><a href="" class="link-01">Aldi Wijaya</a></p>
-                        <span class="tx-12 tx-color-03">Fresh Graduate ITS</span>
-                      </div>
-                    </li>
-                    <li class="media align-items-center">
-                      <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                      <div class="media-body pd-l-15">
-                        <p class="tx-medium mg-b-2"><a href="" class="link-01">Jaler Dio</a></p>
-                        <span class="tx-12 tx-color-03">Fresh Graduate ITS</span>
-                      </div>
-                    </li>
-                    <li class="media align-items-center">
-                      <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                      <div class="media-body pd-l-15">
-                        <p class="tx-medium mg-b-2"><a href="" class="link-01">Bintang Nuralamsyah</a></p>
-                        <span class="tx-12 tx-color-03">Fresh Graduate ITS</span>
-                      </div>
-                    </li>
-                    <li class="media align-items-center">
-                      <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                      <div class="media-body pd-l-15">
-                        <p class="tx-medium mg-b-2"><a href="" class="link-01">Ersad Islahudin</a></p>
-                        <span class="tx-12 tx-color-03">Fresh Graduate ITS</span>
-                      </div>
-                    </li>
-                    <li class="media align-items-center">
-                      <a href=""><div class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div></a>
-                      <div class="media-body pd-l-15">
-                        <p class="tx-medium mg-b-2"><a href="" class="link-01">Paramastri</a></p>
-                        <span class="d-block tx-12 tx-color-03">Fresh Graduate ITS</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div><!-- col -->
+                  <div class="d-sm-flex pd-r-30 pd-l-20 pd-b-20 align-items-center justify-content-end">
+                    <a href="#modalSelengkapnya" class="btn btn-sm btn-white" data-toggle="modal">Selengkapnya</a>
+                  </div>
+                </div><!-- card -->
+              </div><!-- row -->
+              <div class="row pd-l-15 pd-r-15">
+                <div class="card card-body pd-0 mg-b-20 mg-lg-b-25">
+                  <div class="card-body pd-20 pd-lg-25">
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                      <h5 class="mg-b-10 tx-spacing--1">Anggota</h5>
+                    </div>
+                    <div class="img-group img-group-mutual d-none d-sm-flex justify-content-start mg-b-20">
+                      <img src="assets/img/pp-alex.jpg" class="img rounded-circle" style="min-width: 30px; min-height: 30px;" alt="">
+                      <img src="assets/img/pp-evelyn.jpg" class="img rounded-circle" style="min-width: 30px; min-height: 30px;" alt="">
+                      <img src="assets/img/pp-ava.jpg" class="img rounded-circle" style="min-width: 30px; min-height: 30px;" alt="">
+                      <img src="assets/img/NoraZoey.jpg" class="img rounded-circle" style="min-width: 30px; min-height: 30px;" alt="">
+                      <img src="assets/img/pp-jack.jpg" class="img rounded-circle" style="min-width: 30px; min-height: 30px;" alt="">
+                      <img src="https://via.placeholder.com/500" class="img rounded-circle" style="min-width: 30px; min-height: 30px;" alt="">
+                    </div>
+                    <div class="img-group img-group-mutual d-sm-none justify-content-start mg-b-20">
+                      <img src="assets/img/pp-alex.jpg" class="img rounded-circle" style="min-width: 60px; min-height: 60px;" alt="">
+                      <img src="assets/img/pp-evelyn.jpg" class="img rounded-circle" style="min-width: 60px; min-height: 60px;" alt="">
+                      <img src="assets/img/pp-ava.jpg" class="img rounded-circle" style="min-width: 60px; min-height: 60px;" alt="">
+                      <img src="assets/img/NoraZoey.jpg" class="img rounded-circle" style="min-width: 60px; min-height: 60px;" alt="">
+                      <img src="assets/img/pp-jack.jpg" class="img rounded-circle" style="min-width: 60px; min-height: 60px;" alt="">
+                      <img src="https://via.placeholder.com/500" class="img rounded-circle" style="min-width: 60px; min-height: 60px;" alt="">
+                    </div>
+                    <div class="d-sm-flex align-items-center justify-content-center tx-medium">
+                      <i data-feather="users" style="max-width: 15px;"></i><span class="pd-l-7 tx-spacing-1">20</span><span class="tx-spacing-1 pd-r-15 pd-l-15">|</span><span class="tx-spacing-1">7 koneksimu<span class="d-sm-none"> berada disini</span></span>
+                    </div>
+                  </div>
+                  <div class="d-sm-flex pd-r-30 pd-l-20 pd-b-10 align-items-center justify-content-end">
+                    <a href="" class="btn btn-brand-02 pd-l-15 pd-r-15" data-toggle="modal">Undang koneksi</a>
+                  </div>
+                  <div class="d-sm-flex pd-r-30 pd-l-20 pd-b-20 align-items-center justify-content-end">
+                    <a href="" class="btn btn-sm btn-white pd-l-25 pd-r-25" data-toggle="modal">Lihat semua</a>
+                  </div>
+                </div><!-- card -->
               </div><!-- row -->
             </div><!-- profile-sidebar -->
           </div><!-- media -->
@@ -261,7 +282,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
 
-            <h5 class="tx-18 tx-sm-20 mg-b-20">Buat Postingan</h5>
+            <h5 class="tx-18 tx-sm-20 mg-b-20">Buat Postingan Diskusi</h5>
 
             <div class="d-sm-flex">
               <div class="flex-fill">
@@ -274,9 +295,63 @@
           </div>
           <div class="modal-footer">
             <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
-              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Posting Sekarang</button>
+              <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+                <div class="dropdown-menu tx-13">
+                  <a href="" class="dropdown-item">Email</a>
+                  <a href="" class="dropdown-item">Phone</a>
+                  <a href="" class="dropdown-item">Address</a>
+                  <a href="" class="dropdown-item">Custom</a>
+                </div><!-- dropdown-menu -->
+              </div>
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Posting Diskusi</button>
             </div>
           </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalSelengkapnya" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <div class="card-body pd-0 mg-b-20">
+              <div class="d-sm-flex align-items-center">
+                <h4 class="tx-semibold mg-b-10 tx-spacing-1">Tentang komunitas ini</h4>
+              </div>
+              <p class="mg-b-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula tellus enim, vitae vehicula arcu fermentum in. Curabitur non consequat diam, vitae vulputate urna. Cras at ornare tortor. Nam pellentesque felis orci, eget egestas erat eleifend et. Proin auctor lobortis purus. Ut viverra leo in quam porttitor cursus. Sed ac pulvinar dui. </p>
+            </div>
+
+            <div class="row">
+              <div class="col-sm col-lg-12 col-xl">
+                <div class="media">
+                  <div class="media-body pd-0">
+                    <h4 class="tx-25 tx-lg-25 tx-semibold tx-spacing-1 mg-b-5">Detil komunitas</span></h4>
+                    <p class="tx-color-02 tx-16 mg-t-10 mg-b-0">Kategori</p>
+                    <p class="tx-color-03 tx-14 mg-b-10">Technology</p>
+                    <p class="tx-color-02 tx-16 mg-t-10 mg-b-0">Dibuat pada</p>
+                    <p class="tx-color-03 tx-14 mg-b-10">9 April 2021</p>
+                  </div>
+                </div><!-- media -->
+              </div><!-- col -->
+              
+              <div class="col-sm col-lg-12 col-xl mg-sm-t-0 mg-lg-t-25 mg-xl-t-0">
+                <div class="media">
+                  <div class="media-body pd-0">
+                    <h4 class="tx-25 tx-lg-25 tx-semibold tx-spacing-1 mg-b-5">Aturan</span></h4>
+                    <p style="margin-top: 10px; margin-bottom: 10px;" class="tx-color-03 tx-14 mg-b-40 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div><!-- media -->
+              </div><!-- col -->
+            </div><!-- row -->
+            <div class="d-sm-flex pd-t-20 pd-b-10 align-items-center justify-content-start">
+              <a href="" class="btn btn-sm btn-white" data-toggle="modal">Keluar Komunitas</a>
+            </div>
+          </div>
+          
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
@@ -320,22 +395,8 @@
           }
         });
 
-        $(document).ready(function() {
-
-          $('.submit_on_enter').keydown(function(event) {
-            // enter has keyCode = 13, change it if you want to use another button
-            if (event.keyCode == 13) {
-              this.form.submit();
-              return false;
-            }
-          });
-
-        });
-
 
       });
-
-
     </script>
   </body>
 </html>
