@@ -51,7 +51,6 @@
   <body class="page-profile">
     <div id="offCanvas3" class="off-canvas off-canvas-overlay off-canvas-right wd-300">
       <a href="#" class="close"><i data-feather="x"></i></a>
-
       <div class="pd-25 ht-100p tx-13">
         <div class="clearfix mg-b-25">
             <div id="contactAvatar" class="pos-relative float-left">
@@ -62,15 +61,14 @@
           </div>
         </div>
         <h5 id="contactName" class="tx-18 tx-xl-20 mg-b-5">PT. Surya Jaya</h5>
-              <p class="tx-13 tx-lg-12 tx-xl-13 tx-color-03 mg-b-20">Jakarta, Indonesia</p>
-
-              <hr class="mg-y-20">
-              <nav class="nav flex-column contact-content-nav mg-b-25">
-                <a href="profil-perusahaan.html" class="nav-link"><i data-feather="user"></i> Lihat Akun</a>
-                <a href="kelola-akun-perusahaan.html" class="nav-link"><i data-feather="settings"></i> Kelola Akun</a>
-              </nav>
-                <a href="" class="btn btn-secondary btn-block">Kembali ke myITS SSO</a>
-                <a href="" class="btn btn-white btn-block">Keluar</a>
+        <p class="tx-13 tx-lg-12 tx-xl-13 tx-color-03 mg-b-20">Jakarta, Indonesia</p>
+        <hr class="mg-y-20">
+        <nav class="nav flex-column contact-content-nav mg-b-25">
+          <a href="profil-perusahaan.html" class="nav-link"><i data-feather="user"></i> Lihat Akun</a>
+          <a href="kelola-akun-perusahaan.html" class="nav-link"><i data-feather="settings"></i> Kelola Akun</a>
+        </nav>
+          <a href="" class="btn btn-secondary btn-block">Kembali ke myITS SSO</a>
+          <a href="" class="btn btn-white btn-block">Keluar</a>
       </div>
     </div><!-- off-canvas -->
 
@@ -135,10 +133,10 @@
                   src="assets/img/thumbnail-3.jpg" style="opacity: 0.3;" alt="Card image cap">
                   <div class="tx-overlay-center">
                     <div class="avatar avatar-xl avatar-img horizontal-center mg-b-10 rounded-circle">
-                      <div class="rounded-circle" style="background: black; overflow: hidden;">
-                        <img src="assets/img/suryajaya.jpg" style="opacity: 0.7;" class="rounded-circle" alt="">
+                      <div class="avatar avatar-xl avatar-img horizontal-center">
+                        <img src="assets/img/suryajaya.jpg" id="profileImage" style="background: black; overflow: hidden; opacity: 0.7;" class="rounded-circle" alt="">
                       </div>
-                      <a href="" class="contact-edit-photo" data-toggle="tooltip" title="Pilih foto profil"><i data-feather="edit-2"></i></a>
+                      <a class="contact-edit-photo" data-toggle="tooltip" title="Pilih foto profil"><i data-feather="edit-2"></i><input class="ilangin-inputfile" id="imageUpload" type="file"></a>
                     </div>
                     <h2 class="tx-center tx-white">PT. Surya Jaya</h2>
                     <p class="tx-center tx-white mg-b-0">Where you come to do the best work of your life<br>Jakarta, Indonesia</p>
@@ -171,7 +169,7 @@
                     <div class="row col-sm-10">
                       <div class="col-sm-5">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10 mg-t-10">Kota</label>
-                        <input type="text" class="form-control" value="Surabaya">
+                        <input type="text" class="form-control" value="Jakarta">
                       </div>
                       <div class="col-sm-5">
                         <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10 mg-t-10">Provinsi</label>
@@ -183,7 +181,7 @@
                       <input type="text" class="form-control" value="Indonesia">
                     </div>
                     <div class="col-sm-12 mg-t-40">
-                      <a href="profil-mhs.html"><button type="submit" class="btn btn-sm btn-brand-02 align-items-center mg-r-5"><i data-feather="save"></i><span class="mg-l-5"></span>Simpan</span></button></a>
+                      <a href="profil-perusahaan-finish.html"><button type="submit" class="btn btn-sm btn-brand-02 align-items-center mg-r-5"><i data-feather="save"></i><span class="mg-l-5"></span>Simpan</span></button></a>
                     </div>
                   </div><!-- row -->
                 </div>
@@ -296,7 +294,7 @@
                     </div>
 
                     <div class="col-sm-12 mg-t-40">
-                      <a href="profil-mhs.html"><button type="submit" class="btn btn-sm btn-brand-02 align-items-center mg-r-5"><i data-feather="save"></i><span class="mg-l-5"></span>Simpan</span></button></a>
+                      <a href="profil-perusahaan-finish.html"><button type="submit" class="btn btn-sm btn-brand-02 align-items-center mg-r-5"><i data-feather="save"></i><span class="mg-l-5"></span>Simpan</span></button></a>
                     </div>
                   </div><!-- row -->
                 </div>
