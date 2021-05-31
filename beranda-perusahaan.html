@@ -135,19 +135,16 @@
                     <a href="form-buatlowongan.html"><button type="button" class="btn btn-lg btn-white mg-b-5 mg-sm-b-0" style="box-shadow: 5px 5px 30px gray; border-color: white;">Buat Lowongan Baru</button></a>
                   </div>
                 </div>
-              <div class="card-profile profile-update-option ht-50 bd d-flex justify-content-end mg-b-20 mg-lg-b-25 rounded">
+              <div class="card-profile profile-update-option ht-50 bd d-flex justify-content-end mg-b-20 mg-lg-b-25 rounded" href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10">
                 <div class="d-flex align-items-center pd-x-20 mg-r-auto">
-                  <i data-feather="edit-3"></i> <a href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Apa yang ingin anda bagikan?</span><span class="d-sm-none">Buat postingan</span></a>
+                  <i data-feather="edit-3"></i><a href="#modalPosting" data-toggle="modal" class="link-03 mg-l-10"><span class="d-none d-sm-inline"> Apa yang ingin anda bagikan?</span><span class="d-sm-none">Buat postingan</span></a>
                 </div>
-                <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
-                  <a href="" class="link-03" data-toggle="tooltip" title="Unggah Foto"><i data-feather="image"></i></a>
-                </div>
-                <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
-                  <a href="" class="link-03" data-toggle="tooltip" title="Bagikan Tautan"><i data-feather="link"></i></a>
-                </div>
-                <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
-                  <a href="" class="link-03" data-toggle="tooltip" title="Unggah Dokumen"><i data-feather="file-text"></i></a>
-                </div>
+                <nav class="nav nav-with-icon wd-50 bd-l d-flex align-items-center justify-content-center">
+                  <a href="" class="nav-link mg-l-7" data-toggle="tooltip" title="Unggah Foto"><i data-feather="image"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept="image/*"></a>
+                </nav>
+                <nav class="nav nav-with-icon wd-50 bd-l d-flex align-items-center justify-content-center">
+                  <a href="" class="nav-link mg-l-7" data-toggle="tooltip" title="Unggah Dokumen"><i data-feather="file-text"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept=".pdf"></a>
+                </nav>
               </div>
 
               <div class="card mg-b-20 mg-lg-b-25">
@@ -266,9 +263,8 @@
             <div class="d-sm-flex">
               <div class="flex-fill">
                 <textarea class="form-control" rows="2" placeholder="Apa yang ingin anda bagikan?"></textarea>
-                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="image"></i><span class="d-none d-sm-inline mg-l-5">Gambar</span></button>
-                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="link"></i><span class="d-none d-sm-inline mg-l-5">Tautan</span></button>
-                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="file-text"></i><span class="d-none d-sm-inline mg-l-5">Dokumen</span></button>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="image"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept="image/*"><span class="d-none d-sm-inline mg-l-5">Gambar</span></button>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="file-text"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept=".pdf"><span class="d-none d-sm-inline mg-l-5">Dokumen</span></button>
               </div><!-- col -->
             </div>
           </div>
