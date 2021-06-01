@@ -4007,6 +4007,9 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
+  @media (max-width: 575px) {
+    .navbar {
+      flex-wrap: nowrap; } }
   .navbar > .container,
   .navbar > .container-fluid {
     display: flex;
