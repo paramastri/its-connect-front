@@ -175,7 +175,7 @@
                   <div style="float: right;" class="card-footer tx-13">
                     <div class="demo-btn-group">
                     <a href=""><button class="btn btn-xs btn-brand-02"><i data-feather="eye"></i><span class="d-sm-inline mg-l-5">Lihat Detail</span></button></a>
-                    <a href="lowongan-tersimpan-2.html"><button class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class="d-sm-inline mg-l-5">Batal Simpan</span></button></a>
+                    <a href="#modalBatal" data-toggle="modal"><button class="btn btn-xs btn-secondary"><i data-feather="x-circle"></i><span class="d-sm-inline mg-l-5">Batal Simpan</span></button></a>
                   </div>
                   </div><!-- card-footer -->
                 </div><!-- card -->
@@ -208,6 +208,25 @@
         </div><!-- container -->
       </div>
     </div><!-- content -->
+
+    <div class="modal fade effect-scale" id="modalBatal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Batal Simpan</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mg-b-0">Apakah anda yakin ingin membatalkan penyimpanan lowongan ini?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="lowongan-tersimpan-2.html"><button type="button" class="btn btn-brand-02">Batal Simpan</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
