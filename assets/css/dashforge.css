@@ -13958,12 +13958,15 @@ textarea.parsley-success:focus {
   background-color: #013880;
   color: #ffffff;
   border-top: 1px solid rgba(72, 94, 144, 0.16);
-  display: none; }
+  /*display: none;*/ }
   @media (min-width: 992px) {
     .footer {
       display: flex;
       align-items: center;
       justify-content: space-between; } }
+  @media (max-width: 767px){
+    .footer {
+      padding: 40px 30px; }}
   .footer a {
     padding: 0;
     color: #1b2e4b; }
