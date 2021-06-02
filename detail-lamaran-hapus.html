@@ -346,7 +346,7 @@
                           </div><!-- media -->
                         </div><!-- col -->
                         <div class="col-sm-12 mg-t-20 demo-btn-group">
-                            <a href="lamaran-saya-baru.html"><button type="submit" class="btn btn-danger align-items-center mg-r-5"><i data-feather="trash"></i><span class="d-none d-sm-inline mg-l-5"> Hapus Lamaran</span></button></a>
+                            <a href="#modalHapus" data-toggle="modal"><button type="submit" class="btn btn-danger align-items-center mg-r-5"><i data-feather="trash"></i><span class="d-none d-sm-inline mg-l-5"> Hapus Lamaran</span></button></a>
                         </div>
                     </div><!-- row -->
                   </div>
@@ -400,6 +400,25 @@
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalHapus" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Hapus Lamaran Pekerjaan</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mg-b-0">Apakah anda yakin ingin menghapus lamaran pekerjaan ini?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="lamaran-saya-baru.html"><button type="button" class="btn btn-brand-02">Hapus</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
