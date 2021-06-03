@@ -229,13 +229,26 @@
                 <div class="card-footer bg-transparent pd-l-25 pd-r-25 pd-t-0 pd-b-20">
                   <nav class="nav nav-with-icon tx-13">
                     <a href="" class="nav-link"><i data-feather="thumbs-up"></i><span class="mg-r-5">25</span><span class="d-none d-sm-inline"> Suka</span></a>
-                    <a class="nav-link" data-toggle="collapse" href="#collapseComment-1" aria-expanded="false" aria-controls="collapseComment-1"><i data-feather="message-square"></i><span class="d-none d-sm-inline"> Komentar</span></a>
+                    <a class="nav-link" data-toggle="collapse" href="#collapseComment-1" aria-expanded="false" aria-controls="collapseComment-1"><i data-feather="message-square"></i><span class="mg-r-5">1</span><span class="d-none d-sm-inline"> Komentar</span></a>
                     <a href="" class="nav-link"><i data-feather="share"></i><span class="d-none d-sm-inline"> Bagikan</span></a>
                   </nav> 
                 </div><!-- card-footer -->
-                <div class="collapse row mg-l-20 mg-r-20 form-group" id="collapseComment-1">
-                  <input type="text" class="col form-control mg-r-20" placeholder="Komentari postingan">
-                  <a href="detail-komunitas-joined-test-komen-p.html" class="col-auto btn btn-brand-02"><i class="" data-feather="send"></i></a>
+                <div class="collapse mg-l-20 mg-r-20 form-group" id="collapseComment-1">
+                  <div class="row mg-l-0 mg-r-0">
+                    <input type="text" class="col form-control mg-r-20" placeholder="Komentari postingan">
+                    <a href="" class="col-auto btn btn-brand-02"><i class="" data-feather="send"></i></a>
+                  </div>
+                  <div class="bd bg-gray-50 pd-y-15 pd-x-15 pd-sm-x-20 mg-t-10">
+                    <div class="media align-items-start mg-b-10">
+                      <div class="avatar avatar-sm"><img src="assets/img/suryajaya.jpg" class="rounded-circle" alt=""></div>
+                      <div class="media-body pd-l-15">
+                        <p class="mg-b-0 tx-medium">PT. Surya Jaya</p>
+                        <span class="d-block tx-color-02">Nice move! Hope the business will get back soon</span>
+                        <span class="d-block tx-color-03">1 menit yang lalu</span>
+                      </div>
+                      <a href="#modalHapus" data-toggle="modal" class="btn btn-white btn-xs mg-l-5"><i data-feather="trash"></i><span class="d-none d-sm-inline"> Hapus</span></a>
+                    </div><!-- media -->
+                  </div>
                 </div>
               </div><!-- card -->
 
@@ -396,6 +409,32 @@
             </div>
           </div>
           
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalHapus" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title">Hapus Komentar</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-sm-flex align-items-center">
+                <p class="mg-b-10 tx-spacing-1">Apakah anda yakin ingin menghapus komentar anda?</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="detail-komunitas-joined-test-p.html">
+                <button type="button" class="btn btn-sm btn-white mg-r-10">Hapus</button>
+              </a>
+              <a href="">
+                <button type="button" class="btn btn-sm btn-brand-02" data-dismiss="modal">Batal</button>
+              </a>
+            </div>
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
