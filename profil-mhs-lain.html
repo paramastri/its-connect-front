@@ -210,8 +210,12 @@
               <div class="card mg-b-20 mg-lg-b-25">
                 <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                   <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Aktivitas Terkini</h6>
-                  <nav class="nav nav-icon-only">
-                    <a href="" class="nav-link"><i data-feather="more-horizontal"></i></a>
+                  <nav class="nav nav-icon-only dropdown-file" style="position: absolute; top: 10px; right: 25px;">
+                    <a href="" class="nav-link" data-toggle="dropdown"><i data-feather="more-horizontal"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#modalPostingEdit" class="dropdown-item file" data-toggle="modal"><i data-feather="edit"></i>Ubah Postingan</a>
+                      <a href="" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
+                    </div>
                   </nav>
                 </div><!-- card-header -->
                 <div class="card-body pd-20 pd-lg-25">
