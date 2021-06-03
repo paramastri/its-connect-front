@@ -13723,7 +13723,7 @@ textarea.parsley-success:focus {
 .nav-aside {
   flex-direction: column;
   line-height: 1.6;
-  font-size: 13px;
+  font-size: 14px;
   white-space: nowrap;
   margin-bottom: 25px; }
   .nav-aside .nav-label {
@@ -13811,7 +13811,7 @@ textarea.parsley-success:focus {
       left: -25px;
       bottom: 2px;
       right: -25px;
-      border-left: 3px solid #8392a5;
+      border-left: 3px solid #8392a500;
       opacity: 0;
       visibility: hidden; }
     .nav-aside .nav-link:hover, .nav-aside .nav-link:focus {
