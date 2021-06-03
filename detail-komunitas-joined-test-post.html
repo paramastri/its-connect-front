@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
     <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
+    <link rel="stylesheet" href="assets/css/dashforge.filemgr.css">
   </head>
   <body class="page-profile">
 
@@ -209,6 +210,13 @@
                       <span class="d-block tx-13 tx-color-03">Fresh Graduate Teknik Informatika</span>
                     </div>
                     <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">1 menit yang lalu</span>
+                    <nav class="nav nav-icon-only dropdown-file" style="position: absolute; top: 40px; right: 25px;">
+                      <a href="" class="nav-link" data-toggle="dropdown"><i data-feather="more-horizontal"></i></a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#modalPostingEdit" class="dropdown-item file" data-toggle="modal"><i data-feather="edit"></i>Ubah Postingan</a>
+                        <a href="" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
+                      </div>
+                    </nav>
                   </div><!-- media -->
                   <p class="mg-b-20">Flutter is Google’s new open source technology for creating native Android and iOS apps with a single codebase. Unlike other popular solutions, Flutter is not a framework; it’s a complete SDK – software development kit – which already contains everything you will need to build cross-platform applications. This includes a rendering engine, ready-made widgets, testing and integration APIs, and command-line tools.</p>
                   <a href="">
@@ -220,7 +228,7 @@
                 </div>
                 <div class="card-footer bg-transparent pd-l-25 pd-r-25 pd-t-0 pd-b-20">
                   <nav class="nav nav-with-icon tx-13">
-                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i><span class="d-none d-sm-inline"> Suka</span></a>
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i><span class="mg-r-5">25</span><span class="d-none d-sm-inline"> Suka</span></a>
                     <a class="nav-link" data-toggle="collapse" href="#collapseComment-1" aria-expanded="false" aria-controls="collapseComment-1"><i data-feather="message-square"></i><span class="d-none d-sm-inline"> Komentar</span></a>
                     <a href="" class="nav-link"><i data-feather="share"></i><span class="d-none d-sm-inline"> Bagikan</span></a>
                   </nav> 
@@ -256,7 +264,7 @@
                 </div>
                 <div class="card-footer bg-transparent pd-l-25 pd-r-25 pd-t-0 pd-b-20">
                   <nav class="nav nav-with-icon tx-13">
-                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i><span class="d-none d-sm-inline"> Suka</span></a>
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i><span class="mg-r-5">25</span><span class="d-none d-sm-inline"> Suka</span></a>
                     <a class="nav-link" data-toggle="collapse" href="#collapseComment-2" aria-expanded="false" aria-controls="collapseComment-2"><i data-feather="message-square"></i><span class="d-none d-sm-inline"> Komentar</span></a>
                     <a href="" class="nav-link"><i data-feather="share"></i><span class="d-none d-sm-inline"> Bagikan</span></a>
                   </nav> 
@@ -287,7 +295,7 @@
                 </div>
                 <div class="card-footer bg-transparent pd-l-25 pd-r-25 pd-t-0 pd-b-20">
                   <nav class="nav nav-with-icon tx-13">
-                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i><span class="d-none d-sm-inline"> Suka</span></a>
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i><span class="mg-r-5">25</span><span class="d-none d-sm-inline"> Suka</span></a>
                     <a class="nav-link" data-toggle="collapse" href="#collapseComment-3" aria-expanded="false" aria-controls="collapseComment-3"><i data-feather="message-square"></i><span class="d-none d-sm-inline"> Komentar</span></a>
                     <a href="" class="nav-link"><i data-feather="share"></i><span class="d-none d-sm-inline"> Bagikan</span></a>
                   </nav> 
@@ -376,6 +384,39 @@
               <a href="">
                 <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Posting Diskusi</button>
               </a>
+            </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalPostingEdit" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="tx-18 tx-sm-20 mg-b-20">Ubah Postingan</h5>
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <textarea class="form-control" rows="2" placeholder="Apa yang ingin anda bagikan?">Flutter is Google’s new open source technology for creating native Android and iOS apps with a single codebase. Unlike other popular solutions, Flutter is not a framework; it’s a complete SDK – software development kit – which already contains everything you will need to build cross-platform applications. This includes a rendering engine, ready-made widgets, testing and integration APIs, and command-line tools.</textarea>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="image"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept="image/*"><span class="d-none d-sm-inline mg-l-5">Gambar</span></button>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="file-text"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept=".pdf"><span class="d-none d-sm-inline mg-l-5">Dokumen</span></button>
+              </div><!-- col -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+              <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+                <div class="dropdown-menu tx-13">
+                  <a href="" class="dropdown-item">Email</a>
+                  <a href="" class="dropdown-item">Phone</a>
+                  <a href="" class="dropdown-item">Address</a>
+                  <a href="" class="dropdown-item">Custom</a>
+                </div><!-- dropdown-menu -->
+              </div>
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Posting Sekarang</button>
             </div>
           </div><!-- modal-footer -->
         </div><!-- modal-content -->
