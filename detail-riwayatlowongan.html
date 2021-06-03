@@ -166,15 +166,6 @@
               <div class="mg-t-20">
                   <h6 class="mg-t-30">Status:</h6>
                   <p style="height: 23px; " class="badge badge-success tx-15">Terposting</p>
-                  <div class="d-flex">
-                  <select class="form-control select2-no-search wd-200">
-                    <option></option>
-                    <option value="Firefox">Terposting</option>
-                    <option value="Firefox">Draft</option>
-                  </select>
-                  <a href="detail-lamaranmasuk-diterima.html"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02"></i>Ubah</button></a>
-                  </div>
-                </div>
           </div>
 
           <div class="row row-xs">
@@ -310,7 +301,8 @@
                         </div><!-- col -->
 
                       <div class="col-sm-12 mg-t-40 ">
-                        <a href="form-editlowongan.html"><button type="submit" class="btn btn-brand-02 align-items-center mg-r-5"><i data-feather="edit"></i><span class="d-sm-inline mg-l-5"> Ubah Lowongan</span></button></a>
+                        <a href="#modalDraft" data-toggle="modal"><button type="submit" class="btn btn-dark align-items-center mg-r-5"><i data-feather="save"></i><span class="d-sm-inline mg-l-5"> Simpan Sebagai Draft</span></button></a>
+                        <a href="form-editlowongan.html"><button type="submit" class="btn btn-white align-items-center mg-r-5"><i data-feather="edit"></i><span class="d-sm-inline mg-l-5"> Ubah Lowongan</span></button></a>
                         <button type="submit" class="btn btn-danger align-items-center mg-r-5"><i data-feather="trash"></i><span class="d-sm-inline mg-l-5"> Hapus Lowongan</span></button>
                       </div>
                     </div><!-- row -->
@@ -365,6 +357,25 @@
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalDraft" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Simpan Sebagai Draft</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mg-b-0">Apakah anda yakin ingin menyimpan lowongan ini sebagai draft?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="riwayat-lowongan-baru.html"><button type="button" class="btn btn-brand-02">Simpan ke Draft</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
