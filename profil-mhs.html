@@ -219,8 +219,12 @@
               <div class="card mg-b-20 mg-lg-b-25">
                 <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                   <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Aktivitas Terkini</h6>
-                  <nav class="nav nav-icon-only">
-                    <a href="" class="nav-link"><i data-feather="more-horizontal"></i></a>
+                  <nav class="nav nav-icon-only dropdown-file" style="position: absolute; top: 10px; right: 25px;">
+                    <a href="" class="nav-link" data-toggle="dropdown"><i data-feather="more-horizontal"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#modalPostingEdit" class="dropdown-item file" data-toggle="modal"><i data-feather="edit"></i>Ubah Postingan</a>
+                      <a href="" class="dropdown-item delete"><i data-feather="trash"></i>Hapus</a>
+                    </div>
                   </nav>
                 </div><!-- card-header -->
                 <div class="card-body pd-20 pd-lg-25">
@@ -389,6 +393,39 @@
             <div class="d-sm-flex">
               <div class="flex-fill">
                 <textarea class="form-control" rows="2" placeholder="Apa yang ingin anda bagikan?"></textarea>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="image"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept="image/*"><span class="d-none d-sm-inline mg-l-5">Gambar</span></button>
+                <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="file-text"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept=".pdf"><span class="d-none d-sm-inline mg-l-5">Dokumen</span></button>
+              </div><!-- col -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+              <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+                <div class="dropdown-menu tx-13">
+                  <a href="" class="dropdown-item">Email</a>
+                  <a href="" class="dropdown-item">Phone</a>
+                  <a href="" class="dropdown-item">Address</a>
+                  <a href="" class="dropdown-item">Custom</a>
+                </div><!-- dropdown-menu -->
+              </div>
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0">Posting Sekarang</button>
+            </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalPostingEdit" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="tx-18 tx-sm-20 mg-b-20">Ubah Postingan</h5>
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <textarea class="form-control" rows="2" placeholder="Apa yang ingin anda bagikan?">Our team is expanding again. We are looking for a Product Manager and Software Engineer to drive our new aspects of our capital projects. If you're interested, please drop a comment here or simply message me. #softwareengineer #engineering</textarea>
                 <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="image"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept="image/*"><span class="d-none d-sm-inline mg-l-5">Gambar</span></button>
                 <button type="button" class="btn btn-xs btn-light rounded-pill mg-t-10"><i data-feather="file-text"></i><input class="ilangin-inputfile" id="imageUpload" type="file" accept=".pdf"><span class="d-none d-sm-inline mg-l-5">Dokumen</span></button>
               </div><!-- col -->
