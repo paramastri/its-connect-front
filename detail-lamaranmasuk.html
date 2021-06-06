@@ -176,7 +176,7 @@
                     <option value="Firefox">Menunggu</option>
                     <option value="Firefox">Ditolak</option>
                   </select>
-                  <a href="detail-lamaranmasuk-diterima.html"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02"></i>Ubah</button></a>
+                  <a href="#modalUbahStatus" data-toggle="modal"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02"></i>Ubah</button></a>
                   </div>
                 </div>
             </div>
@@ -385,6 +385,25 @@
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalUbahStatus" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Ubah Status Lamaran</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mg-b-0">Apakah anda yakin ingin mengubah status lamaran ini?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="detail-lamaranmasuk-diterima.html"><button type="button" class="btn btn-brand-02">Ubah Status</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
