@@ -3984,7 +3984,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0168fa; }
+  background-color: #013880; }
 
 .nav-fill .nav-item {
   flex: 1 1 auto;
@@ -8652,7 +8652,7 @@ textarea.form-control {
 .nav-link {
   color: #596882; }
   .nav-link:hover, .nav-link:focus {
-    color: #0168fa; }
+    color: #013880; }
   .nav-link.active {
     color: #0168fa; }
 
