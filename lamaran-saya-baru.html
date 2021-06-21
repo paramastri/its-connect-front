@@ -260,10 +260,30 @@
     <script src="lib/js-cookie/js.cookie.js"></script>
     <script src="assets/js/dashforge.settings.js"></script>
     <script>
-      $(function(){
+       $(function(){
         'use strict'
 
-        $('#example1').DataTable({
+            $('#example1 thead tr').clone(true).appendTo( '#example1 thead' );
+            $('#example1 thead tr:eq(1) th').each( function (i) {
+                if( i < 4 ) {
+                    var title = $(this).text();
+                    $(this).html( '<input class="col-sm" type="text" placeholder="Cari '+'" />' );
+
+                    $( 'input', this ).on( 'keyup change keydown', function () {
+                        if ( table.column(i).search() !== this.value ) {
+                            table
+                                .column(i)
+                                .search( this.value )
+                                .draw();
+                        }
+                    });
+                }
+            });
+
+        var table = $('#example1').DataTable({
+          orderCellsTop: true,
+          fixedHeader: true,
+          destroy: true,
           language: {
             searchPlaceholder: 'Cari...',
             sSearch: '',
