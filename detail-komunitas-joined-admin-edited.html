@@ -67,7 +67,7 @@
           <a href="kelola-akun-mhs.html" class="nav-link"><i data-feather="settings"></i> Kelola Akun</a>
         </nav>
           <a href="" class="btn btn-secondary btn-block">Kembali ke myITS SSO</a>
-          <a href="index.html" class="btn btn-white btn-block">Keluar</a>
+          <a href="#modalLogout" data-toggle="modal" class="btn btn-white btn-block">Keluar</a>
       </div>
     </div><!-- off-canvas -->
 
@@ -402,6 +402,32 @@
             </div>
           </div>
           
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalLogout" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title">Keluar myITS Connect</h6>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="d-sm-flex align-items-center">
+                <p class="mg-b-10 tx-spacing-1">Apakah anda yakin ingin keluar?</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="">
+                <button type="button" class="btn btn-sm btn-white mg-r-10" data-dismiss="modal">Batal</button>
+              </a>
+              <a href="index.html">
+                <button type="button" class="btn btn-sm btn-brand-02">Keluar</button>
+              </a>
+            </div>
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
