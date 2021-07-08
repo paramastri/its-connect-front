@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content="@themepixels">
+    <meta name="twitter:creator" content="@themepixels">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="DashForge">
+    <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
+
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <title>myITS Connect - Formulir Lamaran</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="lib/quill/quill.core.css" rel="stylesheet">
+    <link href="lib/quill/quill.snow.css" rel="stylesheet">
+    <link href="lib/quill/quill.bubble.css" rel="stylesheet">
+
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/skin.cool.css">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+    <link rel="stylesheet" href="assets/css/dashforge.filemgr.css">
+    <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
+  </head>
+  <body class="page-profile">
+    <div id="offCanvas3" class="off-canvas off-canvas-overlay off-canvas-right wd-300">
+      <a href="#" class="close"><i data-feather="x"></i></a>
+      <div class="pd-25 ht-100p tx-13">
+        <div class="clearfix mg-b-15 mg-t-15">
+          <div id="contactAvatar" class="pos-relative float-left">
+            <div class="avatar avatar-xl avatar-img horizontal-center">
+              <img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt="">
+            </div>
+            <a href="" class="contact-edit-photo" data-toggle="tooltip" title="Upload Photo"><i data-feather="edit-2"></i></a>
+          </div>
+        </div>
+        <h5 id="contactName" class="tx-18 tx-xl-20 mg-b-5">Aldi Wijaya</h5>
+        <p class="tx-13 tx-lg-12 tx-xl-13 tx-color-03 mg-b-20">Fresh Graduate Teknik Informatika</p>
+        <hr class="mg-y-20">
+        <nav class="nav flex-column contact-content-nav mg-b-25">
+          <a href="profil-mhs.html" class="nav-link"><i data-feather="user"></i> Lihat Akun</a>
+          <a href="kelola-akun-mhs.html" class="nav-link"><i data-feather="settings"></i> Kelola Akun</a>
+        </nav>
+          <a href="" class="btn btn-secondary btn-block">Kembali ke myITS SSO</a>
+          <a href="index.html" class="btn btn-white btn-block">Keluar</a>
+      </div>
+    </div><!-- off-canvas -->
+
+    <aside class="aside aside-fixed">
+      <div class="aside-header">
+      <a href="beranda.html"><img width="40%" class="aside-logo" src="assets/img/logo.png"></a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+
+      <div class="aside-body">
+        <ul class="nav nav-aside">
+          <li class="nav-item"><a href="beranda.html" class="nav-link"><i data-feather="home"></i> <span>Beranda</span></a></li>
+          <li class="nav-item with-sub show active">
+            <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Pekerjaan</span></a>
+            <ul>
+              <li class="active"><a href="lowongan.html">Cari Lowongan</a></li>
+              <li><a href="lowongan-tersimpan.html">Lowongan Tersimpan</a></li>
+              <li><a href="lamaran-saya.html">Lamaran Saya</a></li>
+              <li><a href="list-perusahaan.html">Daftar Perusahaan</a></li>
+            </ul>
+          </li>
+          <li class="nav-item with-sub show">
+            <a href="" class="nav-link"><i data-feather="users"></i> <span>Komunitas</span></a>
+            <ul>
+              <li><a href="jelajahi-komunitas.html">Jelajahi Komunitas</a></li>
+              <li><a href="page-connections.html">Komunitas Saya</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+
+    <div class="content ht-100v pd-0">
+      <div class="navbar navbar-header content-header">
+        <div class="content-search">
+          <form action="cari-profil.html">
+            <div class="d-flex align-items-center">
+              <i data-feather="search"></i>
+              <input type="search" class="form-control d-none d-sm-inline wd-300 align-items-center" placeholder="Cari relasi, kolega, dan teman">
+              <input type="search" class="form-control d-sm-none align-items-center" placeholder="Cari">
+              <input type="submit" hidden="true" name="">
+            </div>  
+          </form>
+        </div>
+        <nav class="nav">
+          <div class="dropdown dropdown-notification mg-r-20 mg-b-0 mg-t-8">
+            <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+              <i data-feather="bell"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-header">Notifikasi</div>
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm"><img src="assets/img/NoraZoey.jpg" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <p><strong>Nora Zoey</strong> menyukai postingan anda</p>
+                    <span>4 Juni 21.45</span>
+                  </div><!-- media-body -->
+                </div><!-- media -->
+              </a>
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm"><img src="assets/img/pp-alex.jpg" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <p><strong>Alex Martin</strong> memberikan komentar pada postingan anda</p>
+                    <span>3 Juni 18.30</span>
+                  </div><!-- media-body -->
+                </div><!-- media -->
+              </a>
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm"><img src="assets/img/pp-evelyn.jpg" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <p><strong>Evelyn Harper</strong> mengirimkan permintaan koneksi untuk anda</p>
+                    <span>2 Juni 15.15</span>
+                  </div><!-- media-body -->
+                </div><!-- media -->
+              </a>
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <div class="avatar avatar-sm"><img src="assets/img/suryajaya.jpg" class="rounded-circle" alt=""></div>
+                  <div class="media-body mg-l-15">
+                    <p><strong>PT Surya Jaya</strong> telah menerima lamaran anda. Cek status lamaranmu disini</p>
+                    <span>1 Juni 12.00</span>
+                  </div><!-- media-body -->
+                </div><!-- media -->
+              </a>
+              <div class="dropdown-footer"><a href="notifikasi.html">Lihat Semua</a></div>
+            </div><!-- dropdown-menu -->
+          </div><!-- dropdown -->
+          <div class="d-none d-sm-inline mg-r-20 mg-b-0 mg-t-10">
+            <h6 class="tx-brand-02 tx-light">hai, <span class="tx-semibold">Aldi Wijaya</span></h6>
+          </div>
+          <a href="#offCanvas3" class="nav-link off-canvas-menu">
+            <div class="avatar avatar-shadow"><img src="assets/img/aldiwijaya.jpg" class="rounded-circle" alt=""></div>
+          </a>
+        </nav>
+      </div><!-- content-header -->
+
+      <div class="content-body">
+        <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+          <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-30">
+            <div class="btn-toolbar align-items-center">
+              <a href="detail-lowongan.html"><button type="button" class="btn btn-xs btn-secondary btn-icon"><i data-feather="arrow-left"></i></button></a>
+              <h4 class="mg-b-0 tx-spacing--1 mg-l-20"><h4 class="mg-b-0 tx-spacing--1">UI/UX Designer | PT. Surya Jaya</h4>
+            </div>
+          </div>
+
+          <div class="alert alert-danger alert-dismissible fade show wd-750" role="alert">
+            Format yang anda unggah untuk berkas <strong>Artikel</strong> salah, pastikan anda memilih format <strong>PDF/DOC</strong>.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+
+          <div class="row row-xs">
+            <div class="col-lg-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="mg-b-10 mg-sm-b-0">
+                    <h5 class="tx-bold mg-b-0 tx-15 tx-color-02 mg-b-20">Biodata Umum</h5>
+                    <div class="row row-sm">
+                      <div class="col-sm-12 media mg-b-20">
+                        <div class="avatar avatar-md"><span class="avatar-initial rounded-circle bg-gray-600">AW</span></div>
+                        <div class="media-body mg-l-20">
+                          <h6 class="mg-b-3">Aldi Wijaya</h6>
+                          <h6 class="mg-b-0 tx-color-03">Fresh Graduate ITS</h6>
+                          <small class="d-block tx-color-03">Surabaya</small>
+                        </div><!-- media-body -->
+                      </div>
+                      <div class="col-sm-6">
+                        <label style="font-family: 'IBM Plex Sans';" class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">email</label>
+                        <div class="mg-b-10">
+                          <select class="form-control select2-no-search">
+                            <option label="">aldiwijaya@gmail.com</option>
+                            <option value="Firefox">aldiwijaya256@outlook.com</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <label style="font-family: 'IBM Plex Sans';" class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">nomor telepon</label>
+                        <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </div><!-- row -->
+                  </div>
+
+                  <div class="mg-b-10 mg-sm-b-0 mg-t-10">
+                    <div class="row row-sm">
+                      <div class="col-sm-12 mg-t-20">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h5 class="tx-bold mg-b-0 tx-15 tx-color-02">Pengalaman</h5>
+                        </div><!-- card-header -->
+
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label style="font-family: 'IBM Plex Sans';"
+ class="pd-25 media d-block d-sm-flex  custom-control-label mg-l-5" for="customCheck1">
+                            <div class="wd-60 ht-60 bg-ui-04 rounded d-flex align-items-center justify-content-center">
+                              <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
+                            </div>
+                            <div class="media-body pd-t-25 pd-sm-t-0 pd-sm-l-25">
+                              <h5 class="mg-b-5">UI/UX Designer</h5>
+                              <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">Antonio Tech</span>, Surabaya, Indonesia</p>
+                              <span class="d-block tx-13 tx-color-03">Desember 2016 - Sekarang</span>
+                            </div>
+                            <a href="#modalUbahPengalaman" data-toggle="modal" class="btn btn-xs btn-white mg-t-10"><i data-feather="edit" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Ubah</span></a>
+                          </label><!-- media -->
+                        </div>
+
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                          <label style="font-family: 'IBM Plex Sans';"
+ class="pd-25 media d-block d-sm-flex  custom-control-label mg-l-5" for="customCheck2">
+                            <div class="wd-60 ht-60 bg-ui-04 rounded d-flex align-items-center justify-content-center">
+                              <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
+                            </div>
+                            <div class="media-body pd-t-25 pd-sm-t-0 pd-sm-l-25">
+                              <h5 class="mg-b-5">Document Officer Intern</h5>
+                              <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">Suneater, Co.,</span> Bandung, Indonesia</p>
+                              <span class="d-block tx-13 tx-color-03">Maret 2016 - April 2016</span>
+                            </div>
+                          <a href="#modalUbahPengalaman1" data-toggle="modal" class="btn btn-xs btn-white mg-t-10"><i data-feather="edit" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Ubah</span></a>
+                          </label><!-- media -->
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mg-t-10">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <h5 class="tx-bold mg-b-0 tx-15 tx-color-02">Pendidikan</h5>
+                        </div><!-- card-header -->
+
+                        <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                         <label style="font-family: 'IBM Plex Sans';"
+ class="pd-25 media d-block d-sm-flex  custom-control-label mg-l-5" for="customCheck4">
+                            <div class="wd-60 ht-60 bg-ui-04 rounded d-flex align-items-center justify-content-center">
+                              <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
+                            </div>
+                            <div class="media-body pd-t-25 pd-sm-t-0 pd-sm-l-25">
+                              <h5 class="mg-b-5">Institut Teknologi Sepuluh Nopember</h5>
+                              <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">Teknik Informatika</p>
+                              <span class="d-block tx-13 tx-color-03">Januari 2016 - April 2020</span>
+                            </div>
+                          <a href="#modalUbahPendidikan" data-toggle="modal" class="btn btn-xs btn-white mg-t-10"><i data-feather="edit" class="mg-r-0 "></i><span class="d-none d-sm-inline mg-l-5">Ubah</span></a>
+                          </label><!-- media -->
+                      </div>
+
+                      </div>
+
+
+                      <div class="col-sm-12 mg-t-10">
+                        <label style="font-family: 'IBM Plex Sans';" class="tx-bold mg-b-0 tx-15 tx-color-02">Pertanyaan</label>
+                        <ol class="pd-l-10 mg-0 mg-t-20 mg-l-20 mg-b-20 tx-13">
+                          <li>Reaching the targets and goals set for my area.</li>
+                          <li>Servicing the needs of my existing customers.</li>
+                          <li>Maintaining the relationships with existing customers for repeat business.</li>
+                          <li>Reporting to top managers.</li>
+                          <li>Keeping up to date with the products.</li>
+                        </ol>
+                        <div id="editor-container3" class="ht-200 mg-b-25"></div>
+                      </div>
+
+                      <div class="col-sm-12 mg-t-10">
+                        <label style="font-family: 'IBM Plex Sans';" class="tx-bold tx-15 tx-color-02">Resume</label>
+                      </div>
+
+                        <div class="col-sm-6 mg-t-10 mg-b-10">
+                          <div class="media media-folder">
+                            <i data-feather="file"></i>
+                            <div class="media-body">
+                              <h6><a href="" class="link-02">Resume_V2.pdf</a></h6>
+                              <span>43.9kb</span>
+                            </div><!-- media-body -->
+                            <div class="dropdown-file">
+                              <a href="" class="dropdown-link" data-toggle="dropdown"><i data-feather="more-vertical"></i></a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#modalViewDetails" data-toggle="modal" class="dropdown-item details"><i data-feather="eye"></i>Lihat Berkas</a>
+                              </div>
+                            </div><!-- dropdown -->
+                          </div><!-- media -->
+                        </div><!-- col -->
+
+                          <div class="col-sm-12">
+                            <p>Berkas di atas adalah Resume yang telah disimpan pada sistem, apakah anda ingin mengganti dengan berkas lainnya?</p>
+                            <a href="#modalUpload" data-toggle="modal"><button type="submit" class="btn btn-xs btn-white d-flex align-items-center mg-r-5">Unggah Berkas Lain</button></a>
+                          </div>
+
+                      <div class="col-sm-12 mg-t-40">
+                        <label style="font-family: 'IBM Plex Sans';" class="tx-bold tx-15 tx-color-02">Artikel</label>
+                      </div>
+
+                        <div class="col-sm-12 mg-t-0">
+                            <p>Unggah artikel terbaik yang pernah anda tulis<br>Format: PDF/DOC</p>
+                            <input type="file" >
+                        </div>
+
+                        <div class="col-sm-12 mg-t-40">
+                            <a href="lamaran-saya.html"><button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn btn-sm d-flex align-items-center mg-r-5"><i data-feather="check"></i><span class="d-sm-inline mg-l-5">Kirim Lamaran</span></button></a>
+                        </div>
+                    </div><!-- row -->
+                  </div>
+                </div><!-- card-body -->
+              </div><!-- card -->
+            </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </div>
+    </div><!-- content -->
+
+    <div class="modal fade effect-scale" id="modalUbahPengalaman" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title">Ubah Pengalaman</h6>
+            </div>
+            <div class="modal-body">
+              <h6 class="mg-b-10">Judul</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="UI/UX Designer Internship">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Jenis Pekerjaan</h6>
+                <div class="form-group mg-b-20">
+                  <select class="select2 form-control">
+                    <option>Magang<option>
+                    <option value="Firefox">Full-time</option>
+                    <option value="Chrome">Part-time</option>
+                    <option value="Safari">Kontrak<option>
+                    <option value="Opera">Magang</option>
+                    <option value="Opera">Volunteer</option>
+                    <option value="Opera">Pekerja Sementara</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                  </select>
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Perusahaan / Institusi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Antonio Tech">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Lokasi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Surabaya, Indonesia">
+                </div><!-- form-group -->
+
+                <div class="row mg-b-20">
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Mulai</h6>
+                    <input type="text" id="datepicker3from" class="form-control" value="04/07/2020">
+                  </div><!-- col -->
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Selesai</h6>
+                    <input type="text" id="datepicker3to" class="form-control" value="04/10/2020">
+                  </div><!-- col -->
+                </div><!-- row -->
+                <h6 class="mg-b-10">Perbarui Posisi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" placeholder="">
+                  <p class="mg-t-5 tx-color-03">*Posisi yang anda isikan ini akan muncul di bawah nama lengkap pada akun anda.</p>
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Deskripsi</h6>
+                <div class="form-group mg-b-20">
+                  <textarea type="text" class="form-control" placeholder=""></textarea>
+                </div><!-- form-group -->
+            </div>
+            <div class="modal-footer">
+              <a href="kelola-komunitas-hapus.html">
+                <button type="button" class="btn btn-sm btn-secondary mg-r-10" data-dismiss="modal">Kembali</button>
+              </a>
+              <a href="lowongan-tersimpan-2.html">
+                <button class="btn btn-sm btn-brand-02">Simpan Perubahan</button>
+              </a>
+            </div>
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalUbahPengalaman1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title">Ubah Pengalaman</h6>
+            </div>
+            <div class="modal-body">
+              <h6 class="mg-b-10">Judul</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Document Officer Intern">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Jenis Pekerjaan</h6>
+                <div class="form-group mg-b-20">
+                  <select class="select2 form-control">
+                    <option>Magang<option>
+                    <option value="Firefox">Full-time</option>
+                    <option value="Chrome">Part-time</option>
+                    <option value="Safari">Kontrak<option>
+                    <option value="Opera">Magang</option>
+                    <option value="Opera">Volunteer</option>
+                    <option value="Opera">Pekerja Sementara</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                  </select>
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Perusahaan / Institusi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Suneater, co.">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Lokasi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Bandung, Indonesia">
+                </div><!-- form-group -->
+
+                <div class="row mg-b-20">
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Mulai</h6>
+                    <input type="text" id="datepicker3from" class="form-control" value="04/07/2020">
+                  </div><!-- col -->
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Selesai</h6>
+                    <input type="text" id="datepicker3to" class="form-control" value="04/10/2020">
+                  </div><!-- col -->
+                </div><!-- row -->
+                <h6 class="mg-b-10">Perbarui Posisi</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" placeholder="">
+                  <p class="mg-t-5 tx-color-03">*Posisi yang anda isikan ini akan muncul di bawah nama lengkap pada akun anda.</p>
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Deskripsi</h6>
+                <div class="form-group mg-b-20">
+                  <textarea type="text" class="form-control" placeholder=""></textarea>
+                </div><!-- form-group -->
+            </div>
+            <div class="modal-footer">
+              <a href="kelola-komunitas-hapus.html">
+                <button type="button" class="btn btn-sm btn-secondary mg-r-10" data-dismiss="modal">Kembali</button>
+              </a>
+              <a href="lowongan-tersimpan-2.html">
+                <button class="btn btn-sm btn-brand-02">Simpan Perubahan</button>
+              </a>
+            </div>
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalUbahPendidikan" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title">Ubah Pengalaman</h6>
+            </div>
+            <div class="modal-body">
+              <h6 class="mg-b-10">Sekolah / Akademi / Kampus</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Institut Teknologi Sepuluh Nopember">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Jenjang</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Sarjana">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Jurusan</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="Teknik Informatika">
+                </div><!-- form-group -->
+                <div class="row mg-b-20">
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Tahun Masuk</h6>
+                    <input type="text"class="form-control" value="2016">
+                  </div><!-- col -->
+                  <div class="col-6">
+                    <h6 class="mg-b-10">Tahun Lulus</h6>
+                    <input type="text" class="form-control" value="2020">
+                  </div><!-- col -->
+                </div><!-- row -->
+                <h6 class="mg-b-10">Nilai / IPK</h6>
+                <div class="form-group mg-b-20">
+                  <input type="text" class="form-control" value="3.87">
+                </div><!-- form-group -->
+                <h6 class="mg-b-10">Aktivitas</h6>
+                <div class="form-group mg-b-20">
+                  <textarea type="text" class="form-control" placeholder="Contoh: Organisasi, Ekstrakurikuler, Komunitas, dan lain-lain."></textarea>
+            </div>
+            <div class="modal-footer">
+              <a href="kelola-komunitas-hapus.html">
+                <button type="button" class="btn btn-sm btn-secondary mg-r-10" data-dismiss="modal">Kembali</button>
+              </a>
+              <a href="lowongan-tersimpan-2.html">
+                <button class="btn btn-sm btn-brand-02">Simpan Perubahan</button>
+              </a>
+            </div>
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalUpload" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pd-20 pd-sm-30">
+            <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h5 class="tx-18 tx-sm-20 mg-b-10">Ganti Berkas</h5>
+            <p class="tx-13 tx-color-03 mg-b-30">Unggah berkas baru untuk mengisi formulir lamaran terkait.</p>
+
+            <div class="d-sm-flex">
+              <div class="flex-fill">
+                <h6 class="mg-b-10">Unggah Berkas</h6>
+                  <input type="file" >
+              </div><!-- col -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+              <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+                <div class="dropdown-menu tx-13">
+                  <a href="" class="dropdown-item">Email</a>
+                  <a href="" class="dropdown-item">Phone</a>
+                  <a href="" class="dropdown-item">Address</a>
+                  <a href="" class="dropdown-item">Custom</a>
+                </div><!-- dropdown-menu -->
+              </div>
+              <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0" data-dismiss="modal" aria-label="Close">Selesai</button>
+            </div>
+          </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/feather-icons/feather.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="lib/peity/jquery.peity.min.js"></script>
+    <script src="lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="lib/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="lib/quill/quill.min.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+
+    <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="assets/js/dashforge.sampledata.js"></script>
+    <script src="assets/js/dashboard-four.js"></script>
+    <script src="assets/js/dashforge.filemgr.js"></script>
+
+    
+    <script>
+      // Adding placeholder for search input
+      (function($) {
+
+        'use strict'
+
+        var Defaults = $.fn.select2.amd.require('select2/defaults');
+
+        $.extend(Defaults.defaults, {
+          searchInputPlaceholder: ''
+        });
+
+        var SearchDropdown = $.fn.select2.amd.require('select2/dropdown/search');
+
+        var _renderSearchDropdown = SearchDropdown.prototype.render;
+
+        SearchDropdown.prototype.render = function(decorated) {
+
+          // invoke parent method
+          var $rendered = _renderSearchDropdown.apply(this, Array.prototype.slice.apply(arguments));
+
+          this.$search.attr('placeholder', this.options.get('searchInputPlaceholder'));
+
+          return $rendered;
+        };
+
+      })(window.jQuery);
+
+
+      $(function(){
+        'use strict'
+
+        // Basic with search
+        $('.select2').select2({
+          placeholder: 'Pilih salah satu...',
+          searchInputPlaceholder: 'Search options'
+        });
+
+        // Disable search
+        $('.select2-no-search').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Pilih salah satu...'
+        });
+
+        // Clearable selection
+        $('.select2-clear').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Pilih salah satu...',
+          allowClear: true
+        });
+
+        // Limit selection
+        $('.select2-limit').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Pilih salah satu...',
+          maximumSelectionLength: 2
+        });
+
+      });
+    </script>
+    <script>
+      $(function(){
+        'use strict'
+
+        var quill = new Quill('#editor-container', {
+          modules: {
+            toolbar: '#toolbar-container'
+          },
+          placeholder: 'Tulis deskripsi pekerjaan. Mulai dari kualifikasi pegawai, tanggung jawab, dan lain-lain...',
+          theme: 'snow'
+        });
+
+        var quill2 = new Quill('#editor-container2', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic'],
+              ['link', 'blockquote', 'code-block', 'image'],
+              [{ list: 'ordered' }, { list: 'bullet' }]
+            ]
+          },
+          placeholder: 'Tulis deskripsi pekerjaan. Mulai dari kualifikasi pegawai, tanggung jawab, dan lain-lain...',
+          theme: 'snow'
+        });
+
+        var quill2 = new Quill('#editor-container3', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic'],
+              ['link', 'blockquote', 'code-block', 'image'],
+              [{ list: 'ordered' }, { list: 'bullet' }]
+            ]
+          },
+          placeholder: 'Tulis deskripsi pekerjaan. Mulai dari kualifikasi pegawai, tanggung jawab, dan lain-lain...',
+          theme: 'snow'
+        });
+
+        // Inline Edit
+        var quillInline = new Quill('#quillInline', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic', 'underline'],
+              [{ 'header': 1 }, { 'header': 2 }, 'blockquote'],
+              ['link', 'image', 'code-block'],
+            ]
+          },
+          bounds: '#quillInline',
+          scrollingContainer: '#scrolling-container',
+          placeholder: 'Write something...',
+          theme: 'bubble'
+        });
+
+        const ps = new PerfectScrollbar('#scrolling-container', {
+          suppressScrollX: true
+        });
+
+        // Editor in Modal
+        var quillModal2 = new Quill('#quillEditorModal', {
+          modules: {
+            toolbar: [
+              ['bold', 'italic', 'underline'],
+              [{ 'header': 1 }, { 'header': 2 }, 'blockquote'],
+              ['link', 'image', 'code-block'],
+            ]
+          },
+          theme: 'snow'
+        });
+
+      });
+    </script>
+    <script>
+      $(function(){
+        'use strict'
+
+        // With TypeAhead
+        var citynames = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          prefetch: {
+            url: 'assets/data/citynames.json',
+            filter: function(list) {
+              return $.map(list, function(cityname) {
+                return { name: cityname }; });
+              }
+            }
+        });
+
+        citynames.initialize();
+
+        $('#input2').tagsinput({
+          typeaheadjs: {
+            name: 'citynames',
+            displayKey: 'name',
+            valueKey: 'name',
+            source: citynames.ttAdapter()
+          }
+        });
+
+        // Objects as Tags
+        var cities = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          prefetch: 'assets/data/cities.json'
+        });
+
+        cities.initialize();
+
+        var elt = $('#input3');
+        elt.tagsinput({
+          itemValue: 'value',
+          itemText: 'text',
+          typeaheadjs: {
+            name: 'cities',
+            displayKey: 'text',
+            source: cities.ttAdapter()
+          }
+        });
+
+        elt.tagsinput('add', { "value": 1 , "text": "Amsterdam"   , "continent": "Europe"    });
+        elt.tagsinput('add', { "value": 4 , "text": "Washington"  , "continent": "America"   });
+        elt.tagsinput('add', { "value": 7 , "text": "Sydney"      , "continent": "Australia" });
+        elt.tagsinput('add', { "value": 10, "text": "Beijing"     , "continent": "Asia"      });
+        elt.tagsinput('add', { "value": 13, "text": "Cairo"       , "continent": "Africa"    });
+
+      });
+    </script>
+    
+  </body>
+</html>
