@@ -267,7 +267,7 @@
             $('#example1 thead tr:eq(1) th').each( function (i) {
                 if( i < 4 ) {
                     var title = $(this).text();
-                    $(this).html( '<input class="col-sm" type="text" placeholder="Cari '+'" />' );
+                    $(this).html( '<input class="form-control" type="search" placeholder="Cari '+'" />' );
 
                     $( 'input', this ).on( 'keyup change keydown', function () {
                         if ( table.column(i).search() !== this.value ) {
@@ -284,6 +284,7 @@
           orderCellsTop: true,
           fixedHeader: true,
           destroy: true,
+          sDom: 'lrtip',
           language: {
             searchPlaceholder: 'Cari...',
             sSearch: '',
