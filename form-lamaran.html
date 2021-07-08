@@ -331,7 +331,7 @@
                         </div>
 
                         <div class="col-sm-12 mg-t-40">
-                            <a href="lamaran-saya.html"><button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn btn-sm d-flex align-items-center mg-r-5"><i data-feather="check"></i><span class="d-sm-inline mg-l-5">Kirim Lamaran</span></button></a>
+                            <a href="#modalKirim" data-toggle="modal"><button style="color: white; background: #013880; outline-color: #013880" type="submit" class="btn btn-sm d-flex align-items-center mg-r-5"><i data-feather="check"></i><span class="d-sm-inline mg-l-5">Kirim Lamaran</span></button></a>
                         </div>
                     </div><!-- row -->
                   </div>
@@ -366,6 +366,29 @@
               <button type="button" class="btn btn-brand-02 mg-b-5 mg-sm-b-0" data-dismiss="modal" aria-label="Close">Selesai</button>
             </div>
           </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <div class="modal fade effect-scale" id="modalKirim" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title">Kirim Lamaran</h6>
+            </div>
+            <div class="modal-body">
+              <div class="d-sm-flex align-items-center">
+                <p class="mg-b-10">Apakah anda yakin ingin mengirim lamaran ini?</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="kelola-komunitas-hapus.html">
+                <button type="button" class="btn btn-sm btn-secondary mg-r-10" data-dismiss="modal">Kembali</button>
+              </a>
+              <a href="lamaran-saya.html">
+                <button class="btn btn-sm btn-brand-02">Kirim Sekarang</button>
+              </a>
+            </div>
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
     </div><!-- modal -->
