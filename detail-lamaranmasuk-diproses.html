@@ -194,13 +194,13 @@
                 <div class="mg-t-20">
                   <h6 class="mg-t-30">Status:</h6>
                   <div class="d-flex">
-                  <select class="form-control select2-no-search wd-200">
+                  <select id="SelectOption" class="form-control select2-no-search wd-200">
                     <option>Diproses</option>
                     <option value="Firefox">Menunggu</option>
                     <option value="Firefox">Diterima</option>
                     <option value="Firefox">Ditolak</option>
                   </select>
-                  <a href="detail-lamaranmasuk-diterima.html"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02"></i>Ubah</button></a>
+                  <a href="detail-lamaranmasuk-diterima.html"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02" id="buttonUbah"></i>Ubah</button></a>
                   </div>
                   <div class="alert alert-warning mg-t-20 mg-b-0 wd-800" role="alert">Terima kasih! Lamaran ini telah <b>diproses</b> ke tahap rekrutmen anda selanjutnya. Informasi berlanjutnya proses lamaran telah dikirimkan melalui akun pelamar. Silahkan <b>melakukan komunikasi melalui email atau nomor HP pelamar</b> yang telah tercantum pada lamaran ini untuk menjalani rekrutmen lebih lanjut. <hr>Anda dapat merubah kembali status lamaran apabila diperlukan.</div>
                 </div>
@@ -617,6 +617,20 @@
         elt.tagsinput('add', { "value": 10, "text": "Beijing"     , "continent": "Asia"      });
         elt.tagsinput('add', { "value": 13, "text": "Cairo"       , "continent": "Africa"    });
 
+      });
+    </script>
+
+    <script>
+      $(function(){
+        $('#buttonUbah').css('display', 'none');
+        $('#SelectOption').on('change', function(){
+          if($(this).val()=='Diproses'){
+            $('#buttonUbah').css('display', 'none');
+          }
+          else{
+            $('#buttonUbah').css('display', 'block');
+          }
+        });
       });
     </script>
     

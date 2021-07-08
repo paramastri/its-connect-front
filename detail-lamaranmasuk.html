@@ -171,11 +171,11 @@
                   <div class="d-flex">
                   <select id="SelectOption" class="form-control select2-no-search wd-200">
                     <option>Menunggu</option>
-                    <option value="Diproses"><a href="detail-lamaranmasuk-diproses.html">Diproses</a></option>
+                    <option value="Diproses">Diproses</option>
                     <option value="Firefox">Diterima</option>
                     <option value="Firefox">Ditolak</option>
                   </select>
-                  <a href="#modalUbahStatus" data-toggle="modal"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02"></i>Ubah</button></a>
+                  <a href="#modalUbahStatus" data-toggle="modal"><button type="submit" class="btn align-items-center mg-l-10 btn-brand-02" id="buttonUbah"></i>Ubah</button></a>
                   </div>
                 </div>
                 <div class="alert alert-secondary mg-t-20 mg-b-0" role="alert">Lamaran ini sedang <b>menunggu respon</b> dari anda. Silakan melakukan pemeriksaan biodata dan berkas pelamar sebelum melakukan perubahan status.</div>
@@ -433,21 +433,6 @@
 
     
     <script>
-
-      document.getElementById('SelectOption').addEventListener('change', function() {
-        val = $( "#SelectOption" ).val();
-          
-        console.log(val)
-        if(val === 'Diproses') {
-          window.open('detail-lamaranmasuk-diproses.html');
-          }
-        if(val === 'Contact') {
-          window.open('contact.php', '_blank');
-        }
-        if (val === 'Sitemap') {
-          window.open('sitemap.php', '_blank');
-        }
-      });
       // Adding placeholder for search input
       (function($) {
 
@@ -630,6 +615,20 @@
         elt.tagsinput('add', { "value": 10, "text": "Beijing"     , "continent": "Asia"      });
         elt.tagsinput('add', { "value": 13, "text": "Cairo"       , "continent": "Africa"    });
 
+      });
+    </script>
+
+    <script>
+      $(function(){
+        $('#buttonUbah').css('display', 'none');
+        $('#SelectOption').on('change', function(){
+          if($(this).val()=='Menunggu'){
+            $('#buttonUbah').css('display', 'none');
+          }
+          else{
+            $('#buttonUbah').css('display', 'block');
+          }
+        });
       });
     </script>
     
