@@ -10191,9 +10191,9 @@ textarea.form-control {
 .marker-primary {
   color: #fff; }
   .marker-primary.marker-icon::before {
-    background-color: #0168fa; }
+    background-color: #013880; }
   .marker-primary.marker-ribbon {
-    background-color: #0168fa; }
+    background-color: #013880; }
     .marker-primary.marker-ribbon::after {
       border-bottom-color: #0148ae; }
 
