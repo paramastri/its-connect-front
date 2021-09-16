@@ -32,20 +32,24 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <title>myITS Connect - Upgrade Akun</title>
+    <title>myITS Connect - Kelola Komunitas</title>
 
     <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/jqvmap/jqvmap.min.css" rel="stylesheet">
     <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/skin.cool.css">
-    <link rel="stylesheet" href="assets/css/dashforge.profile.css">
+    <link rel="stylesheet" href="assets/css/dashforge.dashboard.css">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
     <link rel="stylesheet" href="assets/css/dashforge.contacts.css">
-    <link rel="stylesheet" href="assets/css/dashforge.dashboard.css">
   </head>
   <body class="page-profile">
     <div id="offCanvas3" class="off-canvas off-canvas-overlay off-canvas-right wd-300">
@@ -71,37 +75,6 @@
       </div>
     </div><!-- off-canvas -->
 
-    <!-- <aside class="aside aside-fixed">
-      <div class="aside-header">
-        <a href="beranda.html"><img class="aside-logo" width="40%" src="assets/img/logo.png"></a>
-        <a href="" class="aside-menu-link">
-          <i data-feather="menu"></i>
-          <i data-feather="x"></i>
-        </a>
-      </div>
-      <div class="aside-body">
-        <ul class="nav sidebar-nav">
-          <li class="nav-item"><a href="index.html" class="nav-link active"><i data-feather="home"></i> Beranda</a></li>
-          <li class="nav-item show">
-            <a href="" class="nav-link"><i data-feather="briefcase"></i> Pekerjaan</a>
-            <nav class="nav">
-              <a href="lowongan.html">Cari Lowongan</a>
-              <a href="lowongan-tersimpan.html">Lowongan Tersimpan</a>
-              <a href="lamaran-saya.html">Lamaran Saya</a>
-              <a href="list-perusahaan.html">Daftar Perusahaan</a>
-            </nav>
-          </li>
-          <li class="nav-item show">
-            <a href="" class="nav-link"><i data-feather="users"></i> Komunitas</a>
-            <nav class="nav">
-              <a href="jelajahi-komunitas.html">Jelajahi Komunitas</a>
-              <a href="komunitas-saya.html">Komunitas Saya</a>
-            </nav>
-          </li>
-        </ul>
-      </div>
-    </aside> -->
-    
     <aside class="aside aside-fixed">
       <div class="aside-header">
         <a href="beranda.html"><img class="aside-logo" width="40%" src="assets/img/logo.png"></a>
@@ -146,9 +119,6 @@
           </form>
         </div>
         <nav class="nav">
-          <!-- <div>
-            <a href="upgrade-jobseeker.html" class="btn btn-brand-02 mg-r-20 mg-b-0"><i class="d-none d-sm-inline mg-r-5" data-feather="arrow-up"></i>Upgrade <span class="d-none d-sm-inline">Akun</span></a>
-          </div> -->
           <div class="dropdown dropdown-notification mg-r-20 mg-b-0 mg-t-8">
             <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
               <i data-feather="bell"></i>
@@ -204,117 +174,157 @@
       </div><!-- content-header -->
 
       <div class="content-body">
-        <div class="container pd-x-0 tx-13">
-          <h2 class="tx-color-01 tx-center tx-18 tx-sm-32 mg-t-40 tx-lg-36 mg-xl-b-5">Jadilah member untuk maksimalkan potensimu!</h2>
-          <div class="media d-block d-lg-flex">
-            <div class="content content-fixed content-auth-alt">
-              <div class="container ht-100p tx-center">
-                <div class="row justify-content-center">
-                  <div style="border-radius: 25px; transform: scale(1, 1);" class="card mg-15 col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-sm-t-0 d-flex flex-column">
-                    <div class="tx-100 lh-1"><i class="fas fa-feather" style="transform: scale(0.8);"></i></div>
-                    <h3 class="mg-b-25">6 Bulan</h3>
-                    <p class="tx-color-03 mg-b-25">Dapatkan fasilitas member premium dengan akses jobseeker selama 6 bulan di myITS Connect.</p>
-                    <h1 class="tx-rubik tx-normal mg-t-auto">Rp30.000</h1>
-                    <div class="card-body text-center">
-                      <a href="" class="btn btn-outline-primary btn-lg">Pilih</a>
-                    </div>
-                  </div><!-- col -->
-                  <div style="border-radius: 25px; transform: scale(1, 1);" class="card mg-r-40 mg-l-40 mg-b-15 col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-sm-t-0 d-flex flex-column">
-                    <div class="marker marker-ribbon marker-primary marker-top-right pos-absolute t-10 r-0">Paling Laris!</div>
-                    <div class="tx-100 lh-1"><i class="fas fa-fire" style="transform: scale(0.8);"></i></div>
-                    <h3 class="mg-b-25">1 Tahun</h3>
-                    <p class="tx-color-03 mg-b-25">Membership paling sering dipilih!<br>Dapatkan fasilitas member premium dengan akses jobseeker selama 1 tahun di myITS Connect.</p>
-                    <h1 class="tx-rubik tx-normal mg-t-auto">Rp50.000</h1>
-                    <div class="card-body text-center">
-                      <a href="#modalDetilPaket" data-toggle="modal" class="btn btn-outline-primary btn-lg">Pilih</a>
-                    </div>
-                  </div><!-- col -->
-                  <div style="border-radius: 25px; transform: scale(1, 1);" class="card mg-15 col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
-                    <div class="tx-100 lh-1"><i class="fas fa-infinity"></i></div>
-                    <h3 class="mg-b-25">Lifetime</h3>
-                    <p class="tx-color-03 mg-b-25">Dapatkan fasilitas member premium dengan akses jobseeker tanpa batas di myITS Connect!</p>
-                    <h1 class="tx-rubik tx-normal mg-t-auto">Rp100.000</h1>
-                    <div class="card-body text-center">
-                      <a href="" class="btn btn-outline-primary btn-lg">Pilih</a>
-                    </div>
-                  </div><!-- col -->
-                </div><!-- row -->
-              </div><!-- container -->
-            </div><!-- content -->
+        <div class="container pd-x-0">
+          <div class="d-sm-flex align-items-center justify-content-between mg-b-0 mg-lg-b-0 mg-xl-b-0">
+            <h4 class="mg-b-0 tx-spacing--1">Kelola Komunitas</h4>
           </div>
-        </div> 
+          <div class="d-sm-flex align-items-center justify-content-between">
+            <p class="mg-b-0 tx-spacing--1">Daftar komunitas pada myITS Connect</p>
+            <div class="btn-toolbar justify-content-end">
+              <a href="form-buatkomunitas.html" class="btn btn-brand-02 btn-sm"><i data-feather="plus" class="mg-r-10"></i>Tambah komunitas baru</a>
+            </div>
+          </div>
+
+          <div class="row row-xs">
+            <div class="col-lg-12 mg-t-10">
+              <div class="card mg-t-10">
+                <div class="df-example demo-table">
+                  <table id="example1" class="table table-dashboard table-responsive mg-b-0">
+                    <thead>
+                      <tr>
+                        <th class="">No.</th>
+                        <th class="wd-30p">Nama Komunitas</th>
+                        <th class="wd-20p">Kategori</th>
+                        <th class="wd-20p">Privasi</th>
+                        <th class="wd-20p">Tanggal Dibuat</th>
+                        <th class="wd-30p">Status</th>
+                        <th class="wd-30p"></th>
+                        <th ></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">1</td>
+                        <td class="">Digital Marketing Club</td>
+                        <td class="">Bisnis</td>
+                        <td class="">Publik</td>
+                        <td class="">4/6/2015</td>
+                        <td class=" tx-gray-600"><span style="height: 20px;" class="badge badge-success tx-12">Aktif</span></td>
+                        <td class="tx-medium"><a href="admin-kelola-komunitas.html">Lihat Detail</a></td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">2</td>
+                        <td class="">Komunitas Robotika</td>
+                        <td class="">Teknologi</td>
+                        <td class="">Publik</td>
+                        <td class="">28/10/2017</td>
+                        <td class=" tx-gray-600"><span style="height: 20px;" class="badge badge-success tx-12">Aktif</span></td>
+                        <td class="tx-medium"><a href="">Lihat Detail</a></td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">3</td>
+                        <td class="">Capture The Flag</td>
+                        <td class="">Teknologi</td>
+                        <td class="">Privat</td>
+                        <td class="">5/2/2019</td>
+                        <td class=" tx-gray-600"><span style="height: 20px;" class="badge badge-success tx-12">Aktif</span></td>
+                        <td class="tx-medium"><a href="">Lihat Detail</a></td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">4</td>
+                        <td class="">Farmaseutikal Club</td>
+                        <td class="">Sains</td>
+                        <td class="">Publik</td>
+                        <td class="">2/2/2020</td>
+                        <td class=" tx-gray-600"><span style="height: 20px;" class="badge badge-danger tx-12">Tidak Aktif</span></td>
+                        <td class="tx-medium"><a href="">Lihat Detail</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- table-responsive -->
+              </div><!-- card -->
+            </div><!-- row -->
+          </div><!-- container -->
+        </div>
       </div>
-    </div><!-- content -->
-
-    <div class="modal fade effect-scale" id="modalDetilPaket" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h6 class="modal-title">Membership 1 Tahun</h6>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div> -->
-            <div class="modal-body">
-              <div class="media-body mg-15">
-                <h3 class="mg-b-5">Membership 1 tahun</h3>
-                <p class="mg-b-10">Bergabung menjadi anggota membership premium myITS Connect selama 1 tahun.</p>
-                <p class="mg-b-10">Mulai berlangganan sekarang hingga <b>28 Agustus 2022</b>.</p>
-                <h6 class="tx-right mg-t-30">Total bayar</h6>
-                <h3 class="tx-right">Rp 50.000</h3>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <a href="">
-                <button type="button" class="btn btn-sm btn-white mg-r-10" data-dismiss="modal">Batal</button>
-              </a>
-              <a href="upgrade-jobseeker-confirmpay.html">
-                <button type="button" class="btn btn-sm btn-brand-02">Beli Paket</button>
-              </a>
-            </div>
-        </div><!-- modal-content -->
-      </div><!-- modal-dialog -->
-    </div><!-- modal -->
-
+    </div>
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/feather-icons/feather.min.js"></script>
-    <script src="assets/js/dashforge.aside.js"></script>
     <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="lib/jqvmap/jquery.vmap.min.js"></script>
+    <script src="lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+
     <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+
     <script src="assets/js/dashforge.js"></script>
+    <script src="assets/js/dashforge.aside.js"></script>
+    <script src="assets/js/dashforge.sampledata.js"></script>
+    <script src="assets/js/dashboard-one.js"></script>
+
+    <!-- append theme customizer -->
+    <script src="lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
     <script>
-      $(function(){
+       $(function(){
         'use strict'
 
-        // The code below is for demo purposes only.
-        // For you to not be confused, please refer to
-        // Off-Canvas starter template in Collections
-
-        $('.off-canvas-menu').on('click', function(e){
-          e.preventDefault();
-          var target = $(this).attr('href');
-          $(target).addClass('show');
-        });
-
-
-        $('.off-canvas .close').on('click', function(e){
-          e.preventDefault();
-          $(this).closest('.off-canvas').removeClass('show');
-        })
-
-        $(document).on('click touchstart', function(e){
-          e.stopPropagation();
-
-          // closing of sidebar menu when clicking outside of it
-          if(!$(e.target).closest('.off-canvas-menu').length) {
-            var offCanvas = $(e.target).closest('.off-canvas').length;
-            if(!offCanvas) {
-              $('.off-canvas.show').removeClass('show');
-            }
+        var table = $('#example1').DataTable({
+          orderCellsTop: true,
+          fixedHeader: true,
+          destroy: true,
+          language: {
+            searchPlaceholder: 'Cari...',
+            sSearch: '',
+            lengthMenu: '_MENU_ item/halaman',
           }
         });
 
+        $('#example2').DataTable({
+          responsive: true,
+          language: {
+            searchPlaceholder: 'Cari...',
+            sSearch: '',
+            lengthMenu: '_MENU_ item/halaman',
+          }
+        });
+
+        $('#example3').DataTable({
+          'ajax': 'assets/data/datatable-arrays.txt',
+          language: {
+            searchPlaceholder: 'Cari...',
+            sSearch: '',
+            lengthMenu: '_MENU_ item/halaman',
+          }
+        });
+
+        $('#example4').DataTable({
+          'ajax': 'assets/data/datatable-objects.txt',
+          "columns": [
+            { "data": "name" },
+            { "data": "position" },
+            { "data": "office" },
+            { "data": "extn" },
+            { "data": "salary" }
+          ],
+          language: {
+            searchPlaceholder: 'Cari...',
+            sSearch: '',
+            lengthMenu: '_MENU_ item/halaman',
+          }
+        });
+
+        // Select2
+        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
 
       });
     </script>

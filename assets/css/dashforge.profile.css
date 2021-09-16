@@ -22,6 +22,10 @@
   .profile-sidebar-two {
     width: 230px; } }
 
+@media (min-width: 992px) {
+  .profile-sidebar-three {
+    width: 300px; } }
+
 .profile-skillset h4 {
   font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;

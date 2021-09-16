@@ -33,9 +33,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
-    <title>myITS Connect - Buat Komunitas</title>
+    <title>myITS Connect - Tambah Paket</title>
 
     <!-- vendor css -->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-iconpicker.min.css" rel="stylesheet">
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/typicons.font/typicons.css" rel="stylesheet">
@@ -157,111 +159,21 @@
 
       <div class="content-body">
         <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
-          <div class="d-sm-flex align-items-center">
-            <div class="btn-toolbar mg-b-25">
-              <a href="komunitas-saya.html" type="button" class="btn btn-xs btn-secondary btn-icon"><i data-feather="arrow-left"></i></a>              
-            </div>
-            <div class="container">
-              <div class="d-sm-flex align-items-center justify-content-between pd-l-10">
-                <h4 class="mg-b-0 tx-spacing--1">Komunitas Saya</h4>
-              </div>
-              <div class="d-sm-flex align-items-center justify-content-between pd-l-10">
-                <p class="mg-b-0">Daftarkan komunitas anda <span class="d-none d-sm-inline">dan perluas jaringan sesuai minat anda</span></p>
-              </div>
-            </div>
+          <div class="col-sm-8 mg-t-10">
+            <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Ikon Visual Paket</label>
+            <input type="text" class="form-control social-icon">
           </div>
-
-          <div class="row row-xs">
-            <div class="col-lg-8">
-              <div class="card">
-                <div class="mg-b-10 mg-sm-b-0">
-                  <div class="card" style="max-width: 1920px; height: 200px; background: black; overflow: hidden; border: none;">
-                    <img class="card-img-top img-object-fit"
-                    src="assets/img/thumbnail-3.jpg" style="opacity: 0.6;" alt="Card image cap">
-                    <div class="tx-overlay-bottom-right-form">
-                      <a href="" class="btn btn-sm btn-white" data-toggle="tooltip" title="Pilih foto background komunitas"><i data-feather="image"></i><span class="mg-l-10 tx-medium">Pilih foto sampul</span></a>
-                    </div>
-                    <div class="tx-overlay-bottom-left-form">
-                      <div id="contactAvatar" class="pos-relative float-left">
-                        <div class="avatar avatar-xl avatar-img horizontal-center">
-                          <img src="assets/img/thumbnail-1.jpg" class="card" style="border: none;" alt="">
-                        </div>
-                        <a href="" class="contact-edit-photo" data-toggle="tooltip" title="Pilih foto profil komunitas"><i data-feather="edit-2"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="mg-b-10 mg-sm-b-0">
-                      <div class="row row-sm">
-                        <div class="col-sm-8">
-                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Nama Komunitas</label>
-                          <input type="text" class="form-control" placeholder="">
-                        </div>
-                        <div class="col-sm-8 mg-t-10">
-                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Deskripsi</label>
-                          <textarea class="form-control count-chars" name="DescCounter" id="DescCounter" maxlength="150" data-chars-max="150" data-msg-color="secondary" rows="2" placeholder="Apa tujuan komunitas anda?"></textarea>
-                        </div>
-                        <div class="col-sm-8 mg-t-10">
-                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Aturan</label>
-                          <textarea class="form-control count-chars" name="RuleCounter" id="RuleCounter" maxlength="150" data-chars-max="150" data-msg-color="secondary" rows="2" placeholder="Arahkan kepada anggota untuk mengikuti aturan yang anda buat"></textarea>
-                        </div>
-                        <div class="row col-sm-10 mg-t-10">
-                          <div class="col-sm-5">
-                            <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Kategori</label>
-                            <div class="">
-                              <select class="form-control select1-no-search">
-                                <option label=""></option>
-                                <option value="Kategori 1">Teknologi</option>
-                                <option value="Kategori 2">Multimedia</option>
-                                <option value="Kategori 3">Sains</option>
-                                <option value="Kategori 4">Industri</option>
-                                <option value="Kategori 5">Seni</option>
-                                <option value="Kategori 6">Bisnis</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-sm-5">
-                            <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Privasi</label>
-                            <div class="">
-                              <select class="form-control select2-no-search">
-                                <option label=""></option>
-                                <option value="Privat">Privat</option>
-                                <option value="Publik">Publik</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div><!-- row -->
-                    </div>
-                    <div class="mg-b-10 mg-sm-b-0 mg-t-20">
-                      <div class="row row-sm">
-                        <div class="col-sm-8">
-                          <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Undang koneksi anda</label>
-                          <div class="form-group mg-b-20">
-                            <select class="form-control select2" value="" multiple="multiple">
-                              <option label="Choose one"></option>
-                              <option>Ayu</option>
-                              <option>Anya</option>
-                              <option>Budi</option>
-                              <option>Bambang</option>
-                            </select>
-                          </div><!-- form-group -->
-                        </div>
-                        <div class="col-sm-12 mg-t-40">
-                              <a href="komunitas-saya-test.html" type="submit" class="btn btn-sm btn-brand-02 align-items-center mg-r-5"><i data-feather="check"></i><span class="mg-l-5"></span>Buat Komunitas</span></a>
-                        </div>
-                      </div><!-- row -->
-                    </div>
-                  </div><!-- card-body -->
-                </div><!-- card -->
-              </div><!-- col -->
-            </div><!-- row -->
-          </div><!-- container -->
         </div>
       </div><!-- content -->
     </div>
     
-
+    
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome-iconpicker.js"></script>
+    <script type="text/javascript">
+      $('.social-icon').iconpicker();
+    </script>
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/feather-icons/feather.min.js"></script>
@@ -277,15 +189,96 @@
     <script src="lib/typeahead.js/typeahead.bundle.min.js"></script>
     <script src="lib/quill/quill.min.js"></script>
     <script src="lib/select2/js/select2.min.js"></script>
+    <script src="lib/cleave.js/cleave.min.js"></script>
+    <script src="lib/cleave.js/addons/cleave-phone.us.js"></script>
+    
 
+    <script>
+      $(function(){
+        'use strict'
+
+        // Credit Card
+        var cleaveA = new Cleave('#inputCreditCard', {
+          creditCard: true,
+          onCreditCardTypeChanged: function (type) {
+            console.log(type)
+            var card = $('#creditCardType').find('.'+type);
+
+            if(card.length) {
+              card.addClass('tx-primary');
+              card.siblings().removeClass('tx-primary');
+            } else {
+              $('#creditCardType span').removeClass('tx-primary');
+            }
+          }
+        });
+
+        // US Format Phone Number
+        var cleaveB = new Cleave('#inputPhoneNumber', {
+          phone: true,
+          phoneRegionCode: 'US'
+        });
+
+        // Date Formatting
+        var cleaveC = new Cleave('#inputDate', {
+          date: true,
+          datePattern: ['Y', 'm', 'd']
+        });
+
+        var cleaveD = new Cleave('#inputDate2', {
+          date: true,
+          datePattern: ['m', 'y']
+        });
+
+        // Time Formatting
+        var cleaveE = new Cleave('#inputTime', {
+          time: true,
+          timePattern: ['h', 'm', 's']
+        });
+
+        var cleaveF = new Cleave('#inputTime2', {
+          time: true,
+          timePattern: ['h', 'm']
+        });
+
+        // Numeral Formatting
+        var cleaveG = new Cleave('#inputNumeral', {
+          numeral: true,
+          numeralThousandsGroupStyle: 'thousand'
+        });
+
+
+        // Blocks Formatting
+        var cleaveH = new Cleave('#inputBlocks', {
+          blocks: [4, 3, 3, 4],
+          uppercase: true
+        });
+
+        // Multiple Delimiter
+        var cleaveI = new Cleave('#inputBlocks2', {
+          delimiters: ['+', '+', '-'],
+          blocks: [3, 3, 4, 2]
+        });
+
+        // Prefix
+        var cleaveJ = new Cleave('#inputBlocks3', {
+          prefix: 'Prefix-',
+          uppercase: true
+        });
+
+
+
+      });
+    </script>
+
+    
+    
     <script src="assets/js/dashforge.js"></script>
     <script src="assets/js/dashforge.aside.js"></script>
     <script src="assets/js/dashforge.sampledata.js"></script>
     <script src="assets/js/dashboard-four.js"></script>
     <script src="assets/js/dashforge.filemgr.js"></script>
     <script src="assets/js/character-counter.js"></script>
-
-
     
     <script>
       // Adding placeholder for search input
@@ -478,6 +471,7 @@
 
       });
     </script>
+    
     
   </body>
 </html>
